@@ -1,0 +1,4 @@
+Available Kaggle input folders:
+ • /kaggle/input/datasets
+ • /kaggle/input/models
+

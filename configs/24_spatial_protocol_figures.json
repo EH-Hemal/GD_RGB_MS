@@ -1,0 +1,19 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "gd_spatial_protocol_figures.py",
+  "cell_zero_based": null,
+  "expressions": {
+    "RGB_DIR": "None",
+    "OUTPUT_DIR": "None",
+    "BUFFER_M": "24.0",
+    "TARGET_VAL": "40",
+    "TARGET_TEST": "40",
+    "EXPECTED": "{\"train\": 207, \"validation\": 40, \"test\": 41, \"excluded_buffer\": 112}",
+    "GPS_PATTERN": "re.compile(r\"lat_(-?\\d+(?:\\.\\d+)?)_lon_(-?\\d+(?:\\.\\d+)?)\", re.I)",
+    "IMAGE_EXTENSIONS": "{\".jpg\", \".jpeg\", \".png\", \".tif\", \".tiff\"}",
+    "STYLES": "{\n    \"train\": (\"Train\", \"#0072B2\", \"o\"),\n    \"validation\": (\"Validation\", \"#E69F00\", \"^\"),\n    \"test\": (\"Test\", \"#009E73\", \"s\"),\n    \"excluded_buffer\": (\"Excluded\", \"#7C8087\", \"x\"),\n}",
+    "BUFFERED_FIGSIZE": "(11, 8)",
+    "CROSS_FIGSIZE": "(17, 7.5)",
+    "DPI": "600"
+  }
+}

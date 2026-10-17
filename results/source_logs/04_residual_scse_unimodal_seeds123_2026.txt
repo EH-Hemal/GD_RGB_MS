@@ -1,0 +1,290 @@
+====================================================================================================
+GD-RGBMS-DB — RGB-ONLY + MS-ONLY | SEEDS 123 AND 2026
+====================================================================================================
+Dataset    : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Device     : cuda
+Split      : 280 60 60
+Input size : (896, 672)
+Backbone   : Residual-scSE U-Net
+Modalities : ['RGB', 'MS']
+Seeds      : [123, 2026]
+Seed 42    : NOT rerun
+====================================================================================================
+RAM cache: 340 samples (~2.48 GB)
+
+====================================================================================================
+RGB-ONLY | SEED 123 | RESIDUAL-scSE U-NET
+====================================================================================================
+Channels   : ['R', 'G', 'B']
+Parameters : 7,901,827
+RGB | seed 123 | epoch 001/70 | loss 0.3648 | val Dice 0.5496 | IoU 0.3789 | P 0.5087 | R 0.5976 | th 0.80 | lr 1.00e-04
+RGB | seed 123 | epoch 002/70 | loss 0.2630 | val Dice 0.6185 | IoU 0.4477 | P 0.5828 | R 0.6589 | th 0.60 | lr 1.00e-04
+RGB | seed 123 | epoch 003/70 | loss 0.2356 | val Dice 0.6107 | IoU 0.4396 | P 0.5797 | R 0.6453 | th 0.70 | lr 1.00e-04
+RGB | seed 123 | epoch 004/70 | loss 0.2234 | val Dice 0.6365 | IoU 0.4668 | P 0.5974 | R 0.6811 | th 0.55 | lr 1.00e-04
+RGB | seed 123 | epoch 005/70 | loss 0.2149 | val Dice 0.6577 | IoU 0.4900 | P 0.6263 | R 0.6924 | th 0.75 | lr 1.00e-04
+RGB | seed 123 | epoch 006/70 | loss 0.2070 | val Dice 0.6579 | IoU 0.4902 | P 0.6294 | R 0.6892 | th 0.65 | lr 1.00e-04
+RGB | seed 123 | epoch 007/70 | loss 0.2122 | val Dice 0.6679 | IoU 0.5014 | P 0.6315 | R 0.7087 | th 0.65 | lr 1.00e-04
+RGB | seed 123 | epoch 008/70 | loss 0.2028 | val Dice 0.6721 | IoU 0.5062 | P 0.6407 | R 0.7068 | th 0.50 | lr 1.00e-04
+RGB | seed 123 | epoch 009/70 | loss 0.1929 | val Dice 0.6767 | IoU 0.5114 | P 0.6501 | R 0.7057 | th 0.50 | lr 1.00e-04
+RGB | seed 123 | epoch 010/70 | loss 0.1913 | val Dice 0.7206 | IoU 0.5632 | P 0.7023 | R 0.7399 | th 0.55 | lr 1.00e-04
+RGB | seed 123 | epoch 011/70 | loss 0.1857 | val Dice 0.6737 | IoU 0.5080 | P 0.6521 | R 0.6969 | th 0.75 | lr 1.00e-04
+RGB | seed 123 | epoch 012/70 | loss 0.1863 | val Dice 0.6801 | IoU 0.5152 | P 0.6449 | R 0.7192 | th 0.30 | lr 1.00e-04
+RGB | seed 123 | epoch 013/70 | loss 0.1804 | val Dice 0.7136 | IoU 0.5547 | P 0.6796 | R 0.7511 | th 0.65 | lr 1.00e-04
+RGB | seed 123 | epoch 014/70 | loss 0.1781 | val Dice 0.6826 | IoU 0.5182 | P 0.6498 | R 0.7189 | th 0.70 | lr 1.00e-04
+RGB | seed 123 | epoch 015/70 | loss 0.1768 | val Dice 0.6987 | IoU 0.5369 | P 0.6709 | R 0.7290 | th 0.70 | lr 5.00e-05
+RGB | seed 123 | epoch 016/70 | loss 0.1674 | val Dice 0.7256 | IoU 0.5693 | P 0.6999 | R 0.7532 | th 0.40 | lr 5.00e-05
+RGB | seed 123 | epoch 017/70 | loss 0.1625 | val Dice 0.7338 | IoU 0.5795 | P 0.7233 | R 0.7446 | th 0.55 | lr 5.00e-05
+RGB | seed 123 | epoch 018/70 | loss 0.1587 | val Dice 0.7283 | IoU 0.5726 | P 0.7091 | R 0.7485 | th 0.60 | lr 5.00e-05
+RGB | seed 123 | epoch 019/70 | loss 0.1601 | val Dice 0.7026 | IoU 0.5416 | P 0.6730 | R 0.7349 | th 0.75 | lr 5.00e-05
+RGB | seed 123 | epoch 020/70 | loss 0.1569 | val Dice 0.7355 | IoU 0.5817 | P 0.7248 | R 0.7466 | th 0.60 | lr 5.00e-05
+RGB | seed 123 | epoch 021/70 | loss 0.1582 | val Dice 0.7320 | IoU 0.5773 | P 0.7120 | R 0.7533 | th 0.80 | lr 5.00e-05
+RGB | seed 123 | epoch 022/70 | loss 0.1546 | val Dice 0.7356 | IoU 0.5817 | P 0.7207 | R 0.7510 | th 0.75 | lr 5.00e-05
+RGB | seed 123 | epoch 023/70 | loss 0.1506 | val Dice 0.7409 | IoU 0.5885 | P 0.7216 | R 0.7614 | th 0.40 | lr 5.00e-05
+RGB | seed 123 | epoch 024/70 | loss 0.1518 | val Dice 0.7522 | IoU 0.6028 | P 0.7348 | R 0.7704 | th 0.55 | lr 5.00e-05
+RGB | seed 123 | epoch 025/70 | loss 0.1490 | val Dice 0.7397 | IoU 0.5869 | P 0.7261 | R 0.7538 | th 0.65 | lr 5.00e-05
+RGB | seed 123 | epoch 026/70 | loss 0.1475 | val Dice 0.7394 | IoU 0.5866 | P 0.7156 | R 0.7650 | th 0.65 | lr 5.00e-05
+RGB | seed 123 | epoch 027/70 | loss 0.1494 | val Dice 0.7245 | IoU 0.5680 | P 0.7012 | R 0.7493 | th 0.75 | lr 5.00e-05
+RGB | seed 123 | epoch 028/70 | loss 0.1433 | val Dice 0.7385 | IoU 0.5854 | P 0.7215 | R 0.7563 | th 0.80 | lr 5.00e-05
+RGB | seed 123 | epoch 029/70 | loss 0.1426 | val Dice 0.7498 | IoU 0.5998 | P 0.7370 | R 0.7631 | th 0.60 | lr 2.50e-05
+RGB | seed 123 | epoch 030/70 | loss 0.1370 | val Dice 0.7511 | IoU 0.6015 | P 0.7456 | R 0.7567 | th 0.40 | lr 2.50e-05
+RGB | seed 123 | epoch 031/70 | loss 0.1375 | val Dice 0.7477 | IoU 0.5971 | P 0.7418 | R 0.7537 | th 0.70 | lr 2.50e-05
+RGB | seed 123 | epoch 032/70 | loss 0.1351 | val Dice 0.7550 | IoU 0.6064 | P 0.7428 | R 0.7676 | th 0.60 | lr 2.50e-05
+RGB | seed 123 | epoch 033/70 | loss 0.1329 | val Dice 0.7471 | IoU 0.5963 | P 0.7457 | R 0.7486 | th 0.25 | lr 2.50e-05
+RGB | seed 123 | epoch 034/70 | loss 0.1359 | val Dice 0.7393 | IoU 0.5864 | P 0.7279 | R 0.7511 | th 0.80 | lr 2.50e-05
+RGB | seed 123 | epoch 035/70 | loss 0.1301 | val Dice 0.7447 | IoU 0.5932 | P 0.7311 | R 0.7588 | th 0.65 | lr 2.50e-05
+RGB | seed 123 | epoch 036/70 | loss 0.1311 | val Dice 0.7451 | IoU 0.5938 | P 0.7378 | R 0.7527 | th 0.45 | lr 2.50e-05
+RGB | seed 123 | epoch 037/70 | loss 0.1307 | val Dice 0.7521 | IoU 0.6027 | P 0.7568 | R 0.7474 | th 0.40 | lr 1.25e-05
+RGB | seed 123 | epoch 038/70 | loss 0.1265 | val Dice 0.7478 | IoU 0.5972 | P 0.7347 | R 0.7614 | th 0.70 | lr 1.25e-05
+RGB | seed 123 | epoch 039/70 | loss 0.1252 | val Dice 0.7517 | IoU 0.6021 | P 0.7437 | R 0.7599 | th 0.40 | lr 1.25e-05
+RGB | seed 123 | epoch 040/70 | loss 0.1236 | val Dice 0.7505 | IoU 0.6006 | P 0.7399 | R 0.7614 | th 0.60 | lr 1.25e-05
+RGB | seed 123 | epoch 041/70 | loss 0.1232 | val Dice 0.7446 | IoU 0.5931 | P 0.7418 | R 0.7473 | th 0.60 | lr 1.25e-05
+RGB | seed 123 | epoch 042/70 | loss 0.1226 | val Dice 0.7531 | IoU 0.6039 | P 0.7555 | R 0.7506 | th 0.45 | lr 6.25e-06
+RGB | seed 123 | epoch 043/70 | loss 0.1206 | val Dice 0.7529 | IoU 0.6037 | P 0.7451 | R 0.7609 | th 0.50 | lr 6.25e-06
+RGB | seed 123 | epoch 044/70 | loss 0.1205 | val Dice 0.7566 | IoU 0.6085 | P 0.7554 | R 0.7579 | th 0.50 | lr 6.25e-06
+RGB | seed 123 | epoch 045/70 | loss 0.1197 | val Dice 0.7453 | IoU 0.5941 | P 0.7371 | R 0.7538 | th 0.75 | lr 6.25e-06
+RGB | seed 123 | epoch 046/70 | loss 0.1200 | val Dice 0.7528 | IoU 0.6036 | P 0.7483 | R 0.7575 | th 0.60 | lr 6.25e-06
+RGB | seed 123 | epoch 047/70 | loss 0.1191 | val Dice 0.7464 | IoU 0.5954 | P 0.7382 | R 0.7548 | th 0.65 | lr 6.25e-06
+RGB | seed 123 | epoch 048/70 | loss 0.1165 | val Dice 0.7504 | IoU 0.6006 | P 0.7407 | R 0.7605 | th 0.75 | lr 6.25e-06
+RGB | seed 123 | epoch 049/70 | loss 0.1177 | val Dice 0.7522 | IoU 0.6028 | P 0.7518 | R 0.7526 | th 0.50 | lr 3.13e-06
+RGB | seed 123 | epoch 050/70 | loss 0.1156 | val Dice 0.7514 | IoU 0.6018 | P 0.7410 | R 0.7622 | th 0.60 | lr 3.13e-06
+RGB | seed 123 | epoch 051/70 | loss 0.1164 | val Dice 0.7510 | IoU 0.6013 | P 0.7447 | R 0.7574 | th 0.65 | lr 3.13e-06
+RGB | seed 123 | epoch 052/70 | loss 0.1169 | val Dice 0.7481 | IoU 0.5976 | P 0.7450 | R 0.7512 | th 0.60 | lr 3.13e-06
+RGB | seed 123 | epoch 053/70 | loss 0.1171 | val Dice 0.7472 | IoU 0.5965 | P 0.7316 | R 0.7636 | th 0.65 | lr 3.13e-06
+RGB | seed 123 | epoch 054/70 | loss 0.1156 | val Dice 0.7462 | IoU 0.5951 | P 0.7404 | R 0.7520 | th 0.70 | lr 1.56e-06
+RGB | seed 123 | epoch 055/70 | loss 0.1157 | val Dice 0.7517 | IoU 0.6022 | P 0.7434 | R 0.7602 | th 0.60 | lr 1.56e-06
+RGB | seed 123 | epoch 056/70 | loss 0.1136 | val Dice 0.7525 | IoU 0.6032 | P 0.7439 | R 0.7612 | th 0.65 | lr 1.56e-06
+RGB seed 123: early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------
+RGB-ONLY | SEED 123 | FINAL TEST
+--------------------------------------------------------------------------------------------
+Best epoch          : 44
+Best validation Dice : 0.7567
+Threshold           : 0.48
+Dice                : 0.7646
+IoU                 : 0.6189
+Precision           : 0.7634
+Recall              : 0.7657
+Accuracy            : 0.9769
+Results ZIP          : /kaggle/working/gd_rgb_residual_scse_seed123_results.zip
+
+====================================================================================================
+MS-ONLY | SEED 123 | RESIDUAL-scSE U-NET
+====================================================================================================
+Channels   : ['Green', 'Red-Edge', 'NIR']
+Parameters : 7,901,827
+MS | seed 123 | epoch 001/70 | loss 0.3038 | val Dice 0.6668 | IoU 0.5002 | P 0.6198 | R 0.7216 | th 0.75 | lr 1.00e-04
+MS | seed 123 | epoch 002/70 | loss 0.2171 | val Dice 0.6955 | IoU 0.5331 | P 0.6570 | R 0.7387 | th 0.55 | lr 1.00e-04
+MS | seed 123 | epoch 003/70 | loss 0.2047 | val Dice 0.7170 | IoU 0.5589 | P 0.6957 | R 0.7396 | th 0.75 | lr 1.00e-04
+MS | seed 123 | epoch 004/70 | loss 0.1950 | val Dice 0.7230 | IoU 0.5661 | P 0.7123 | R 0.7339 | th 0.45 | lr 1.00e-04
+MS | seed 123 | epoch 005/70 | loss 0.1847 | val Dice 0.7280 | IoU 0.5723 | P 0.7003 | R 0.7581 | th 0.25 | lr 1.00e-04
+MS | seed 123 | epoch 006/70 | loss 0.1766 | val Dice 0.7473 | IoU 0.5965 | P 0.7339 | R 0.7612 | th 0.70 | lr 1.00e-04
+MS | seed 123 | epoch 007/70 | loss 0.1747 | val Dice 0.7183 | IoU 0.5605 | P 0.6805 | R 0.7606 | th 0.80 | lr 1.00e-04
+MS | seed 123 | epoch 008/70 | loss 0.1690 | val Dice 0.7482 | IoU 0.5977 | P 0.7265 | R 0.7712 | th 0.55 | lr 1.00e-04
+MS | seed 123 | epoch 009/70 | loss 0.1656 | val Dice 0.7633 | IoU 0.6173 | P 0.7644 | R 0.7623 | th 0.30 | lr 1.00e-04
+MS | seed 123 | epoch 010/70 | loss 0.1675 | val Dice 0.7580 | IoU 0.6103 | P 0.7372 | R 0.7800 | th 0.35 | lr 1.00e-04
+MS | seed 123 | epoch 011/70 | loss 0.1632 | val Dice 0.7386 | IoU 0.5855 | P 0.7312 | R 0.7461 | th 0.20 | lr 1.00e-04
+MS | seed 123 | epoch 012/70 | loss 0.1604 | val Dice 0.7662 | IoU 0.6210 | P 0.7566 | R 0.7759 | th 0.60 | lr 1.00e-04
+MS | seed 123 | epoch 013/70 | loss 0.1575 | val Dice 0.7678 | IoU 0.6232 | P 0.7579 | R 0.7780 | th 0.55 | lr 1.00e-04
+MS | seed 123 | epoch 014/70 | loss 0.1555 | val Dice 0.7493 | IoU 0.5991 | P 0.7325 | R 0.7669 | th 0.65 | lr 1.00e-04
+MS | seed 123 | epoch 015/70 | loss 0.1541 | val Dice 0.7710 | IoU 0.6274 | P 0.7655 | R 0.7766 | th 0.50 | lr 1.00e-04
+MS | seed 123 | epoch 016/70 | loss 0.1516 | val Dice 0.7403 | IoU 0.5876 | P 0.7282 | R 0.7528 | th 0.25 | lr 1.00e-04
+MS | seed 123 | epoch 017/70 | loss 0.1498 | val Dice 0.7512 | IoU 0.6015 | P 0.7339 | R 0.7693 | th 0.75 | lr 1.00e-04
+MS | seed 123 | epoch 018/70 | loss 0.1450 | val Dice 0.7599 | IoU 0.6127 | P 0.7430 | R 0.7774 | th 0.35 | lr 1.00e-04
+MS | seed 123 | epoch 019/70 | loss 0.1466 | val Dice 0.7542 | IoU 0.6054 | P 0.7453 | R 0.7633 | th 0.75 | lr 1.00e-04
+MS | seed 123 | epoch 020/70 | loss 0.1408 | val Dice 0.7635 | IoU 0.6174 | P 0.7529 | R 0.7743 | th 0.20 | lr 5.00e-05
+MS | seed 123 | epoch 021/70 | loss 0.1336 | val Dice 0.7516 | IoU 0.6020 | P 0.7321 | R 0.7721 | th 0.50 | lr 5.00e-05
+MS | seed 123 | epoch 022/70 | loss 0.1319 | val Dice 0.7813 | IoU 0.6411 | P 0.7678 | R 0.7952 | th 0.65 | lr 5.00e-05
+MS | seed 123 | epoch 023/70 | loss 0.1284 | val Dice 0.7623 | IoU 0.6159 | P 0.7530 | R 0.7718 | th 0.35 | lr 5.00e-05
+MS | seed 123 | epoch 024/70 | loss 0.1305 | val Dice 0.7598 | IoU 0.6127 | P 0.7407 | R 0.7800 | th 0.40 | lr 5.00e-05
+MS | seed 123 | epoch 025/70 | loss 0.1283 | val Dice 0.7810 | IoU 0.6406 | P 0.7629 | R 0.7999 | th 0.45 | lr 5.00e-05
+MS | seed 123 | epoch 026/70 | loss 0.1254 | val Dice 0.7600 | IoU 0.6129 | P 0.7344 | R 0.7875 | th 0.60 | lr 5.00e-05
+MS | seed 123 | epoch 027/70 | loss 0.1217 | val Dice 0.7585 | IoU 0.6110 | P 0.7417 | R 0.7761 | th 0.80 | lr 2.50e-05
+MS | seed 123 | epoch 028/70 | loss 0.1183 | val Dice 0.7720 | IoU 0.6286 | P 0.7572 | R 0.7873 | th 0.60 | lr 2.50e-05
+MS | seed 123 | epoch 029/70 | loss 0.1177 | val Dice 0.7637 | IoU 0.6178 | P 0.7398 | R 0.7893 | th 0.55 | lr 2.50e-05
+MS | seed 123 | epoch 030/70 | loss 0.1150 | val Dice 0.7700 | IoU 0.6261 | P 0.7676 | R 0.7725 | th 0.45 | lr 2.50e-05
+MS | seed 123 | epoch 031/70 | loss 0.1133 | val Dice 0.7844 | IoU 0.6453 | P 0.7806 | R 0.7883 | th 0.65 | lr 2.50e-05
+MS | seed 123 | epoch 032/70 | loss 0.1127 | val Dice 0.7684 | IoU 0.6239 | P 0.7535 | R 0.7839 | th 0.40 | lr 2.50e-05
+MS | seed 123 | epoch 033/70 | loss 0.1119 | val Dice 0.7743 | IoU 0.6318 | P 0.7629 | R 0.7861 | th 0.35 | lr 2.50e-05
+MS | seed 123 | epoch 034/70 | loss 0.1107 | val Dice 0.7745 | IoU 0.6320 | P 0.7637 | R 0.7856 | th 0.65 | lr 2.50e-05
+MS | seed 123 | epoch 035/70 | loss 0.1083 | val Dice 0.7755 | IoU 0.6333 | P 0.7676 | R 0.7834 | th 0.45 | lr 2.50e-05
+MS | seed 123 | epoch 036/70 | loss 0.1071 | val Dice 0.7563 | IoU 0.6081 | P 0.7432 | R 0.7699 | th 0.55 | lr 1.25e-05
+MS | seed 123 | epoch 037/70 | loss 0.1047 | val Dice 0.7666 | IoU 0.6216 | P 0.7649 | R 0.7684 | th 0.35 | lr 1.25e-05
+MS | seed 123 | epoch 038/70 | loss 0.1037 | val Dice 0.7631 | IoU 0.6170 | P 0.7488 | R 0.7780 | th 0.55 | lr 1.25e-05
+MS | seed 123 | epoch 039/70 | loss 0.1030 | val Dice 0.7674 | IoU 0.6226 | P 0.7649 | R 0.7699 | th 0.30 | lr 1.25e-05
+MS | seed 123 | epoch 040/70 | loss 0.1038 | val Dice 0.7746 | IoU 0.6321 | P 0.7531 | R 0.7973 | th 0.55 | lr 1.25e-05
+MS | seed 123 | epoch 041/70 | loss 0.0997 | val Dice 0.7747 | IoU 0.6322 | P 0.7677 | R 0.7818 | th 0.55 | lr 6.25e-06
+MS | seed 123 | epoch 042/70 | loss 0.1009 | val Dice 0.7725 | IoU 0.6293 | P 0.7584 | R 0.7872 | th 0.55 | lr 6.25e-06
+MS | seed 123 | epoch 043/70 | loss 0.0995 | val Dice 0.7738 | IoU 0.6310 | P 0.7558 | R 0.7926 | th 0.50 | lr 6.25e-06
+MS seed 123: early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------
+MS-ONLY | SEED 123 | FINAL TEST
+--------------------------------------------------------------------------------------------
+Best epoch          : 31
+Best validation Dice : 0.7844
+Threshold           : 0.62
+Dice                : 0.7954
+IoU                 : 0.6603
+Precision           : 0.7824
+Recall              : 0.8088
+Accuracy            : 0.9796
+Results ZIP          : /kaggle/working/gd_ms_residual_scse_seed123_results.zip
+
+====================================================================================================
+RGB-ONLY | SEED 2026 | RESIDUAL-scSE U-NET
+====================================================================================================
+Channels   : ['R', 'G', 'B']
+Parameters : 7,901,827
+RGB | seed 2026 | epoch 001/70 | loss 0.4151 | val Dice 0.4886 | IoU 0.3232 | P 0.4399 | R 0.5493 | th 0.75 | lr 1.00e-04
+RGB | seed 2026 | epoch 002/70 | loss 0.2845 | val Dice 0.5781 | IoU 0.4066 | P 0.5462 | R 0.6140 | th 0.80 | lr 1.00e-04
+RGB | seed 2026 | epoch 003/70 | loss 0.2470 | val Dice 0.6263 | IoU 0.4559 | P 0.5809 | R 0.6794 | th 0.55 | lr 1.00e-04
+RGB | seed 2026 | epoch 004/70 | loss 0.2363 | val Dice 0.6239 | IoU 0.4533 | P 0.5820 | R 0.6722 | th 0.65 | lr 1.00e-04
+RGB | seed 2026 | epoch 005/70 | loss 0.2249 | val Dice 0.6413 | IoU 0.4720 | P 0.6001 | R 0.6886 | th 0.70 | lr 1.00e-04
+RGB | seed 2026 | epoch 006/70 | loss 0.2172 | val Dice 0.6498 | IoU 0.4813 | P 0.6026 | R 0.7051 | th 0.75 | lr 1.00e-04
+RGB | seed 2026 | epoch 007/70 | loss 0.2100 | val Dice 0.6377 | IoU 0.4681 | P 0.5954 | R 0.6865 | th 0.70 | lr 1.00e-04
+RGB | seed 2026 | epoch 008/70 | loss 0.2067 | val Dice 0.6701 | IoU 0.5038 | P 0.6552 | R 0.6856 | th 0.55 | lr 1.00e-04
+RGB | seed 2026 | epoch 009/70 | loss 0.2076 | val Dice 0.6555 | IoU 0.4875 | P 0.6229 | R 0.6916 | th 0.45 | lr 1.00e-04
+RGB | seed 2026 | epoch 010/70 | loss 0.1991 | val Dice 0.6874 | IoU 0.5237 | P 0.6675 | R 0.7086 | th 0.40 | lr 1.00e-04
+RGB | seed 2026 | epoch 011/70 | loss 0.1965 | val Dice 0.6717 | IoU 0.5057 | P 0.6424 | R 0.7039 | th 0.75 | lr 1.00e-04
+RGB | seed 2026 | epoch 012/70 | loss 0.1909 | val Dice 0.7074 | IoU 0.5473 | P 0.6851 | R 0.7312 | th 0.50 | lr 1.00e-04
+RGB | seed 2026 | epoch 013/70 | loss 0.1877 | val Dice 0.6848 | IoU 0.5207 | P 0.6577 | R 0.7143 | th 0.60 | lr 1.00e-04
+RGB | seed 2026 | epoch 014/70 | loss 0.1873 | val Dice 0.7018 | IoU 0.5406 | P 0.6817 | R 0.7231 | th 0.60 | lr 1.00e-04
+RGB | seed 2026 | epoch 015/70 | loss 0.1856 | val Dice 0.6868 | IoU 0.5229 | P 0.6627 | R 0.7126 | th 0.40 | lr 1.00e-04
+RGB | seed 2026 | epoch 016/70 | loss 0.1776 | val Dice 0.6904 | IoU 0.5271 | P 0.6569 | R 0.7274 | th 0.75 | lr 1.00e-04
+RGB | seed 2026 | epoch 017/70 | loss 0.1794 | val Dice 0.6753 | IoU 0.5098 | P 0.6407 | R 0.7139 | th 0.70 | lr 5.00e-05
+RGB | seed 2026 | epoch 018/70 | loss 0.1694 | val Dice 0.7224 | IoU 0.5654 | P 0.7041 | R 0.7416 | th 0.70 | lr 5.00e-05
+RGB | seed 2026 | epoch 019/70 | loss 0.1654 | val Dice 0.7333 | IoU 0.5789 | P 0.7259 | R 0.7409 | th 0.70 | lr 5.00e-05
+RGB | seed 2026 | epoch 020/70 | loss 0.1659 | val Dice 0.7177 | IoU 0.5597 | P 0.6865 | R 0.7518 | th 0.80 | lr 5.00e-05
+RGB | seed 2026 | epoch 021/70 | loss 0.1647 | val Dice 0.7140 | IoU 0.5553 | P 0.7007 | R 0.7279 | th 0.80 | lr 5.00e-05
+RGB | seed 2026 | epoch 022/70 | loss 0.1618 | val Dice 0.7258 | IoU 0.5696 | P 0.7139 | R 0.7381 | th 0.80 | lr 5.00e-05
+RGB | seed 2026 | epoch 023/70 | loss 0.1621 | val Dice 0.7120 | IoU 0.5528 | P 0.6810 | R 0.7460 | th 0.50 | lr 5.00e-05
+RGB | seed 2026 | epoch 024/70 | loss 0.1580 | val Dice 0.7204 | IoU 0.5630 | P 0.6903 | R 0.7532 | th 0.80 | lr 2.50e-05
+RGB | seed 2026 | epoch 025/70 | loss 0.1524 | val Dice 0.7432 | IoU 0.5914 | P 0.7340 | R 0.7528 | th 0.65 | lr 2.50e-05
+RGB | seed 2026 | epoch 026/70 | loss 0.1506 | val Dice 0.7363 | IoU 0.5827 | P 0.7158 | R 0.7580 | th 0.50 | lr 2.50e-05
+RGB | seed 2026 | epoch 027/70 | loss 0.1488 | val Dice 0.7304 | IoU 0.5753 | P 0.7131 | R 0.7485 | th 0.85 | lr 2.50e-05
+RGB | seed 2026 | epoch 028/70 | loss 0.1464 | val Dice 0.7390 | IoU 0.5861 | P 0.7217 | R 0.7573 | th 0.80 | lr 2.50e-05
+RGB | seed 2026 | epoch 029/70 | loss 0.1457 | val Dice 0.7390 | IoU 0.5860 | P 0.7381 | R 0.7398 | th 0.65 | lr 2.50e-05
+RGB | seed 2026 | epoch 030/70 | loss 0.1450 | val Dice 0.7343 | IoU 0.5802 | P 0.7208 | R 0.7483 | th 0.80 | lr 1.25e-05
+RGB | seed 2026 | epoch 031/70 | loss 0.1403 | val Dice 0.7566 | IoU 0.6085 | P 0.7457 | R 0.7679 | th 0.50 | lr 1.25e-05
+RGB | seed 2026 | epoch 032/70 | loss 0.1375 | val Dice 0.7494 | IoU 0.5992 | P 0.7410 | R 0.7580 | th 0.55 | lr 1.25e-05
+RGB | seed 2026 | epoch 033/70 | loss 0.1385 | val Dice 0.7599 | IoU 0.6127 | P 0.7516 | R 0.7683 | th 0.55 | lr 1.25e-05
+RGB | seed 2026 | epoch 034/70 | loss 0.1366 | val Dice 0.7489 | IoU 0.5986 | P 0.7430 | R 0.7548 | th 0.70 | lr 1.25e-05
+RGB | seed 2026 | epoch 035/70 | loss 0.1362 | val Dice 0.7515 | IoU 0.6020 | P 0.7524 | R 0.7507 | th 0.60 | lr 1.25e-05
+RGB | seed 2026 | epoch 036/70 | loss 0.1364 | val Dice 0.7509 | IoU 0.6012 | P 0.7548 | R 0.7472 | th 0.60 | lr 1.25e-05
+RGB | seed 2026 | epoch 037/70 | loss 0.1350 | val Dice 0.7529 | IoU 0.6038 | P 0.7427 | R 0.7634 | th 0.70 | lr 1.25e-05
+RGB | seed 2026 | epoch 038/70 | loss 0.1347 | val Dice 0.7449 | IoU 0.5935 | P 0.7291 | R 0.7613 | th 0.60 | lr 6.25e-06
+RGB | seed 2026 | epoch 039/70 | loss 0.1311 | val Dice 0.7510 | IoU 0.6012 | P 0.7378 | R 0.7647 | th 0.65 | lr 6.25e-06
+RGB | seed 2026 | epoch 040/70 | loss 0.1322 | val Dice 0.7534 | IoU 0.6043 | P 0.7422 | R 0.7649 | th 0.65 | lr 6.25e-06
+RGB | seed 2026 | epoch 041/70 | loss 0.1303 | val Dice 0.7538 | IoU 0.6049 | P 0.7442 | R 0.7637 | th 0.55 | lr 6.25e-06
+RGB | seed 2026 | epoch 042/70 | loss 0.1308 | val Dice 0.7550 | IoU 0.6064 | P 0.7430 | R 0.7674 | th 0.50 | lr 6.25e-06
+RGB | seed 2026 | epoch 043/70 | loss 0.1297 | val Dice 0.7537 | IoU 0.6048 | P 0.7444 | R 0.7633 | th 0.75 | lr 3.13e-06
+RGB | seed 2026 | epoch 044/70 | loss 0.1277 | val Dice 0.7492 | IoU 0.5990 | P 0.7489 | R 0.7496 | th 0.60 | lr 3.13e-06
+RGB | seed 2026 | epoch 045/70 | loss 0.1284 | val Dice 0.7548 | IoU 0.6062 | P 0.7520 | R 0.7577 | th 0.65 | lr 3.13e-06
+RGB seed 2026: early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------
+RGB-ONLY | SEED 2026 | FINAL TEST
+--------------------------------------------------------------------------------------------
+Best epoch          : 33
+Best validation Dice : 0.7600
+Threshold           : 0.57
+Dice                : 0.7554
+IoU                 : 0.6069
+Precision           : 0.7474
+Recall              : 0.7635
+Accuracy            : 0.9758
+Results ZIP          : /kaggle/working/gd_rgb_residual_scse_seed2026_results.zip
+
+====================================================================================================
+MS-ONLY | SEED 2026 | RESIDUAL-scSE U-NET
+====================================================================================================
+Channels   : ['Green', 'Red-Edge', 'NIR']
+Parameters : 7,901,827
+MS | seed 2026 | epoch 001/70 | loss 0.3454 | val Dice 0.5927 | IoU 0.4212 | P 0.5579 | R 0.6322 | th 0.75 | lr 1.00e-04
+MS | seed 2026 | epoch 002/70 | loss 0.2436 | val Dice 0.6598 | IoU 0.4923 | P 0.6225 | R 0.7019 | th 0.65 | lr 1.00e-04
+MS | seed 2026 | epoch 003/70 | loss 0.2142 | val Dice 0.7036 | IoU 0.5428 | P 0.6999 | R 0.7074 | th 0.45 | lr 1.00e-04
+MS | seed 2026 | epoch 004/70 | loss 0.2066 | val Dice 0.6978 | IoU 0.5358 | P 0.6685 | R 0.7298 | th 0.55 | lr 1.00e-04
+MS | seed 2026 | epoch 005/70 | loss 0.2025 | val Dice 0.6848 | IoU 0.5207 | P 0.6602 | R 0.7114 | th 0.70 | lr 1.00e-04
+MS | seed 2026 | epoch 006/70 | loss 0.1931 | val Dice 0.7127 | IoU 0.5537 | P 0.6667 | R 0.7656 | th 0.70 | lr 1.00e-04
+MS | seed 2026 | epoch 007/70 | loss 0.1799 | val Dice 0.7431 | IoU 0.5912 | P 0.7231 | R 0.7643 | th 0.45 | lr 1.00e-04
+MS | seed 2026 | epoch 008/70 | loss 0.1738 | val Dice 0.7580 | IoU 0.6103 | P 0.7422 | R 0.7746 | th 0.50 | lr 1.00e-04
+MS | seed 2026 | epoch 009/70 | loss 0.1735 | val Dice 0.7453 | IoU 0.5941 | P 0.7402 | R 0.7505 | th 0.30 | lr 1.00e-04
+MS | seed 2026 | epoch 010/70 | loss 0.1660 | val Dice 0.7611 | IoU 0.6143 | P 0.7629 | R 0.7593 | th 0.25 | lr 1.00e-04
+MS | seed 2026 | epoch 011/70 | loss 0.1653 | val Dice 0.7592 | IoU 0.6119 | P 0.7451 | R 0.7738 | th 0.70 | lr 1.00e-04
+MS | seed 2026 | epoch 012/70 | loss 0.1648 | val Dice 0.7457 | IoU 0.5945 | P 0.7279 | R 0.7643 | th 0.20 | lr 1.00e-04
+MS | seed 2026 | epoch 013/70 | loss 0.1594 | val Dice 0.7313 | IoU 0.5764 | P 0.7068 | R 0.7575 | th 0.50 | lr 1.00e-04
+MS | seed 2026 | epoch 014/70 | loss 0.1544 | val Dice 0.7590 | IoU 0.6117 | P 0.7600 | R 0.7581 | th 0.45 | lr 1.00e-04
+MS | seed 2026 | epoch 015/70 | loss 0.1601 | val Dice 0.7585 | IoU 0.6109 | P 0.7466 | R 0.7708 | th 0.45 | lr 5.00e-05
+MS | seed 2026 | epoch 016/70 | loss 0.1460 | val Dice 0.7607 | IoU 0.6139 | P 0.7418 | R 0.7807 | th 0.60 | lr 5.00e-05
+MS | seed 2026 | epoch 017/70 | loss 0.1440 | val Dice 0.7663 | IoU 0.6211 | P 0.7476 | R 0.7859 | th 0.65 | lr 5.00e-05
+MS | seed 2026 | epoch 018/70 | loss 0.1444 | val Dice 0.7740 | IoU 0.6313 | P 0.7707 | R 0.7773 | th 0.45 | lr 5.00e-05
+MS | seed 2026 | epoch 019/70 | loss 0.1396 | val Dice 0.7755 | IoU 0.6333 | P 0.7742 | R 0.7767 | th 0.70 | lr 5.00e-05
+MS | seed 2026 | epoch 020/70 | loss 0.1380 | val Dice 0.7705 | IoU 0.6266 | P 0.7574 | R 0.7840 | th 0.65 | lr 5.00e-05
+MS | seed 2026 | epoch 021/70 | loss 0.1384 | val Dice 0.7738 | IoU 0.6310 | P 0.7578 | R 0.7905 | th 0.70 | lr 5.00e-05
+MS | seed 2026 | epoch 022/70 | loss 0.1378 | val Dice 0.7684 | IoU 0.6239 | P 0.7417 | R 0.7972 | th 0.60 | lr 5.00e-05
+MS | seed 2026 | epoch 023/70 | loss 0.1338 | val Dice 0.7615 | IoU 0.6148 | P 0.7441 | R 0.7796 | th 0.65 | lr 5.00e-05
+MS | seed 2026 | epoch 024/70 | loss 0.1343 | val Dice 0.7672 | IoU 0.6223 | P 0.7486 | R 0.7868 | th 0.60 | lr 2.50e-05
+MS | seed 2026 | epoch 025/70 | loss 0.1285 | val Dice 0.7751 | IoU 0.6328 | P 0.7589 | R 0.7920 | th 0.60 | lr 2.50e-05
+MS | seed 2026 | epoch 026/70 | loss 0.1267 | val Dice 0.7750 | IoU 0.6327 | P 0.7633 | R 0.7871 | th 0.65 | lr 2.50e-05
+MS | seed 2026 | epoch 027/70 | loss 0.1255 | val Dice 0.7823 | IoU 0.6424 | P 0.7728 | R 0.7920 | th 0.50 | lr 2.50e-05
+MS | seed 2026 | epoch 028/70 | loss 0.1237 | val Dice 0.7608 | IoU 0.6140 | P 0.7353 | R 0.7882 | th 0.75 | lr 2.50e-05
+MS | seed 2026 | epoch 029/70 | loss 0.1258 | val Dice 0.7712 | IoU 0.6276 | P 0.7542 | R 0.7890 | th 0.70 | lr 2.50e-05
+MS | seed 2026 | epoch 030/70 | loss 0.1226 | val Dice 0.7682 | IoU 0.6236 | P 0.7606 | R 0.7758 | th 0.40 | lr 2.50e-05
+MS | seed 2026 | epoch 031/70 | loss 0.1215 | val Dice 0.7672 | IoU 0.6223 | P 0.7576 | R 0.7770 | th 0.50 | lr 2.50e-05
+MS | seed 2026 | epoch 032/70 | loss 0.1202 | val Dice 0.7741 | IoU 0.6314 | P 0.7739 | R 0.7742 | th 0.35 | lr 1.25e-05
+MS | seed 2026 | epoch 033/70 | loss 0.1181 | val Dice 0.7785 | IoU 0.6374 | P 0.7761 | R 0.7810 | th 0.60 | lr 1.25e-05
+MS | seed 2026 | epoch 034/70 | loss 0.1173 | val Dice 0.7730 | IoU 0.6301 | P 0.7572 | R 0.7895 | th 0.65 | lr 1.25e-05
+MS | seed 2026 | epoch 035/70 | loss 0.1148 | val Dice 0.7736 | IoU 0.6307 | P 0.7612 | R 0.7863 | th 0.50 | lr 1.25e-05
+MS | seed 2026 | epoch 036/70 | loss 0.1154 | val Dice 0.7643 | IoU 0.6185 | P 0.7567 | R 0.7720 | th 0.55 | lr 1.25e-05
+MS | seed 2026 | epoch 037/70 | loss 0.1142 | val Dice 0.7728 | IoU 0.6297 | P 0.7632 | R 0.7826 | th 0.55 | lr 6.25e-06
+MS | seed 2026 | epoch 038/70 | loss 0.1147 | val Dice 0.7736 | IoU 0.6308 | P 0.7624 | R 0.7852 | th 0.55 | lr 6.25e-06
+MS | seed 2026 | epoch 039/70 | loss 0.1117 | val Dice 0.7619 | IoU 0.6154 | P 0.7487 | R 0.7757 | th 0.60 | lr 6.25e-06
+MS seed 2026: early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------
+MS-ONLY | SEED 2026 | FINAL TEST
+--------------------------------------------------------------------------------------------
+Best epoch          : 27
+Best validation Dice : 0.7823
+Threshold           : 0.50
+Dice                : 0.7895
+IoU                 : 0.6522
+Precision           : 0.7730
+Recall              : 0.8067
+Accuracy            : 0.9789
+Results ZIP          : /kaggle/working/gd_ms_residual_scse_seed2026_results.zip
+
+====================================================================================================
+FINAL SUMMARY — NEW RUNS ONLY
+====================================================================================================
+Seed 123 | MS  | Dice=0.7954 | IoU=0.6603 | P=0.7824 | R=0.8088 | ValDice=0.7844 | th=0.62 | epoch=31
+Seed 123 | RGB | Dice=0.7646 | IoU=0.6189 | P=0.7634 | R=0.7657 | ValDice=0.7567 | th=0.48 | epoch=44
+Seed 2026 | MS  | Dice=0.7895 | IoU=0.6522 | P=0.7730 | R=0.8067 | ValDice=0.7823 | th=0.50 | epoch=27
+Seed 2026 | RGB | Dice=0.7554 | IoU=0.6069 | P=0.7474 | R=0.7635 | ValDice=0.7600 | th=0.57 | epoch=33
+
+Summary CSV : /kaggle/working/gd_rgb_ms_residual_scse_seeds123_2026/gd_rgb_ms_seed123_2026_results.csv
+Combined ZIP: /kaggle/working/gd_rgb_ms_residual_scse_seeds123_2026_complete.zip
+
+Seed 42 was NOT rerun.
+Done.

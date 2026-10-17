@@ -1,0 +1,17 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "gd_cross_acquisition_train_val_test_figure.py",
+  "cell_zero_based": null,
+  "expressions": {
+    "RGB_DIR": "None",
+    "OUTPUT_DIR": "None",
+    "DPI": "600",
+    "FIGSIZE": "(17, 7.5)",
+    "GPS_PATTERN": "re.compile(r\"lat_(-?\\d+(?:\\.\\d+)?)_lon_(-?\\d+(?:\\.\\d+)?)\", re.I)",
+    "IMAGE_EXTENSIONS": "{\".jpg\", \".jpeg\", \".png\", \".tif\", \".tiff\"}",
+    "PLOT_SEEDS": "[42]",
+    "DEV_VAL_FRACTION": "0.20",
+    "DEV_METHODS": "{'A_to_B': 'sklearn_recheck', 'B_to_A': 'numpy_original'}",
+    "SPLIT_LIST_DIRS": "{'A_to_B': None, 'B_to_A': None}"
+  }
+}

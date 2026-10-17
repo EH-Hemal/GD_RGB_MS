@@ -1,0 +1,29 @@
+{
+  "checks_passed": [
+    "All 25 experiment notebooks parse and match the recorded code hashes; all Python files compile.",
+    "Extracted model class/function ASTs are identical to original notebook cell40.",
+    "Sample-SD summary independently reproduced from the available printed per-seed values.",
+    "Collector tested with metadata, checkpoint inventory/copy, ZIP members, unsafe archive paths, excluded credentials, missing roots and repeated-export protection using synthetic fixtures.",
+    "Summary tool rejects duplicate protocol/model/seed rows.",
+    "Relative Markdown links resolve."
+  ],
+  "not_tested": [
+    "GPU training",
+    "PyTorch model forward pass (PyTorch unavailable in packaging environment)",
+    "Actual dataset preprocessing",
+    "Historical checkpoint loading",
+    "Exact historical split membership",
+    "Complete manuscript metric reproduction"
+  ],
+  "source_notebooks": {
+    "graindiscoloration (2).ipynb": {
+      "cells": 96,
+      "bytes": 23527302
+    },
+    "gd-second.ipynb": {
+      "cells": 17,
+      "bytes": 738111
+    }
+  },
+  "readiness": "Code package assembled; historical assets still required as listed in RELEASE_STATUS.md."
+}

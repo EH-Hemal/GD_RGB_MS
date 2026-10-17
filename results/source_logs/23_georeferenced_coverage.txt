@@ -1,0 +1,11 @@
+<Figure size 1650x560 with 5 Axes>
+<Figure size 1550x920 with 8 Axes>
+
+✅ Test-only georeferenced mapping completed
+Source: /kaggle/working/gd_image_level_coverage_seed42/per_image_gd_coverage.csv
+Images used: 60 (expected: 60)
+Area counts: {'Acquisition area A': 28, 'Acquisition area B': 32}
+Output folder: /kaggle/working/gd_test60_georeferenced_mapping
+Download ZIP: /kaggle/working/gd_test60_georeferenced_mapping/gd_test60_georeferenced_mapping.zip
+
+/kaggle/working/gd_test60_georeferenced_mapping/gd_test60_georeferenced_mapping.zip

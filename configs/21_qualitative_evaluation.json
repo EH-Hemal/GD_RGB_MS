@@ -1,0 +1,13 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 62,
+  "expressions": {
+    "VALIDATION_SELECTED_THRESHOLD": "0.60",
+    "NUMBER_OF_THRESHOLD_BINS": "1000",
+    "WORK_DIR": "Path(\"/kaggle/working\")",
+    "INPUT_DIR": "Path(\"/kaggle/input\")",
+    "OUTPUT_DIR": "WORK_DIR / \"gd_seed42_paper_ready_figures\"",
+    "TARGET_NORMALIZED_NAME": "normalize_source_name(\n    \"gd_v3_1_without_ndre_seed42_results\"\n)"
+  }
+}

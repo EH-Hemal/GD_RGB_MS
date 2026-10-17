@@ -1,0 +1,25 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 47,
+  "expressions": {
+    "WORK_DIR": "Path(\"/kaggle/working\") if Path(\"/kaggle/working\").exists() else Path.cwd()",
+    "OUT_DIR": "WORK_DIR / \"six_channel_gate_analysis_seed42\"",
+    "TARGET_SIZE": "(896, 672)",
+    "RGB_CHANNELS": "3",
+    "SPECTRAL_CHANNELS": "3",
+    "TOTAL_INPUT_CHANNELS": "6",
+    "BRANCH_BASE": "int(checkpoint.get(\"branch_base\", BRANCH_BASE))",
+    "PREFERRED_GN_GROUPS": "8",
+    "MODALITY_DROPOUT_PROBABILITY": "0.0",
+    "MASK_POSITIVE_RGB": "np.array([240, 128, 128], dtype=np.int16)",
+    "DEFAULT_MEAN": "np.array(\n    [\n        0.41819797, 0.46573568, 0.25167707,\n        0.21822916, 0.16206901, 0.23585168,\n    ],\n    dtype=np.float32,\n)",
+    "DEFAULT_STD": "np.array(\n    [\n        0.15404519, 0.15691774, 0.13375558,\n        0.07147331, 0.05124885, 0.04640943,\n    ],\n    dtype=np.float32,\n)",
+    "CHECKPOINT_FILENAME": "\"best_v3_1_without_ndre_seed42.pt\"",
+    "BASE_DIR": "find_dataset_root()",
+    "MEAN": "np.asarray(checkpoint.get(\"mean\", DEFAULT_MEAN), dtype=np.float32)",
+    "STD": "np.asarray(checkpoint.get(\"std\", DEFAULT_STD), dtype=np.float32)",
+    "GATE_THRESHOLD": "float(\n    checkpoint.get(\"primary_no_tta_test_metrics\", {}).get(\"threshold\", 0.60)\n)",
+    "MAX_VISUAL_SAMPLES": "4"
+  }
+}

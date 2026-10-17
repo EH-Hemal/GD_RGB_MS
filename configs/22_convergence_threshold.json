@@ -1,0 +1,10 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 65,
+  "expressions": {
+    "INPUT_ROOT": "Path(\"/kaggle/input\")",
+    "OUTPUT_DIR": "Path(\"/kaggle/working/gd_final_curve_figures\")",
+    "COLORS": "{\n    \"train\": \"#2878B5\",\n    \"validation\": \"#D55E00\",\n    \"dice\": \"#D55E00\",\n    \"iou\": \"#2878B5\",\n    \"precision\": \"#6F63B6\",\n    \"recall\": \"#1B9E77\",\n    \"selected\": \"#555555\",\n    \"endpoint\": \"#9A5A00\"\n}"
+  }
+}

@@ -1,0 +1,38 @@
+Selected RGB directory:
+/kaggle/input/datasets/hemal7/gd-rgbms-db/RGB
+Detected coordinate-labelled RGB images: 400
+
+Unique samples: 400
+
+24 m spatial components:
+spatial_component_24m
+0    183
+1    217
+
+Cross-split verification:
+   split_a    split_b  minimum_distance_m  pairs_at_or_below_24m
+     train validation           25.950979                      0
+     train       test           24.551714                      0
+validation       test          555.449307                      0
+
+✅ VERIFIED: No cross-set pair is within 24 m.
+
+Final split summary:
+          split  number_of_images
+          train               207
+     validation                40
+           test                41
+excluded_buffer               112
+
+Total retained: 288
+Total excluded: 112
+
+<Figure size 1000x650 with 1 Axes>
+
+====================================================================
+24 m LEAKAGE-AWARE SPLIT COMPLETED
+====================================================================
+Output folder: /kaggle/working/spatial_24m_split
+Download ZIP: /kaggle/working/spatial_24m_leakage_aware_split.zip
+
+/kaggle/working/spatial_24m_leakage_aware_split.zip

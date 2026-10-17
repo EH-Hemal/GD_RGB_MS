@@ -1,0 +1,492 @@
+========================================================================================
+SIX-CHANNEL EARLY-FUSION U-NET — THREE-SEED CONTROLLED BASELINE
+========================================================================================
+Dataset       : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Output        : /kaggle/working/gd_6ch_early_fusion_unet_three_seeds
+Device        : cuda
+Split         : 280 60 60
+Input         : (896, 672) | channels: ['R', 'G', 'B', 'Green', 'Red-Edge', 'NIR']
+Seeds         : [42, 123, 2026]
+Primary mode  : no TTA
+
+Preloading train+validation cache: 100%|██████████| 340/340 [00:55<00:00,  6.13it/s]
+
+RAM cache: 340 samples, approximately 2.48 GB
+
+========================================================================================
+SEED 42 | SIX-CHANNEL EARLY-FUSION U-NET
+========================================================================================
+Parameters: 7,902,787
+
+                                                                   
+Seed 42 | Epoch 001 | train 0.3462 | val 0.2829 | Dice 0.6566 | IoU 0.4888 | P 0.6720 | R 0.6419 | th 0.20 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 002 | train 0.2330 | val 0.2229 | Dice 0.7014 | IoU 0.5401 | P 0.6802 | R 0.7239 | th 0.50 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 003 | train 0.2152 | val 0.2149 | Dice 0.7120 | IoU 0.5528 | P 0.6737 | R 0.7549 | th 0.70 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 004 | train 0.1908 | val 0.1858 | Dice 0.7491 | IoU 0.5988 | P 0.7328 | R 0.7661 | th 0.55 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 005 | train 0.1854 | val 0.1830 | Dice 0.7465 | IoU 0.5956 | P 0.7315 | R 0.7622 | th 0.60 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 006 | train 0.1779 | val 0.1856 | Dice 0.7562 | IoU 0.6079 | P 0.7311 | R 0.7831 | th 0.70 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 007 | train 0.1684 | val 0.1783 | Dice 0.7455 | IoU 0.5943 | P 0.7231 | R 0.7694 | th 0.55 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 008 | train 0.1661 | val 0.1650 | Dice 0.7667 | IoU 0.6217 | P 0.7533 | R 0.7806 | th 0.30 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 009 | train 0.1614 | val 0.1616 | Dice 0.7679 | IoU 0.6233 | P 0.7562 | R 0.7801 | th 0.40 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 010 | train 0.1604 | val 0.1663 | Dice 0.7532 | IoU 0.6041 | P 0.7247 | R 0.7839 | th 0.40 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 011 | train 0.1577 | val 0.1687 | Dice 0.7516 | IoU 0.6021 | P 0.7416 | R 0.7619 | th 0.35 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 012 | train 0.1580 | val 0.1764 | Dice 0.7504 | IoU 0.6005 | P 0.7316 | R 0.7701 | th 0.70 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 013 | train 0.1497 | val 0.1633 | Dice 0.7663 | IoU 0.6211 | P 0.7552 | R 0.7776 | th 0.70 | lr 1.00e-04 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 014 | train 0.1470 | val 0.1738 | Dice 0.7374 | IoU 0.5841 | P 0.7107 | R 0.7663 | th 0.55 | lr 5.00e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 015 | train 0.1428 | val 0.1668 | Dice 0.7744 | IoU 0.6318 | P 0.7787 | R 0.7701 | th 0.20 | lr 5.00e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 016 | train 0.1396 | val 0.1648 | Dice 0.7656 | IoU 0.6202 | P 0.7339 | R 0.8001 | th 0.70 | lr 5.00e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 017 | train 0.1353 | val 0.1611 | Dice 0.7646 | IoU 0.6189 | P 0.7435 | R 0.7868 | th 0.65 | lr 5.00e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 018 | train 0.1334 | val 0.1661 | Dice 0.7728 | IoU 0.6297 | P 0.7430 | R 0.8051 | th 0.75 | lr 5.00e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 019 | train 0.1341 | val 0.1710 | Dice 0.7661 | IoU 0.6209 | P 0.7455 | R 0.7880 | th 0.80 | lr 5.00e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 020 | train 0.1335 | val 0.1579 | Dice 0.7681 | IoU 0.6235 | P 0.7412 | R 0.7971 | th 0.55 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 021 | train 0.1294 | val 0.1585 | Dice 0.7734 | IoU 0.6305 | P 0.7486 | R 0.7998 | th 0.70 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 022 | train 0.1250 | val 0.1498 | Dice 0.7846 | IoU 0.6455 | P 0.7727 | R 0.7968 | th 0.65 | lr 2.50e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 023 | train 0.1242 | val 0.1531 | Dice 0.7769 | IoU 0.6352 | P 0.7602 | R 0.7945 | th 0.55 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 024 | train 0.1219 | val 0.1472 | Dice 0.7879 | IoU 0.6500 | P 0.7769 | R 0.7991 | th 0.60 | lr 2.50e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 025 | train 0.1222 | val 0.1525 | Dice 0.7792 | IoU 0.6382 | P 0.7596 | R 0.7998 | th 0.60 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 026 | train 0.1208 | val 0.1613 | Dice 0.7748 | IoU 0.6324 | P 0.7459 | R 0.8061 | th 0.75 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 027 | train 0.1209 | val 0.1579 | Dice 0.7705 | IoU 0.6267 | P 0.7517 | R 0.7903 | th 0.65 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 028 | train 0.1208 | val 0.1607 | Dice 0.7825 | IoU 0.6428 | P 0.7570 | R 0.8099 | th 0.80 | lr 2.50e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 029 | train 0.1204 | val 0.1578 | Dice 0.7705 | IoU 0.6267 | P 0.7416 | R 0.8017 | th 0.65 | lr 1.25e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 030 | train 0.1161 | val 0.1529 | Dice 0.7783 | IoU 0.6370 | P 0.7617 | R 0.7956 | th 0.65 | lr 1.25e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 031 | train 0.1168 | val 0.1486 | Dice 0.7834 | IoU 0.6439 | P 0.7724 | R 0.7947 | th 0.55 | lr 1.25e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 032 | train 0.1151 | val 0.1485 | Dice 0.7857 | IoU 0.6471 | P 0.7756 | R 0.7962 | th 0.70 | lr 1.25e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 033 | train 0.1152 | val 0.1517 | Dice 0.7829 | IoU 0.6433 | P 0.7650 | R 0.8017 | th 0.70 | lr 1.25e-05 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 034 | train 0.1145 | val 0.1490 | Dice 0.7808 | IoU 0.6404 | P 0.7686 | R 0.7934 | th 0.60 | lr 6.25e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 035 | train 0.1120 | val 0.1442 | Dice 0.7904 | IoU 0.6534 | P 0.7896 | R 0.7912 | th 0.55 | lr 6.25e-06 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_42/best_6ch_early_fusion_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 036 | train 0.1115 | val 0.1481 | Dice 0.7840 | IoU 0.6447 | P 0.7767 | R 0.7914 | th 0.65 | lr 6.25e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 037 | train 0.1111 | val 0.1471 | Dice 0.7876 | IoU 0.6496 | P 0.7759 | R 0.7995 | th 0.65 | lr 6.25e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 038 | train 0.1109 | val 0.1468 | Dice 0.7830 | IoU 0.6433 | P 0.7755 | R 0.7906 | th 0.60 | lr 6.25e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 039 | train 0.1103 | val 0.1472 | Dice 0.7868 | IoU 0.6485 | P 0.7712 | R 0.8031 | th 0.65 | lr 6.25e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 040 | train 0.1097 | val 0.1519 | Dice 0.7772 | IoU 0.6356 | P 0.7668 | R 0.7879 | th 0.60 | lr 3.13e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 041 | train 0.1082 | val 0.1514 | Dice 0.7791 | IoU 0.6381 | P 0.7637 | R 0.7951 | th 0.60 | lr 3.13e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 042 | train 0.1085 | val 0.1468 | Dice 0.7870 | IoU 0.6488 | P 0.7808 | R 0.7933 | th 0.60 | lr 3.13e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 043 | train 0.1076 | val 0.1490 | Dice 0.7827 | IoU 0.6430 | P 0.7768 | R 0.7887 | th 0.60 | lr 3.13e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 044 | train 0.1086 | val 0.1506 | Dice 0.7833 | IoU 0.6438 | P 0.7671 | R 0.8002 | th 0.65 | lr 3.13e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 045 | train 0.1082 | val 0.1505 | Dice 0.7823 | IoU 0.6424 | P 0.7708 | R 0.7941 | th 0.65 | lr 1.56e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 046 | train 0.1075 | val 0.1464 | Dice 0.7897 | IoU 0.6525 | P 0.7797 | R 0.8000 | th 0.65 | lr 1.56e-06 | 1.6m
+
+                                                                   
+Seed 42 | Epoch 047 | train 0.1084 | val 0.1469 | Dice 0.7862 | IoU 0.6477 | P 0.7795 | R 0.7930 | th 0.60 | lr 1.56e-06 | 1.6m
+Early stopping: 12 consecutive non-improving epochs.
+
+Fine validation threshold search seed 42: 100%|██████████| 60/60 [00:07<00:00,  7.64it/s]
+Final no-TTA test seed 42: 100%|██████████| 60/60 [00:16<00:00,  3.71it/s]
+Saving probability maps seed 42: 100%|██████████| 60/60 [00:08<00:00,  7.04it/s]
+Saving predictions seed 42: 100%|██████████| 60/60 [00:00<00:00, 133.99it/s]
+
+
+----------------------------------------------------------------------------------------
+SEED 42 FINISHED
+Best epoch       : 35
+Val threshold    : 0.54
+Test Dice        : 0.803582
+Test IoU         : 0.671657
+Test Precision   : 0.798030
+Test Recall      : 0.809213
+Downloadable ZIP : /kaggle/working/gd_6ch_early_fusion_unet_seed42_results.zip
+
+/kaggle/working/gd_6ch_early_fusion_unet_seed42_results.zip
+
+========================================================================================
+SEED 123 | SIX-CHANNEL EARLY-FUSION U-NET
+========================================================================================
+Parameters: 7,902,787
+
+                                                                    
+Seed 123 | Epoch 001 | train 0.3759 | val 0.3148 | Dice 0.6261 | IoU 0.4557 | P 0.5679 | R 0.6975 | th 0.75 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 002 | train 0.2568 | val 0.2476 | Dice 0.7119 | IoU 0.5527 | P 0.6930 | R 0.7319 | th 0.70 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 003 | train 0.2235 | val 0.2432 | Dice 0.7127 | IoU 0.5537 | P 0.6654 | R 0.7672 | th 0.80 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 004 | train 0.2055 | val 0.2131 | Dice 0.7296 | IoU 0.5743 | P 0.6980 | R 0.7642 | th 0.65 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 005 | train 0.1989 | val 0.2029 | Dice 0.7404 | IoU 0.5878 | P 0.7443 | R 0.7366 | th 0.30 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 006 | train 0.1848 | val 0.1949 | Dice 0.7365 | IoU 0.5829 | P 0.7101 | R 0.7648 | th 0.65 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 007 | train 0.1831 | val 0.1925 | Dice 0.7511 | IoU 0.6014 | P 0.7394 | R 0.7631 | th 0.80 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 008 | train 0.1700 | val 0.1769 | Dice 0.7669 | IoU 0.6220 | P 0.7531 | R 0.7813 | th 0.75 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 009 | train 0.1667 | val 0.1731 | Dice 0.7530 | IoU 0.6038 | P 0.7318 | R 0.7754 | th 0.45 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 010 | train 0.1620 | val 0.1685 | Dice 0.7860 | IoU 0.6475 | P 0.8037 | R 0.7690 | th 0.40 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_123/best_6ch_early_fusion_seed123.pt
+
+                                                                    
+Seed 123 | Epoch 011 | train 0.1585 | val 0.1579 | Dice 0.7837 | IoU 0.6443 | P 0.7817 | R 0.7856 | th 0.35 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 012 | train 0.1553 | val 0.1777 | Dice 0.7530 | IoU 0.6038 | P 0.7245 | R 0.7838 | th 0.70 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 013 | train 0.1514 | val 0.1693 | Dice 0.7653 | IoU 0.6198 | P 0.7469 | R 0.7846 | th 0.75 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 014 | train 0.1526 | val 0.1949 | Dice 0.7338 | IoU 0.5796 | P 0.7123 | R 0.7567 | th 0.85 | lr 1.00e-04 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 015 | train 0.1494 | val 0.1648 | Dice 0.7702 | IoU 0.6262 | P 0.7550 | R 0.7859 | th 0.75 | lr 5.00e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 016 | train 0.1377 | val 0.1568 | Dice 0.7762 | IoU 0.6343 | P 0.7750 | R 0.7774 | th 0.70 | lr 5.00e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 017 | train 0.1406 | val 0.1573 | Dice 0.7807 | IoU 0.6403 | P 0.7624 | R 0.8000 | th 0.70 | lr 5.00e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 018 | train 0.1353 | val 0.1527 | Dice 0.7746 | IoU 0.6322 | P 0.7635 | R 0.7861 | th 0.60 | lr 5.00e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 019 | train 0.1321 | val 0.1613 | Dice 0.7673 | IoU 0.6224 | P 0.7508 | R 0.7845 | th 0.70 | lr 5.00e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 020 | train 0.1303 | val 0.1476 | Dice 0.7821 | IoU 0.6422 | P 0.7690 | R 0.7957 | th 0.50 | lr 2.50e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 021 | train 0.1303 | val 0.1606 | Dice 0.7741 | IoU 0.6315 | P 0.7586 | R 0.7903 | th 0.75 | lr 2.50e-05 | 1.6m
+
+                                                                    
+Seed 123 | Epoch 022 | train 0.1239 | val 0.1618 | Dice 0.7739 | IoU 0.6311 | P 0.7502 | R 0.7991 | th 0.75 | lr 2.50e-05 | 1.6m
+Early stopping: 12 consecutive non-improving epochs.
+
+Fine validation threshold search seed 123: 100%|██████████| 60/60 [00:07<00:00,  7.69it/s]
+Final no-TTA test seed 123: 100%|██████████| 60/60 [00:14<00:00,  4.15it/s]
+
+
+----------------------------------------------------------------------------------------
+SEED 123 FINISHED
+Best epoch       : 10
+Val threshold    : 0.37
+Test Dice        : 0.793999
+Test IoU         : 0.658374
+Test Precision   : 0.781652
+Test Recall      : 0.806743
+Downloadable ZIP : /kaggle/working/gd_6ch_early_fusion_unet_seed123_results.zip
+
+/kaggle/working/gd_6ch_early_fusion_unet_seed123_results.zip
+
+========================================================================================
+SEED 2026 | SIX-CHANNEL EARLY-FUSION U-NET
+========================================================================================
+Parameters: 7,902,787
+
+                                                                     
+Seed 2026 | Epoch 001 | train 0.3571 | val 0.2964 | Dice 0.6540 | IoU 0.4858 | P 0.6133 | R 0.7003 | th 0.75 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 002 | train 0.2547 | val 0.2493 | Dice 0.6869 | IoU 0.5231 | P 0.6669 | R 0.7082 | th 0.45 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 003 | train 0.2195 | val 0.2189 | Dice 0.7268 | IoU 0.5709 | P 0.7015 | R 0.7540 | th 0.60 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 004 | train 0.1995 | val 0.2040 | Dice 0.7296 | IoU 0.5743 | P 0.7056 | R 0.7552 | th 0.35 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 005 | train 0.1911 | val 0.2006 | Dice 0.7236 | IoU 0.5669 | P 0.7074 | R 0.7406 | th 0.65 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 006 | train 0.1814 | val 0.1810 | Dice 0.7504 | IoU 0.6005 | P 0.7318 | R 0.7699 | th 0.50 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 007 | train 0.1768 | val 0.1968 | Dice 0.7315 | IoU 0.5766 | P 0.7134 | R 0.7505 | th 0.75 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 008 | train 0.1719 | val 0.1729 | Dice 0.7602 | IoU 0.6132 | P 0.7528 | R 0.7678 | th 0.35 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 009 | train 0.1619 | val 0.1746 | Dice 0.7434 | IoU 0.5916 | P 0.7279 | R 0.7597 | th 0.45 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 010 | train 0.1618 | val 0.1753 | Dice 0.7473 | IoU 0.5966 | P 0.7274 | R 0.7683 | th 0.65 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 011 | train 0.1587 | val 0.1619 | Dice 0.7652 | IoU 0.6197 | P 0.7448 | R 0.7867 | th 0.45 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 012 | train 0.1585 | val 0.1694 | Dice 0.7522 | IoU 0.6028 | P 0.7392 | R 0.7656 | th 0.50 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 013 | train 0.1578 | val 0.1771 | Dice 0.7549 | IoU 0.6063 | P 0.7285 | R 0.7833 | th 0.65 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 014 | train 0.1530 | val 0.1591 | Dice 0.7699 | IoU 0.6259 | P 0.7548 | R 0.7857 | th 0.55 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 015 | train 0.1489 | val 0.1710 | Dice 0.7469 | IoU 0.5960 | P 0.7247 | R 0.7705 | th 0.30 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 016 | train 0.1442 | val 0.1703 | Dice 0.7471 | IoU 0.5963 | P 0.7270 | R 0.7684 | th 0.40 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 017 | train 0.1433 | val 0.1602 | Dice 0.7624 | IoU 0.6160 | P 0.7399 | R 0.7863 | th 0.55 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 018 | train 0.1393 | val 0.1691 | Dice 0.7781 | IoU 0.6367 | P 0.7537 | R 0.8041 | th 0.75 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 019 | train 0.1422 | val 0.1510 | Dice 0.7850 | IoU 0.6461 | P 0.7652 | R 0.8058 | th 0.65 | lr 1.00e-04 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 020 | train 0.1356 | val 0.1548 | Dice 0.7720 | IoU 0.6287 | P 0.7540 | R 0.7909 | th 0.50 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 021 | train 0.1356 | val 0.1616 | Dice 0.7643 | IoU 0.6185 | P 0.7606 | R 0.7681 | th 0.45 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 022 | train 0.1341 | val 0.1765 | Dice 0.7597 | IoU 0.6125 | P 0.7330 | R 0.7884 | th 0.80 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 023 | train 0.1335 | val 0.1566 | Dice 0.7848 | IoU 0.6458 | P 0.7589 | R 0.8125 | th 0.75 | lr 1.00e-04 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 024 | train 0.1288 | val 0.1508 | Dice 0.7799 | IoU 0.6391 | P 0.7745 | R 0.7853 | th 0.65 | lr 5.00e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 025 | train 0.1233 | val 0.1452 | Dice 0.7917 | IoU 0.6552 | P 0.7706 | R 0.8140 | th 0.60 | lr 5.00e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 026 | train 0.1187 | val 0.1490 | Dice 0.7846 | IoU 0.6455 | P 0.7874 | R 0.7818 | th 0.35 | lr 5.00e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 027 | train 0.1197 | val 0.1443 | Dice 0.7895 | IoU 0.6522 | P 0.7754 | R 0.8041 | th 0.70 | lr 5.00e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 028 | train 0.1174 | val 0.1582 | Dice 0.7784 | IoU 0.6371 | P 0.7548 | R 0.8034 | th 0.75 | lr 5.00e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 029 | train 0.1167 | val 0.1518 | Dice 0.7721 | IoU 0.6288 | P 0.7604 | R 0.7841 | th 0.65 | lr 5.00e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 030 | train 0.1140 | val 0.1408 | Dice 0.7907 | IoU 0.6539 | P 0.7707 | R 0.8119 | th 0.45 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 031 | train 0.1091 | val 0.1362 | Dice 0.7969 | IoU 0.6624 | P 0.7878 | R 0.8063 | th 0.40 | lr 2.50e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 032 | train 0.1071 | val 0.1425 | Dice 0.7868 | IoU 0.6486 | P 0.7715 | R 0.8028 | th 0.55 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 033 | train 0.1065 | val 0.1419 | Dice 0.7975 | IoU 0.6632 | P 0.7835 | R 0.8120 | th 0.70 | lr 2.50e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 034 | train 0.1066 | val 0.1451 | Dice 0.7829 | IoU 0.6432 | P 0.7705 | R 0.7956 | th 0.50 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 035 | train 0.1069 | val 0.1423 | Dice 0.7919 | IoU 0.6555 | P 0.7713 | R 0.8137 | th 0.60 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 036 | train 0.1068 | val 0.1444 | Dice 0.7937 | IoU 0.6580 | P 0.7718 | R 0.8169 | th 0.70 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 037 | train 0.1038 | val 0.1406 | Dice 0.7905 | IoU 0.6536 | P 0.7815 | R 0.7997 | th 0.55 | lr 2.50e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 038 | train 0.1033 | val 0.1416 | Dice 0.7871 | IoU 0.6489 | P 0.7806 | R 0.7936 | th 0.60 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 039 | train 0.0991 | val 0.1519 | Dice 0.7869 | IoU 0.6487 | P 0.7579 | R 0.8183 | th 0.75 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 040 | train 0.1002 | val 0.1378 | Dice 0.7984 | IoU 0.6644 | P 0.7851 | R 0.8121 | th 0.45 | lr 1.25e-05 | 1.6m
+Saved: /kaggle/working/gd_6ch_early_fusion_unet_three_seeds/seed_2026/best_6ch_early_fusion_seed2026.pt
+
+                                                                     
+Seed 2026 | Epoch 041 | train 0.0993 | val 0.1386 | Dice 0.7966 | IoU 0.6620 | P 0.7812 | R 0.8127 | th 0.60 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 042 | train 0.0991 | val 0.1422 | Dice 0.7880 | IoU 0.6502 | P 0.7754 | R 0.8010 | th 0.55 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 043 | train 0.0980 | val 0.1437 | Dice 0.7926 | IoU 0.6564 | P 0.7705 | R 0.8160 | th 0.65 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 044 | train 0.0964 | val 0.1455 | Dice 0.7814 | IoU 0.6412 | P 0.7647 | R 0.7988 | th 0.40 | lr 1.25e-05 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 045 | train 0.0962 | val 0.1455 | Dice 0.7889 | IoU 0.6514 | P 0.7692 | R 0.8098 | th 0.65 | lr 6.25e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 046 | train 0.0942 | val 0.1481 | Dice 0.7873 | IoU 0.6492 | P 0.7640 | R 0.8120 | th 0.70 | lr 6.25e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 047 | train 0.0938 | val 0.1440 | Dice 0.7906 | IoU 0.6537 | P 0.7795 | R 0.8020 | th 0.70 | lr 6.25e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 048 | train 0.0930 | val 0.1440 | Dice 0.7890 | IoU 0.6515 | P 0.7747 | R 0.8037 | th 0.65 | lr 6.25e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 049 | train 0.0928 | val 0.1414 | Dice 0.7896 | IoU 0.6523 | P 0.7757 | R 0.8039 | th 0.50 | lr 6.25e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 050 | train 0.0939 | val 0.1442 | Dice 0.7857 | IoU 0.6470 | P 0.7733 | R 0.7985 | th 0.50 | lr 3.13e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 051 | train 0.0928 | val 0.1426 | Dice 0.7928 | IoU 0.6568 | P 0.7748 | R 0.8117 | th 0.65 | lr 3.13e-06 | 1.6m
+
+                                                                     
+Seed 2026 | Epoch 052 | train 0.0919 | val 0.1458 | Dice 0.7863 | IoU 0.6479 | P 0.7700 | R 0.8034 | th 0.65 | lr 3.13e-06 | 1.6m
+Early stopping: 12 consecutive non-improving epochs.
+
+Fine validation threshold search seed 2026: 100%|██████████| 60/60 [00:07<00:00,  7.65it/s]
+Final no-TTA test seed 2026: 100%|██████████| 60/60 [00:14<00:00,  4.17it/s]
+
+
+----------------------------------------------------------------------------------------
+SEED 2026 FINISHED
+Best epoch       : 40
+Val threshold    : 0.44
+Test Dice        : 0.810105
+Test IoU         : 0.680820
+Test Precision   : 0.796437
+Test Recall      : 0.824250
+Downloadable ZIP : /kaggle/working/gd_6ch_early_fusion_unet_seed2026_results.zip
+
+/kaggle/working/gd_6ch_early_fusion_unet_seed2026_results.zip
+
+========================================================================================
+THREE-SEED SIX-CHANNEL EARLY-FUSION BASELINE FINISHED
+========================================================================================
+dice      : 0.802562 +/- 0.008101
+iou       : 0.670284 +/- 0.011286
+precision : 0.792040 +/- 0.009031
+recall    : 0.813402 +/- 0.009476
+accuracy  : 0.980405 +/- 0.000812
+Combined ZIP: /kaggle/working/gd_6ch_early_fusion_unet_three_seed_results.zip
+
+Download every seed ZIP after it finishes; do not wait for the Kaggle session to end.
+
+/kaggle/working/gd_6ch_early_fusion_unet_three_seed_results.zip

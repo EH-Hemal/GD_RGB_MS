@@ -1,0 +1,251 @@
+```
+Original saved CSV absent: recreating the notebook 24 m split ONCE.
+
+Unique samples: 400
+
+24 m spatial components:
+spatial_component_24m
+0    183
+1    217
+
+Cross-split verification:
+   split_a    split_b  minimum_distance_m  pairs_at_or_below_24m
+     train validation           25.950979                      0
+     train       test           24.551714                      0
+validation       test          555.449307                      0
+
+✅ VERIFIED: No cross-set pair is within 24 m.
+
+Final split summary:
+          split  number_of_images
+          train               207
+     validation                40
+           test                41
+excluded_buffer               112
+
+Total retained: 288
+Total excluded: 112
+Original 24 m assignments: /kaggle/working/spatial_24m_split/spatial_24m_split_assignments.csv
+================================================================================================
+GD | FIXED 24 m BUFFERED SPLIT | FINAL SIX-CHANNEL AUX-GATED MODEL
+Dataset: /kaggle/input/datasets/hemal7/gd-rgbms-db 
+Split folder: /kaggle/working/spatial_24m_fixed_runner_lists/8b67d25eae4b9d9c 
+Output: /kaggle/working/gd_spatial24m_gatedfusion_3seeds
+Seeds: [42, 123, 2026] | Split: 207 / 40 / 41 | Input: (896, 672) | No TTA
+Excluded images: 112
+train_vs_val minimum 25.951 m
+train_vs_test minimum 24.552 m
+val_vs_test minimum 555.449 m
+Fine validation threshold grid: 0.20..0.95, step 0.01
+
+```
+
+Loading widget...
+
+```
+================================================================================================
+24 m BUFFERED | seed 42 | TRAIN 207 / VALIDATION 40 / TEST 41 | NO TTA
+Parameters: 7,950,483 training; 7,950,033 deployment; auxiliary 450
+================================================================================================
+seed 42 | epoch 001 | loss 0.4985 | val Dice 0.6118 | IoU 0.4408 | P 0.6012 | R 0.6228 | th 0.75 | lr 1.00e-04
+seed 42 | epoch 002 | loss 0.3408 | val Dice 0.6815 | IoU 0.5168 | P 0.6619 | R 0.7023 | th 0.75 | lr 1.00e-04
+seed 42 | epoch 003 | loss 0.3123 | val Dice 0.6417 | IoU 0.4724 | P 0.5016 | R 0.8902 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 004 | loss 0.2909 | val Dice 0.7129 | IoU 0.5539 | P 0.6998 | R 0.7266 | th 0.60 | lr 1.00e-04
+seed 42 | epoch 005 | loss 0.2799 | val Dice 0.7131 | IoU 0.5541 | P 0.6435 | R 0.7996 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 006 | loss 0.2767 | val Dice 0.6736 | IoU 0.5079 | P 0.5617 | R 0.8413 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 007 | loss 0.2677 | val Dice 0.7520 | IoU 0.6026 | P 0.7543 | R 0.7497 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 008 | loss 0.2543 | val Dice 0.7492 | IoU 0.5990 | P 0.7186 | R 0.7825 | th 0.80 | lr 1.00e-04
+seed 42 | epoch 009 | loss 0.2594 | val Dice 0.7107 | IoU 0.5513 | P 0.6930 | R 0.7294 | th 0.80 | lr 1.00e-04
+seed 42 | epoch 010 | loss 0.2505 | val Dice 0.7482 | IoU 0.5977 | P 0.7261 | R 0.7717 | th 0.70 | lr 1.00e-04
+seed 42 | epoch 011 | loss 0.2524 | val Dice 0.7391 | IoU 0.5861 | P 0.7220 | R 0.7569 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 012 | loss 0.2457 | val Dice 0.6823 | IoU 0.5178 | P 0.5592 | R 0.8748 | th 0.85 | lr 1.00e-04
+seed 42 | epoch 013 | loss 0.2351 | val Dice 0.7688 | IoU 0.6244 | P 0.7429 | R 0.7966 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 014 | loss 0.2277 | val Dice 0.7468 | IoU 0.5959 | P 0.6920 | R 0.8110 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 015 | loss 0.2291 | val Dice 0.7688 | IoU 0.6244 | P 0.7432 | R 0.7963 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 016 | loss 0.2219 | val Dice 0.7736 | IoU 0.6308 | P 0.7382 | R 0.8125 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 017 | loss 0.2242 | val Dice 0.7466 | IoU 0.5957 | P 0.7137 | R 0.7828 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 018 | loss 0.2162 | val Dice 0.7443 | IoU 0.5927 | P 0.7224 | R 0.7675 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 019 | loss 0.2186 | val Dice 0.7533 | IoU 0.6042 | P 0.7430 | R 0.7638 | th 0.55 | lr 5.00e-05
+seed 42 | epoch 020 | loss 0.2222 | val Dice 0.7634 | IoU 0.6173 | P 0.7181 | R 0.8147 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 021 | loss 0.2166 | val Dice 0.7753 | IoU 0.6331 | P 0.7719 | R 0.7789 | th 0.80 | lr 5.00e-05
+seed 42 | epoch 022 | loss 0.2148 | val Dice 0.7514 | IoU 0.6019 | P 0.6873 | R 0.8288 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 023 | loss 0.2136 | val Dice 0.7396 | IoU 0.5868 | P 0.6699 | R 0.8254 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 024 | loss 0.2129 | val Dice 0.7550 | IoU 0.6064 | P 0.7433 | R 0.7670 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 025 | loss 0.2085 | val Dice 0.7606 | IoU 0.6136 | P 0.7188 | R 0.8075 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 026 | loss 0.2092 | val Dice 0.7929 | IoU 0.6569 | P 0.7739 | R 0.8129 | th 0.75 | lr 5.00e-05
+seed 42 | epoch 027 | loss 0.2087 | val Dice 0.7667 | IoU 0.6217 | P 0.7649 | R 0.7685 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 028 | loss 0.2030 | val Dice 0.7706 | IoU 0.6268 | P 0.7296 | R 0.8165 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 029 | loss 0.1775 | val Dice 0.7647 | IoU 0.6190 | P 0.7587 | R 0.7707 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 030 | loss 0.1760 | val Dice 0.7569 | IoU 0.6089 | P 0.7027 | R 0.8202 | th 0.85 | lr 5.00e-05
+seed 42 | epoch 031 | loss 0.1794 | val Dice 0.7585 | IoU 0.6109 | P 0.7508 | R 0.7663 | th 0.60 | lr 5.00e-05
+seed 42 | epoch 032 | loss 0.1729 | val Dice 0.7751 | IoU 0.6328 | P 0.7510 | R 0.8009 | th 0.85 | lr 2.50e-05
+seed 42 | epoch 033 | loss 0.1695 | val Dice 0.7668 | IoU 0.6218 | P 0.7583 | R 0.7755 | th 0.85 | lr 2.50e-05
+seed 42 | epoch 034 | loss 0.1682 | val Dice 0.7698 | IoU 0.6258 | P 0.7570 | R 0.7831 | th 0.85 | lr 2.50e-05
+seed 42 | epoch 035 | loss 0.1664 | val Dice 0.7742 | IoU 0.6316 | P 0.7601 | R 0.7889 | th 0.85 | lr 2.50e-05
+seed 42 | epoch 036 | loss 0.1663 | val Dice 0.7559 | IoU 0.6076 | P 0.7465 | R 0.7656 | th 0.80 | lr 2.50e-05
+seed 42 | epoch 037 | loss 0.1617 | val Dice 0.7668 | IoU 0.6218 | P 0.7087 | R 0.8354 | th 0.85 | lr 1.25e-05
+seed 42 | epoch 038 | loss 0.1628 | val Dice 0.7716 | IoU 0.6281 | P 0.7180 | R 0.8339 | th 0.85 | lr 1.25e-05
+Early stopping: 12 non-improving epochs.
+
+```
+
+Loading widget...
+
+```
+FINAL seed 42 | epoch 26 | th 0.78 | Dice 0.798036 | IoU 0.663944 | Precision 0.845890 | Recall 0.755307
+Saved: /kaggle/working/gd_spatial24m_gatedfusion_3seeds/seed42
+
+Current results:
+seed 42 | D 0.798036 | I 0.663944 | P 0.845890 | R 0.755307
+
+================================================================================================
+24 m BUFFERED | seed 123 | TRAIN 207 / VALIDATION 40 / TEST 41 | NO TTA
+Parameters: 7,950,483 training; 7,950,033 deployment; auxiliary 450
+================================================================================================
+seed 123 | epoch 001 | loss 0.4765 | val Dice 0.6450 | IoU 0.4760 | P 0.5429 | R 0.7943 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 002 | loss 0.3272 | val Dice 0.6876 | IoU 0.5239 | P 0.6709 | R 0.7051 | th 0.80 | lr 1.00e-04
+seed 123 | epoch 003 | loss 0.3023 | val Dice 0.6051 | IoU 0.4338 | P 0.4604 | R 0.8828 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 004 | loss 0.3003 | val Dice 0.7263 | IoU 0.5703 | P 0.6706 | R 0.7922 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 005 | loss 0.2836 | val Dice 0.7281 | IoU 0.5724 | P 0.7448 | R 0.7121 | th 0.35 | lr 1.00e-04
+seed 123 | epoch 006 | loss 0.2808 | val Dice 0.7252 | IoU 0.5689 | P 0.6913 | R 0.7627 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 007 | loss 0.2676 | val Dice 0.7310 | IoU 0.5760 | P 0.6546 | R 0.8276 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 008 | loss 0.2619 | val Dice 0.7078 | IoU 0.5478 | P 0.6460 | R 0.7828 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 009 | loss 0.2590 | val Dice 0.7282 | IoU 0.5725 | P 0.6528 | R 0.8231 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 010 | loss 0.2518 | val Dice 0.7337 | IoU 0.5794 | P 0.7242 | R 0.7435 | th 0.50 | lr 1.00e-04
+seed 123 | epoch 011 | loss 0.2459 | val Dice 0.7329 | IoU 0.5784 | P 0.6817 | R 0.7923 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 012 | loss 0.2442 | val Dice 0.7241 | IoU 0.5676 | P 0.6589 | R 0.8036 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 013 | loss 0.2407 | val Dice 0.7218 | IoU 0.5647 | P 0.7248 | R 0.7188 | th 0.75 | lr 1.00e-04
+seed 123 | epoch 014 | loss 0.2383 | val Dice 0.7345 | IoU 0.5804 | P 0.6573 | R 0.8324 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 015 | loss 0.2446 | val Dice 0.7359 | IoU 0.5821 | P 0.6545 | R 0.8403 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 016 | loss 0.2363 | val Dice 0.7325 | IoU 0.5779 | P 0.6768 | R 0.7981 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 017 | loss 0.2331 | val Dice 0.7283 | IoU 0.5727 | P 0.7350 | R 0.7218 | th 0.65 | lr 1.00e-04
+seed 123 | epoch 018 | loss 0.2304 | val Dice 0.7658 | IoU 0.6205 | P 0.7604 | R 0.7713 | th 0.65 | lr 1.00e-04
+seed 123 | epoch 019 | loss 0.2283 | val Dice 0.7409 | IoU 0.5885 | P 0.6924 | R 0.7968 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 020 | loss 0.2235 | val Dice 0.7429 | IoU 0.5910 | P 0.6533 | R 0.8610 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 021 | loss 0.2259 | val Dice 0.7810 | IoU 0.6407 | P 0.7834 | R 0.7786 | th 0.80 | lr 1.00e-04
+seed 123 | epoch 022 | loss 0.2247 | val Dice 0.7590 | IoU 0.6117 | P 0.6974 | R 0.8327 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 023 | loss 0.2244 | val Dice 0.7348 | IoU 0.5808 | P 0.6378 | R 0.8666 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 024 | loss 0.2230 | val Dice 0.7477 | IoU 0.5971 | P 0.6670 | R 0.8507 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 025 | loss 0.2186 | val Dice 0.7629 | IoU 0.6167 | P 0.7320 | R 0.7966 | th 0.85 | lr 1.00e-04
+seed 123 | epoch 026 | loss 0.2169 | val Dice 0.7662 | IoU 0.6210 | P 0.7641 | R 0.7683 | th 0.80 | lr 1.00e-04
+seed 123 | epoch 027 | loss 0.2080 | val Dice 0.7576 | IoU 0.6097 | P 0.7229 | R 0.7957 | th 0.85 | lr 5.00e-05
+seed 123 | epoch 028 | loss 0.2025 | val Dice 0.7778 | IoU 0.6364 | P 0.7630 | R 0.7932 | th 0.45 | lr 5.00e-05
+seed 123 | epoch 029 | loss 0.1716 | val Dice 0.7854 | IoU 0.6466 | P 0.7730 | R 0.7983 | th 0.45 | lr 5.00e-05
+seed 123 | epoch 030 | loss 0.1762 | val Dice 0.7658 | IoU 0.6205 | P 0.7050 | R 0.8381 | th 0.85 | lr 5.00e-05
+seed 123 | epoch 031 | loss 0.1708 | val Dice 0.7831 | IoU 0.6436 | P 0.7654 | R 0.8017 | th 0.80 | lr 5.00e-05
+seed 123 | epoch 032 | loss 0.1753 | val Dice 0.7824 | IoU 0.6425 | P 0.7780 | R 0.7868 | th 0.75 | lr 5.00e-05
+seed 123 | epoch 033 | loss 0.1713 | val Dice 0.7844 | IoU 0.6452 | P 0.7913 | R 0.7776 | th 0.75 | lr 5.00e-05
+seed 123 | epoch 034 | loss 0.1680 | val Dice 0.7707 | IoU 0.6270 | P 0.7389 | R 0.8054 | th 0.85 | lr 5.00e-05
+seed 123 | epoch 035 | loss 0.1639 | val Dice 0.7730 | IoU 0.6300 | P 0.7259 | R 0.8266 | th 0.85 | lr 2.50e-05
+seed 123 | epoch 036 | loss 0.1630 | val Dice 0.7759 | IoU 0.6339 | P 0.7630 | R 0.7894 | th 0.70 | lr 2.50e-05
+seed 123 | epoch 037 | loss 0.1607 | val Dice 0.7930 | IoU 0.6571 | P 0.7896 | R 0.7965 | th 0.65 | lr 2.50e-05
+seed 123 | epoch 038 | loss 0.1620 | val Dice 0.7798 | IoU 0.6391 | P 0.7748 | R 0.7849 | th 0.65 | lr 2.50e-05
+seed 123 | epoch 039 | loss 0.1588 | val Dice 0.7715 | IoU 0.6279 | P 0.7550 | R 0.7886 | th 0.80 | lr 2.50e-05
+seed 123 | epoch 040 | loss 0.1587 | val Dice 0.7664 | IoU 0.6212 | P 0.7113 | R 0.8306 | th 0.85 | lr 2.50e-05
+seed 123 | epoch 041 | loss 0.1592 | val Dice 0.7603 | IoU 0.6132 | P 0.7433 | R 0.7781 | th 0.85 | lr 2.50e-05
+seed 123 | epoch 042 | loss 0.1581 | val Dice 0.7911 | IoU 0.6544 | P 0.7591 | R 0.8260 | th 0.85 | lr 2.50e-05
+seed 123 | epoch 043 | loss 0.1545 | val Dice 0.7696 | IoU 0.6255 | P 0.7437 | R 0.7974 | th 0.85 | lr 1.25e-05
+seed 123 | epoch 044 | loss 0.1555 | val Dice 0.7819 | IoU 0.6419 | P 0.7710 | R 0.7931 | th 0.75 | lr 1.25e-05
+seed 123 | epoch 045 | loss 0.1549 | val Dice 0.7793 | IoU 0.6384 | P 0.7495 | R 0.8116 | th 0.85 | lr 1.25e-05
+seed 123 | epoch 046 | loss 0.1538 | val Dice 0.7747 | IoU 0.6322 | P 0.7613 | R 0.7886 | th 0.65 | lr 1.25e-05
+seed 123 | epoch 047 | loss 0.1546 | val Dice 0.7790 | IoU 0.6381 | P 0.7640 | R 0.7947 | th 0.80 | lr 1.25e-05
+seed 123 | epoch 048 | loss 0.1510 | val Dice 0.7795 | IoU 0.6387 | P 0.7632 | R 0.7966 | th 0.80 | lr 6.25e-06
+seed 123 | epoch 049 | loss 0.1498 | val Dice 0.7808 | IoU 0.6404 | P 0.7569 | R 0.8063 | th 0.75 | lr 6.25e-06
+Early stopping: 12 non-improving epochs.
+
+```
+
+Loading widget...
+
+```
+FINAL seed 123 | epoch 37 | th 0.65 | Dice 0.805863 | IoU 0.674850 | Precision 0.845051 | Recall 0.770149
+Saved: /kaggle/working/gd_spatial24m_gatedfusion_3seeds/seed123
+
+Current results:
+seed 42 | D 0.798036 | I 0.663944 | P 0.845890 | R 0.755307
+seed 123 | D 0.805863 | I 0.674850 | P 0.845051 | R 0.770149
+
+================================================================================================
+24 m BUFFERED | seed 2026 | TRAIN 207 / VALIDATION 40 / TEST 41 | NO TTA
+Parameters: 7,950,483 training; 7,950,033 deployment; auxiliary 450
+================================================================================================
+seed 2026 | epoch 001 | loss 0.5367 | val Dice 0.5579 | IoU 0.3869 | P 0.4255 | R 0.8100 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 002 | loss 0.3829 | val Dice 0.6966 | IoU 0.5345 | P 0.6996 | R 0.6937 | th 0.75 | lr 1.00e-04
+seed 2026 | epoch 003 | loss 0.3431 | val Dice 0.6993 | IoU 0.5377 | P 0.6734 | R 0.7274 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 004 | loss 0.3218 | val Dice 0.7239 | IoU 0.5673 | P 0.7170 | R 0.7309 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 005 | loss 0.3096 | val Dice 0.7215 | IoU 0.5643 | P 0.7142 | R 0.7289 | th 0.70 | lr 1.00e-04
+seed 2026 | epoch 006 | loss 0.2955 | val Dice 0.7093 | IoU 0.5495 | P 0.7061 | R 0.7125 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 007 | loss 0.2844 | val Dice 0.6969 | IoU 0.5348 | P 0.6534 | R 0.7466 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 008 | loss 0.2804 | val Dice 0.7423 | IoU 0.5902 | P 0.7402 | R 0.7444 | th 0.75 | lr 1.00e-04
+seed 2026 | epoch 009 | loss 0.2816 | val Dice 0.7122 | IoU 0.5531 | P 0.6074 | R 0.8609 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 010 | loss 0.2701 | val Dice 0.7325 | IoU 0.5778 | P 0.7106 | R 0.7557 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 011 | loss 0.2592 | val Dice 0.7526 | IoU 0.6033 | P 0.7415 | R 0.7640 | th 0.80 | lr 1.00e-04
+seed 2026 | epoch 012 | loss 0.2551 | val Dice 0.7591 | IoU 0.6117 | P 0.7539 | R 0.7643 | th 0.75 | lr 1.00e-04
+seed 2026 | epoch 013 | loss 0.2471 | val Dice 0.7517 | IoU 0.6022 | P 0.7579 | R 0.7457 | th 0.40 | lr 1.00e-04
+seed 2026 | epoch 014 | loss 0.2421 | val Dice 0.7627 | IoU 0.6164 | P 0.7223 | R 0.8079 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 015 | loss 0.2481 | val Dice 0.7498 | IoU 0.5998 | P 0.7704 | R 0.7303 | th 0.20 | lr 1.00e-04
+seed 2026 | epoch 016 | loss 0.2410 | val Dice 0.7606 | IoU 0.6136 | P 0.7630 | R 0.7581 | th 0.25 | lr 1.00e-04
+seed 2026 | epoch 017 | loss 0.2340 | val Dice 0.7410 | IoU 0.5886 | P 0.6983 | R 0.7894 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 018 | loss 0.2407 | val Dice 0.7253 | IoU 0.5690 | P 0.6941 | R 0.7594 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 019 | loss 0.2302 | val Dice 0.6905 | IoU 0.5273 | P 0.5577 | R 0.9062 | th 0.85 | lr 1.00e-04
+seed 2026 | epoch 020 | loss 0.2279 | val Dice 0.7594 | IoU 0.6121 | P 0.7486 | R 0.7704 | th 0.80 | lr 5.00e-05
+seed 2026 | epoch 021 | loss 0.2152 | val Dice 0.7703 | IoU 0.6264 | P 0.7630 | R 0.7776 | th 0.75 | lr 5.00e-05
+seed 2026 | epoch 022 | loss 0.2117 | val Dice 0.7683 | IoU 0.6238 | P 0.7666 | R 0.7701 | th 0.85 | lr 5.00e-05
+seed 2026 | epoch 023 | loss 0.2158 | val Dice 0.7740 | IoU 0.6313 | P 0.7771 | R 0.7708 | th 0.60 | lr 5.00e-05
+seed 2026 | epoch 024 | loss 0.2102 | val Dice 0.7759 | IoU 0.6338 | P 0.7687 | R 0.7832 | th 0.85 | lr 5.00e-05
+seed 2026 | epoch 025 | loss 0.2060 | val Dice 0.7823 | IoU 0.6425 | P 0.7744 | R 0.7904 | th 0.80 | lr 5.00e-05
+seed 2026 | epoch 026 | loss 0.2089 | val Dice 0.7631 | IoU 0.6169 | P 0.7290 | R 0.8005 | th 0.85 | lr 5.00e-05
+seed 2026 | epoch 027 | loss 0.2047 | val Dice 0.7742 | IoU 0.6316 | P 0.7795 | R 0.7690 | th 0.75 | lr 5.00e-05
+seed 2026 | epoch 028 | loss 0.2087 | val Dice 0.7767 | IoU 0.6349 | P 0.8055 | R 0.7499 | th 0.20 | lr 5.00e-05
+seed 2026 | epoch 029 | loss 0.1792 | val Dice 0.7653 | IoU 0.6198 | P 0.7669 | R 0.7636 | th 0.70 | lr 5.00e-05
+seed 2026 | epoch 030 | loss 0.1790 | val Dice 0.7775 | IoU 0.6360 | P 0.7431 | R 0.8152 | th 0.85 | lr 5.00e-05
+seed 2026 | epoch 031 | loss 0.1714 | val Dice 0.7788 | IoU 0.6377 | P 0.7770 | R 0.7806 | th 0.80 | lr 2.50e-05
+seed 2026 | epoch 032 | loss 0.1686 | val Dice 0.7870 | IoU 0.6489 | P 0.7841 | R 0.7900 | th 0.70 | lr 2.50e-05
+seed 2026 | epoch 033 | loss 0.1686 | val Dice 0.7728 | IoU 0.6297 | P 0.7690 | R 0.7766 | th 0.65 | lr 2.50e-05
+seed 2026 | epoch 034 | loss 0.1666 | val Dice 0.7802 | IoU 0.6396 | P 0.7712 | R 0.7894 | th 0.85 | lr 2.50e-05
+seed 2026 | epoch 035 | loss 0.1662 | val Dice 0.7688 | IoU 0.6244 | P 0.7723 | R 0.7653 | th 0.55 | lr 2.50e-05
+seed 2026 | epoch 036 | loss 0.1690 | val Dice 0.7845 | IoU 0.6454 | P 0.7869 | R 0.7821 | th 0.70 | lr 2.50e-05
+seed 2026 | epoch 037 | loss 0.1651 | val Dice 0.7820 | IoU 0.6420 | P 0.7805 | R 0.7835 | th 0.70 | lr 2.50e-05
+seed 2026 | epoch 038 | loss 0.1634 | val Dice 0.7848 | IoU 0.6459 | P 0.7841 | R 0.7856 | th 0.80 | lr 1.25e-05
+seed 2026 | epoch 039 | loss 0.1609 | val Dice 0.7801 | IoU 0.6395 | P 0.7633 | R 0.7977 | th 0.80 | lr 1.25e-05
+seed 2026 | epoch 040 | loss 0.1632 | val Dice 0.7867 | IoU 0.6484 | P 0.7797 | R 0.7938 | th 0.65 | lr 1.25e-05
+seed 2026 | epoch 041 | loss 0.1604 | val Dice 0.7875 | IoU 0.6494 | P 0.7783 | R 0.7968 | th 0.75 | lr 1.25e-05
+seed 2026 | epoch 042 | loss 0.1601 | val Dice 0.7908 | IoU 0.6540 | P 0.7764 | R 0.8057 | th 0.85 | lr 1.25e-05
+seed 2026 | epoch 043 | loss 0.1595 | val Dice 0.7919 | IoU 0.6555 | P 0.7915 | R 0.7923 | th 0.70 | lr 1.25e-05
+seed 2026 | epoch 044 | loss 0.1594 | val Dice 0.7947 | IoU 0.6594 | P 0.7965 | R 0.7930 | th 0.65 | lr 1.25e-05
+seed 2026 | epoch 045 | loss 0.1575 | val Dice 0.7817 | IoU 0.6416 | P 0.7831 | R 0.7803 | th 0.85 | lr 1.25e-05
+seed 2026 | epoch 046 | loss 0.1599 | val Dice 0.7826 | IoU 0.6429 | P 0.7867 | R 0.7786 | th 0.85 | lr 1.25e-05
+seed 2026 | epoch 047 | loss 0.1584 | val Dice 0.7887 | IoU 0.6511 | P 0.7897 | R 0.7877 | th 0.65 | lr 1.25e-05
+seed 2026 | epoch 048 | loss 0.1582 | val Dice 0.7850 | IoU 0.6460 | P 0.7823 | R 0.7877 | th 0.70 | lr 1.25e-05
+seed 2026 | epoch 049 | loss 0.1592 | val Dice 0.7893 | IoU 0.6519 | P 0.7927 | R 0.7859 | th 0.40 | lr 1.25e-05
+seed 2026 | epoch 050 | loss 0.1358 | val Dice 0.7902 | IoU 0.6531 | P 0.7877 | R 0.7926 | th 0.75 | lr 6.25e-06
+seed 2026 | epoch 051 | loss 0.1339 | val Dice 0.7848 | IoU 0.6458 | P 0.7850 | R 0.7845 | th 0.80 | lr 6.25e-06
+seed 2026 | epoch 052 | loss 0.1342 | val Dice 0.7888 | IoU 0.6512 | P 0.7829 | R 0.7948 | th 0.75 | lr 6.25e-06
+seed 2026 | epoch 053 | loss 0.1346 | val Dice 0.7856 | IoU 0.6469 | P 0.7844 | R 0.7868 | th 0.75 | lr 6.25e-06
+seed 2026 | epoch 054 | loss 0.1338 | val Dice 0.7878 | IoU 0.6499 | P 0.7915 | R 0.7842 | th 0.80 | lr 6.25e-06
+seed 2026 | epoch 055 | loss 0.1324 | val Dice 0.7895 | IoU 0.6522 | P 0.7892 | R 0.7898 | th 0.70 | lr 3.13e-06
+seed 2026 | epoch 056 | loss 0.1322 | val Dice 0.7852 | IoU 0.6463 | P 0.7830 | R 0.7873 | th 0.65 | lr 3.13e-06
+Early stopping: 12 non-improving epochs.
+
+```
+
+Loading widget...
+
+```
+FINAL seed 2026 | epoch 44 | th 0.62 | Dice 0.814446 | IoU 0.686975 | Precision 0.822790 | Recall 0.806269
+Saved: /kaggle/working/gd_spatial24m_gatedfusion_3seeds/seed2026
+
+Current results:
+seed 42 | D 0.798036 | I 0.663944 | P 0.845890 | R 0.755307
+seed 123 | D 0.805863 | I 0.674850 | P 0.845051 | R 0.770149
+seed 2026 | D 0.814446 | I 0.686975 | P 0.822790 | R 0.806269
+
+FINAL THREE-SEED MEAN +/- SAMPLE SD (ddof=1):
+dice      : 0.8061 +/- 0.0082
+iou       : 0.6753 +/- 0.0115
+precision : 0.8379 +/- 0.0131
+recall    : 0.7772 +/- 0.0262
+accuracy  : 0.9788 +/- 0.0004
+
+Tables/protocol ZIP: /kaggle/working/gd_spatial24m_gatedfusion_3seeds/buffered24m_3seed_tables_and_protocol.zip
+```

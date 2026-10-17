@@ -1,0 +1,23 @@
+Using: /kaggle/input/datasets/hemal7/gd-v3-1-without-ndre-seed42-results/training_history.csv
+Using: /kaggle/input/datasets/hemal7/gd-v3-1-without-ndre-seed42-results/validation_threshold_search_no_tta.csv
+
+Selected checkpoint epoch: 35
+Training endpoint: 47
+Selected threshold: 0.6
+
+<Figure size 1950x750 with 2 Axes>
+<Figure size 1320x840 with 1 Axes>
+
+=================================================================
+FIGURES COMPLETED
+=================================================================
+Selected epoch       : 35
+Training endpoint    : 47
+Validation Dice      : 0.8001
+Validation IoU       : 0.6668
+Selected threshold   : 0.60
+Precision            : 0.7926
+Recall               : 0.8078
+Output folder        : /kaggle/working/gd_final_curve_figures
+
+/kaggle/working/gd_final_curve_figures.zip

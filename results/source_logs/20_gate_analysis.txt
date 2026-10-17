@@ -1,0 +1,19 @@
+Dataset    : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Checkpoint : /kaggle/input/datasets/hemal7/best-v3-1-without-ndre-seed42/best_v3_1_without_ndre_seed42.pt
+Device     : cuda
+Test images: 60
+
+<Figure size 2100x1360 with 29 Axes>
+
+GATE SCALE SUMMARY
+S1: RGB=0.4165, Spectral=0.5835, Mean spatial SD=0.0911, Spectral GD-BG=-0.0220
+S2: RGB=0.4628, Spectral=0.5372, Mean spatial SD=0.1179, Spectral GD-BG=-0.0973
+S3: RGB=0.4698, Spectral=0.5302, Mean spatial SD=0.1312, Spectral GD-BG=+0.1736
+S4: RGB=0.5118, Spectral=0.4882, Mean spatial SD=0.1609, Spectral GD-BG=+0.3017
+
+Maximum |RGB + spectral - 1|: 1.192e-07
+Figure : /kaggle/working/six_channel_gate_analysis_seed42/posthoc_gate_analysis/representative_spectral_gate_maps.png
+CSV    : /kaggle/working/six_channel_gate_analysis_seed42/posthoc_gate_analysis/gate_scale_summary_for_paper.csv
+ZIP    : /kaggle/working/six_channel_gate_analysis_seed42/six_channel_gate_analysis_seed42.zip
+
+/kaggle/working/six_channel_gate_analysis_seed42/six_channel_gate_analysis_seed42.zip

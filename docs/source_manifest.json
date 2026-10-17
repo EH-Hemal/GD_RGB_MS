@@ -1,0 +1,227 @@
+[
+  {
+    "experiment": "01_proposed_standard_seed42",
+    "notebook": "notebooks/01_proposed_standard_seed42.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 40,
+    "code_sha256": "c388b8227bfc581bf1dd404e66f3c0ce729c194903b5539a5d3a3d084ef08a5a",
+    "saved_text_output": false,
+    "note": "Six-channel final architecture. The saved cell has no output. It also evaluates TTA variants; use the explicitly labelled no_tta metrics for the main paper, not the validation-selected TTA result."
+  },
+  {
+    "experiment": "02_early_fusion_three_seeds",
+    "notebook": "notebooks/02_early_fusion_three_seeds.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 44,
+    "code_sha256": "93cba2fb1023162c83423189884b7322f9708d71d0d8dee0d3abb5b801fec97d",
+    "saved_text_output": true,
+    "note": "Complete three-seed training and saved output. Original code retained."
+  },
+  {
+    "experiment": "03_plain_unet_source_seed42",
+    "notebook": "notebooks/03_plain_unet_source_seed42.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 76,
+    "code_sha256": "ce4dc95992a8f476e3611fcda352879bac0ed62f9fca00067859800d5ce0d772",
+    "saved_text_output": true,
+    "note": "Source implementation only: saved RGB Dice is 0.7459, which differs from the later author-confirmed final RGB result 0.7398. Final three-seed run code and exports still need to be attached. Do not label this historical output as the final manuscript run."
+  },
+  {
+    "experiment": "04_residual_scse_unimodal_seeds123_2026",
+    "notebook": "notebooks/04_residual_scse_unimodal_seeds123_2026.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 13,
+    "code_sha256": "746b4ef68baf427037286627d8682b9f7502b49b9dc60ebf6796954652b0e411",
+    "saved_text_output": true,
+    "note": "Both modalities; this is a Residual-scSE U-Net, not the plain U-Net. Final manuscript aggregate must be reconciled with the original result exports."
+  },
+  {
+    "experiment": "05_ms_vs_ms_ndre_seed42",
+    "notebook": "notebooks/05_ms_vs_ms_ndre_seed42.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 48,
+    "code_sha256": "eb8d53882e739583ff18b763d15c50032244558c9bd9e99264d1e28c646b8e34",
+    "saved_text_output": true,
+    "note": "Separate unimodal spectral experiment. Not the six-versus-seven-channel proposed-model confirmation."
+  },
+  {
+    "experiment": "06_components_seed42",
+    "notebook": "notebooks/06_components_seed42.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 46,
+    "code_sha256": "2950101430436bdc00e1d22401574248cde72b1e3496573a4e3679e47f20bdc1",
+    "saved_text_output": true,
+    "note": "Seed 42. Measured equal-fusion parameter count is 7,932,769; the later runner has a stale approximate expected-count constant, documented separately."
+  },
+  {
+    "experiment": "08_spatial_gate_no_aux_seed2026",
+    "notebook": "notebooks/08_spatial_gate_no_aux_seed2026.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 14,
+    "code_sha256": "0de09b69e35e2dbf87113da2031fde5e4893819287c53fcc931f572dfe2549b6",
+    "saved_text_output": true,
+    "note": "Saved output is present. Preserve this source separately from the earlier incomplete multi-seed log."
+  },
+  {
+    "experiment": "09_strong_baselines_seed42",
+    "notebook": "notebooks/09_strong_baselines_seed42.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 15,
+    "code_sha256": "c783fe0c24a081542c86631524125a56793fa3a311a144821b398f7fdc36cacc",
+    "saved_text_output": true,
+    "note": "ImageNet-pretrained baselines. Maximum 70 epochs. Internet access required for initial dependency/weight/repository retrieval."
+  },
+  {
+    "experiment": "10_strong_baselines_seeds123_2026",
+    "notebook": "notebooks/10_strong_baselines_seeds123_2026.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 16,
+    "code_sha256": "fbd782960f83c30aa542404805507d1fdb7e462c240b63d068bf45b82dc49f78",
+    "saved_text_output": true,
+    "note": "Maximum 50 epochs. Its three-seed summary includes rounded seed-42 references. CMX original commit and complete historical environment remain to be recovered."
+  },
+  {
+    "experiment": "12_buffered_split_generator",
+    "notebook": "notebooks/12_buffered_split_generator.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 67,
+    "code_sha256": "ba1d9d5922080227e9e7969e0d5fb6dd961b0fde8ff4797f8c1dbebcad1efbd4",
+    "saved_text_output": true,
+    "note": "Geometry-only code. Generates a candidate split from the dataset. Compare against the saved training memberships before treating it as the historical split. Camera-centre distance is not footprint non-overlap."
+  },
+  {
+    "experiment": "14_cross_acquisition_recheck_seed123",
+    "notebook": "notebooks/14_cross_acquisition_recheck_seed123.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 12,
+    "code_sha256": "53074773634e110974761bcf5b08f392f4a29cabecaf94d5126ee9181f1280ee",
+    "saved_text_output": true,
+    "note": "The actual SEED is 123 even though the original folder/comment says seed42. Source retained verbatim. The final target group is unseen during source development and refit."
+  },
+  {
+    "experiment": "16_weedyrice_proposed_seed42",
+    "notebook": "notebooks/16_weedyrice_proposed_seed42.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 8,
+    "code_sha256": "3df3dbfd7dac9173b9c313f01b555e9d00061b38602018a7f59f0258616a6099",
+    "saved_text_output": false,
+    "note": "Dataset-specific retraining using the official split. The saved source cell has no output; attach the final run exports."
+  },
+  {
+    "experiment": "17_weedyrice_unimodal_seed42",
+    "notebook": "notebooks/17_weedyrice_unimodal_seed42.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 9,
+    "code_sha256": "ff5816bdd2768d8ef802cf50f8b894c2ad2b6219332a6c5f779057d4af33b78c",
+    "saved_text_output": true,
+    "note": "Official split. 50-epoch maximum. Saved output present."
+  },
+  {
+    "experiment": "18_weedyrice_seeds123_2026",
+    "notebook": "notebooks/18_weedyrice_seeds123_2026.ipynb",
+    "source": "gd-second.ipynb",
+    "cell_zero_based": 11,
+    "code_sha256": "cc1e51d9183419bec1a076b5ec96b6b64e0b9709183e178ef0c630d4609aa8c0",
+    "saved_text_output": true,
+    "note": "Self-contained runner embedding the original training scripts. Saved output stops during the final proposed-model run, so it is not a complete final-run archive."
+  },
+  {
+    "experiment": "19_proposed_with_ndre_source_seed42",
+    "notebook": "notebooks/19_proposed_with_ndre_source_seed42.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 36,
+    "code_sha256": "4367b8d5acf016dde55af3460c447753fc2e928fae26bca5aa895df136d9421c",
+    "saved_text_output": false,
+    "note": "NDRE source variant. The external run_ndre_confirmation.py driver referenced in original cell 41 is not included in the two source notebooks."
+  },
+  {
+    "experiment": "20_gate_analysis",
+    "notebook": "notebooks/20_gate_analysis.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 47,
+    "code_sha256": "bfb3c5b92e626b1eec1735222cb879eb472f0ed1a8026f759d1c82aaae13f3a5",
+    "saved_text_output": true,
+    "note": "Evaluation only. Requires the actual seed-42 checkpoint/results archive. Review checkpoint path selection before execution."
+  },
+  {
+    "experiment": "21_qualitative_evaluation",
+    "notebook": "notebooks/21_qualitative_evaluation.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 62,
+    "code_sha256": "bdd7309f966dfad7720adabec0d057ec8e44f0fbde52f0a82b00ff80b3c45c86",
+    "saved_text_output": true,
+    "note": "Requires final checkpoint and dataset. Source preserved; verify saved no-TTA threshold."
+  },
+  {
+    "experiment": "22_convergence_threshold",
+    "notebook": "notebooks/22_convergence_threshold.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 65,
+    "code_sha256": "1569341853dcedfb705c20bebc7e8a92a1eef0de32bb734dfec870348d2ddfa4",
+    "saved_text_output": true,
+    "note": "Requires saved training-history and validation-threshold files."
+  },
+  {
+    "experiment": "23_georeferenced_coverage",
+    "notebook": "notebooks/23_georeferenced_coverage.ipynb",
+    "source": "graindiscoloration (2).ipynb",
+    "cell_zero_based": 54,
+    "code_sha256": "3d67ec77bbd874a952e257348b499e27da08b33f86565469c441aeea302852d0",
+    "saved_text_output": true,
+    "note": "Requires per_image_gd_coverage.csv. These are sampled image locations, not independently validated continuous field disease maps."
+  },
+  {
+    "experiment": "07_components_seeds123_2026",
+    "notebook": "notebooks/07_components_seeds123_2026.ipynb",
+    "source": "Pasted text.txt",
+    "cell_zero_based": null,
+    "code_sha256": "aa37eca746fb787591dae20dbdedc274ed6a9ac3d037c68ba1ef2467f9e3cb27",
+    "saved_text_output": false,
+    "note": "Author-supplied runner. The approximate expected-count constant says 7,932,401, but the observed count is 7,932,769, matching the seed-42 source expectation. This stale constant is not evidence of a different architecture. Final run exports are still needed."
+  },
+  {
+    "experiment": "11_unetpp_seeds123_2026",
+    "notebook": "notebooks/11_unetpp_seeds123_2026.ipynb",
+    "source": "gd_unetpp_seeds123_2026.py",
+    "cell_zero_based": null,
+    "code_sha256": "6a488c9a0a4ef5b8c32bd2ca09043a61a50c30fac5718ec55b963a7da3271e84",
+    "saved_text_output": false,
+    "note": "Previously supplied runner used for the new runs. Model from original cell 73, training pipeline adapted from cell 45; the original seed-42 U-Net++ training cell was absent. Seed-42 summary entries are references, not newly evaluated."
+  },
+  {
+    "experiment": "13_buffered24m_three_seeds",
+    "notebook": "notebooks/13_buffered24m_three_seeds.ipynb",
+    "source": "gd_buffered24m_3seeds.py",
+    "cell_zero_based": null,
+    "code_sha256": "33f6c19e2827533209b9f57a39eb66128051ea35128f251c8b90782bbd7837ba",
+    "saved_text_output": false,
+    "note": "Previously supplied runner with completed author-provided output. Uses saved split if available, otherwise explicitly reconstructs it. Retain generated protocol and exact membership lists."
+  },
+  {
+    "experiment": "15_cross_acquisition_remaining_runs",
+    "notebook": "notebooks/15_cross_acquisition_remaining_runs.ipynb",
+    "source": "gd_cross_acquisition_remaining_runs.py",
+    "cell_zero_based": null,
+    "code_sha256": "6b60c5f7bd0195b11ba8197815b87752a7e3b3286c90d3019a9eeb31b4cf980d",
+    "saved_text_output": false,
+    "note": "B-training/A-testing seeds 42,123,2026 plus A-training/B-testing seed2026. Uses the recheck KMeans/sklearn protocol. Two earlier A-training/B-testing runs are separate records."
+  },
+  {
+    "experiment": "24_spatial_protocol_figures",
+    "notebook": "notebooks/24_spatial_protocol_figures.ipynb",
+    "source": "gd_spatial_protocol_figures.py",
+    "cell_zero_based": null,
+    "code_sha256": "176883afafd7b67b8413c668bf9e9249a64ba0871226fa846c03c3a07bbcee3b",
+    "saved_text_output": false,
+    "note": "Prefers saved memberships; reconstruction must be identified. Final cross-acquisition plot shows all-source refit and held-out target."
+  },
+  {
+    "experiment": "25_cross_acquisition_development_figure",
+    "notebook": "notebooks/25_cross_acquisition_development_figure.ipynb",
+    "source": "gd_cross_acquisition_train_val_test_figure.py",
+    "cell_zero_based": null,
+    "code_sha256": "7582fffd0f7e2b35f2f14e0a6a5a385d2fa470be459f7cfe8841ab43956357b8",
+    "saved_text_output": false,
+    "note": "Seed42 development illustration by default. IMPORTANT: its default B_to_A recipe is numpy_original, but the later remaining-runs trainer uses sklearn recheck. Use saved memberships or set B_to_A to sklearn_recheck for those runs. Do not use an unverified reconstructed figure as proof of actual memberships."
+  }
+]

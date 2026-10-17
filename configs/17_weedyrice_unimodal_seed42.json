@@ -1,0 +1,31 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "gd-second.ipynb",
+  "cell_zero_based": 9,
+  "expressions": {
+    "SHOW_PROGRESS": "False",
+    "ROOT": "Path(\"/kaggle/input/datasets/hemal7/weedy-rgb-ms\")",
+    "DATA_DIR": "train_list_candidates[0].parent",
+    "RGB_DIR": "DATA_DIR / \"RGB\"",
+    "MS_DIR": "DATA_DIR / \"Multispectral\"",
+    "MASK_DIR": "DATA_DIR / \"Masks\"",
+    "WORK_DIR": "Path(\"/kaggle/working\")",
+    "OUT_DIR": "WORK_DIR / \"weedy_rgb_ms_unimodal_seed42\"",
+    "SEED": "42",
+    "MODALITIES": "[\"RGB\", \"MS\"]",
+    "MAX_EPOCHS": "50",
+    "EARLY_STOPPING_PATIENCE": "12",
+    "TARGET_SIZE": "(896, 672)",
+    "BATCH_SIZE": "2",
+    "ACCUMULATION_STEPS": "2",
+    "LEARNING_RATE": "1e-4",
+    "WEIGHT_DECAY": "1e-4",
+    "NUM_WORKERS": "2",
+    "UNET_CHANNELS": "[32, 64, 128, 256]",
+    "COARSE_THRESHOLDS": "np.round(np.arange(0.20, 0.86, 0.05), 2).tolist()",
+    "FINE_THRESHOLDS": "np.round(np.arange(0.20, 0.801, 0.01), 2).tolist()",
+    "CACHE_DATA": "True",
+    "RAW_CACHE": "{}",
+    "ALL_CHANNEL_NAMES": "[\"R\", \"G\", \"B\", \"Green\", \"Red-Edge\", \"NIR\"]"
+  }
+}

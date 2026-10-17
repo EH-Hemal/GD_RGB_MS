@@ -1,0 +1,9 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "gd-second.ipynb",
+  "cell_zero_based": 11,
+  "expressions": {
+    "SEEDS": "[123, 2026]",
+    "WORK": "Path(\"/kaggle/working\")"
+  }
+}

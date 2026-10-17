@@ -1,0 +1,625 @@
+====================================================================================================
+WEEDY RICE: SEEDS 123 AND 2026 ONLY
+====================================================================================================
+Runs:
+  Seed 123  : RGB-only + MS-only + Proposed RGB+MS
+  Seed 2026 : RGB-only + MS-only + Proposed RGB+MS
+No seed-42 run will be started.
+No previous model/checkpoint is required.
+
+====================================================================================================
+SEED 123 — RGB-ONLY + MS-ONLY
+====================================================================================================
+====================================================================================================
+WEEDY RICE — RGB-ONLY AND MS-ONLY BASELINES
+====================================================================================================
+ROOT       : /kaggle/input/datasets/hemal7/weedy-rgb-ms
+DATA_DIR   : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB
+Device     : cuda
+Modalities : ['RGB', 'MS']
+Seed       : 123
+Max epochs : 50
+Patience   : 12
+Input size : (896, 672)
+
+Official splits:
+Train: 438
+Val  : 148
+Test : 148
+Total: 734
+
+Checking one paired sample...
+Stem        : DJI_DateTime_2024_06_02_13_42_0035_lat_10.3040603_lon_105.2619317_alt_20.018m
+6ch shape   : (672, 896, 6)
+Mask shape  : (672, 896)
+Mask values : [0. 1.]
+
+Caching resized RGB + G + RE + NIR samples...
+Cached 734 samples (~5.35 GB)
+
+Training-set channel statistics:
+R          mean=0.374092 std=0.125864
+G          mean=0.468180 std=0.122000
+B          mean=0.209188 std=0.107789
+Green      mean=0.216651 std=0.056127
+Red-Edge   mean=0.250748 std=0.063455
+NIR        mean=0.235060 std=0.039767
+
+====================================================================================================
+RUNNING RGB-ONLY
+====================================================================================================
+Channels   : ['R', 'G', 'B']
+Parameters : 7,760,097
+RGB | Epoch 01/50 | loss=0.5293 | val Dice=0.6223 | IoU=0.4517 | P=0.5404 | R=0.7335 | th=0.30 | lr=1.00e-04
+RGB | Epoch 02/50 | loss=0.4846 | val Dice=0.6971 | IoU=0.5350 | P=0.6153 | R=0.8040 | th=0.35 | lr=1.00e-04
+RGB | Epoch 03/50 | loss=0.4282 | val Dice=0.7569 | IoU=0.6089 | P=0.6613 | R=0.8848 | th=0.60 | lr=1.00e-04
+RGB | Epoch 04/50 | loss=0.4362 | val Dice=0.7594 | IoU=0.6122 | P=0.7024 | R=0.8266 | th=0.40 | lr=1.00e-04
+RGB | Epoch 05/50 | loss=0.4028 | val Dice=0.7679 | IoU=0.6233 | P=0.6978 | R=0.8537 | th=0.50 | lr=1.00e-04
+RGB | Epoch 06/50 | loss=0.3882 | val Dice=0.7696 | IoU=0.6255 | P=0.7248 | R=0.8203 | th=0.55 | lr=1.00e-04
+RGB | Epoch 07/50 | loss=0.3830 | val Dice=0.7791 | IoU=0.6382 | P=0.7532 | R=0.8069 | th=0.45 | lr=1.00e-04
+RGB | Epoch 08/50 | loss=0.3761 | val Dice=0.7941 | IoU=0.6585 | P=0.7861 | R=0.8023 | th=0.85 | lr=1.00e-04
+RGB | Epoch 09/50 | loss=0.3504 | val Dice=0.8124 | IoU=0.6840 | P=0.8001 | R=0.8250 | th=0.45 | lr=1.00e-04
+RGB | Epoch 10/50 | loss=0.3271 | val Dice=0.8236 | IoU=0.7001 | P=0.8247 | R=0.8225 | th=0.20 | lr=1.00e-04
+RGB | Epoch 11/50 | loss=0.2911 | val Dice=0.8386 | IoU=0.7220 | P=0.8192 | R=0.8589 | th=0.75 | lr=1.00e-04
+RGB | Epoch 12/50 | loss=0.2911 | val Dice=0.8455 | IoU=0.7323 | P=0.8281 | R=0.8636 | th=0.60 | lr=1.00e-04
+RGB | Epoch 13/50 | loss=0.2827 | val Dice=0.8463 | IoU=0.7336 | P=0.8193 | R=0.8752 | th=0.60 | lr=1.00e-04
+RGB | Epoch 14/50 | loss=0.2871 | val Dice=0.8540 | IoU=0.7452 | P=0.8422 | R=0.8662 | th=0.85 | lr=1.00e-04
+RGB | Epoch 15/50 | loss=0.2735 | val Dice=0.8321 | IoU=0.7124 | P=0.8845 | R=0.7855 | th=0.20 | lr=1.00e-04
+RGB | Epoch 16/50 | loss=0.2776 | val Dice=0.8512 | IoU=0.7409 | P=0.8266 | R=0.8773 | th=0.65 | lr=1.00e-04
+RGB | Epoch 17/50 | loss=0.2530 | val Dice=0.8587 | IoU=0.7524 | P=0.8307 | R=0.8886 | th=0.60 | lr=1.00e-04
+RGB | Epoch 18/50 | loss=0.2525 | val Dice=0.8464 | IoU=0.7338 | P=0.8325 | R=0.8609 | th=0.50 | lr=1.00e-04
+RGB | Epoch 19/50 | loss=0.2464 | val Dice=0.8651 | IoU=0.7622 | P=0.8524 | R=0.8781 | th=0.60 | lr=1.00e-04
+RGB | Epoch 20/50 | loss=0.2431 | val Dice=0.8620 | IoU=0.7575 | P=0.8520 | R=0.8723 | th=0.35 | lr=1.00e-04
+RGB | Epoch 21/50 | loss=0.2527 | val Dice=0.8595 | IoU=0.7537 | P=0.8427 | R=0.8771 | th=0.30 | lr=1.00e-04
+RGB | Epoch 22/50 | loss=0.2434 | val Dice=0.8613 | IoU=0.7563 | P=0.8559 | R=0.8667 | th=0.75 | lr=1.00e-04
+RGB | Epoch 23/50 | loss=0.2468 | val Dice=0.8691 | IoU=0.7686 | P=0.8558 | R=0.8829 | th=0.55 | lr=1.00e-04
+RGB | Epoch 24/50 | loss=0.2439 | val Dice=0.8595 | IoU=0.7536 | P=0.8350 | R=0.8855 | th=0.45 | lr=1.00e-04
+RGB | Epoch 25/50 | loss=0.2443 | val Dice=0.8652 | IoU=0.7625 | P=0.8464 | R=0.8849 | th=0.70 | lr=1.00e-04
+RGB | Epoch 26/50 | loss=0.2416 | val Dice=0.8638 | IoU=0.7602 | P=0.8602 | R=0.8674 | th=0.40 | lr=1.00e-04
+RGB | Epoch 27/50 | loss=0.2455 | val Dice=0.8662 | IoU=0.7640 | P=0.8725 | R=0.8600 | th=0.70 | lr=1.00e-04
+RGB | Epoch 28/50 | loss=0.2293 | val Dice=0.8709 | IoU=0.7714 | P=0.8604 | R=0.8817 | th=0.65 | lr=1.00e-04
+RGB | Epoch 29/50 | loss=0.2342 | val Dice=0.8676 | IoU=0.7661 | P=0.8481 | R=0.8880 | th=0.60 | lr=1.00e-04
+RGB | Epoch 30/50 | loss=0.2485 | val Dice=0.8708 | IoU=0.7712 | P=0.8633 | R=0.8784 | th=0.65 | lr=1.00e-04
+RGB | Epoch 31/50 | loss=0.2301 | val Dice=0.8666 | IoU=0.7646 | P=0.8582 | R=0.8752 | th=0.60 | lr=1.00e-04
+RGB | Epoch 32/50 | loss=0.2371 | val Dice=0.8760 | IoU=0.7794 | P=0.8684 | R=0.8837 | th=0.45 | lr=1.00e-04
+RGB | Epoch 33/50 | loss=0.2314 | val Dice=0.8742 | IoU=0.7765 | P=0.8596 | R=0.8892 | th=0.55 | lr=1.00e-04
+RGB | Epoch 34/50 | loss=0.2272 | val Dice=0.8701 | IoU=0.7701 | P=0.8592 | R=0.8813 | th=0.80 | lr=1.00e-04
+RGB | Epoch 35/50 | loss=0.2273 | val Dice=0.8733 | IoU=0.7752 | P=0.8572 | R=0.8901 | th=0.60 | lr=1.00e-04
+RGB | Epoch 36/50 | loss=0.2286 | val Dice=0.8679 | IoU=0.7666 | P=0.8629 | R=0.8729 | th=0.35 | lr=1.00e-04
+RGB | Epoch 37/50 | loss=0.2246 | val Dice=0.8757 | IoU=0.7790 | P=0.8645 | R=0.8873 | th=0.35 | lr=1.00e-04
+RGB | Epoch 38/50 | loss=0.2082 | val Dice=0.8790 | IoU=0.7841 | P=0.8717 | R=0.8864 | th=0.50 | lr=5.00e-05
+RGB | Epoch 39/50 | loss=0.2079 | val Dice=0.8780 | IoU=0.7825 | P=0.8666 | R=0.8896 | th=0.70 | lr=5.00e-05
+RGB | Epoch 40/50 | loss=0.2082 | val Dice=0.8744 | IoU=0.7768 | P=0.8620 | R=0.8872 | th=0.35 | lr=5.00e-05
+RGB | Epoch 41/50 | loss=0.2077 | val Dice=0.8761 | IoU=0.7795 | P=0.8725 | R=0.8797 | th=0.40 | lr=5.00e-05
+RGB | Epoch 42/50 | loss=0.2048 | val Dice=0.8746 | IoU=0.7771 | P=0.8583 | R=0.8915 | th=0.55 | lr=5.00e-05
+RGB | Epoch 43/50 | loss=0.2047 | val Dice=0.8756 | IoU=0.7787 | P=0.8655 | R=0.8859 | th=0.55 | lr=5.00e-05
+RGB | Epoch 44/50 | loss=0.1978 | val Dice=0.8782 | IoU=0.7829 | P=0.8781 | R=0.8784 | th=0.50 | lr=2.50e-05
+RGB | Epoch 45/50 | loss=0.1964 | val Dice=0.8795 | IoU=0.7850 | P=0.8709 | R=0.8884 | th=0.50 | lr=2.50e-05
+RGB | Epoch 46/50 | loss=0.1932 | val Dice=0.8778 | IoU=0.7822 | P=0.8605 | R=0.8958 | th=0.55 | lr=2.50e-05
+RGB | Epoch 47/50 | loss=0.1968 | val Dice=0.8775 | IoU=0.7817 | P=0.8755 | R=0.8794 | th=0.50 | lr=2.50e-05
+RGB | Epoch 48/50 | loss=0.1969 | val Dice=0.8828 | IoU=0.7901 | P=0.8717 | R=0.8941 | th=0.55 | lr=2.50e-05
+RGB | Epoch 49/50 | loss=0.1983 | val Dice=0.8774 | IoU=0.7815 | P=0.8703 | R=0.8845 | th=0.60 | lr=2.50e-05
+RGB | Epoch 50/50 | loss=0.1956 | val Dice=0.8803 | IoU=0.7862 | P=0.8680 | R=0.8929 | th=0.40 | lr=2.50e-05
+
+------------------------------------------------------------------------------------------
+RGB-ONLY FINAL TEST
+------------------------------------------------------------------------------------------
+Best epoch : 48
+Threshold  : 0.57
+Dice       : 0.8838
+IoU        : 0.7917
+Precision  : 0.8916
+Recall     : 0.8760
+Accuracy   : 0.9226
+
+====================================================================================================
+RUNNING MS-ONLY
+====================================================================================================
+Channels   : ['Green', 'Red-Edge', 'NIR']
+Parameters : 7,760,097
+MS | Epoch 01/50 | loss=0.5321 | val Dice=0.4933 | IoU=0.3274 | P=0.3583 | R=0.7916 | th=0.35 | lr=1.00e-04
+MS | Epoch 02/50 | loss=0.4687 | val Dice=0.7281 | IoU=0.5725 | P=0.6904 | R=0.7702 | th=0.25 | lr=1.00e-04
+MS | Epoch 03/50 | loss=0.3624 | val Dice=0.7777 | IoU=0.6363 | P=0.7282 | R=0.8346 | th=0.45 | lr=1.00e-04
+MS | Epoch 04/50 | loss=0.3273 | val Dice=0.7946 | IoU=0.6592 | P=0.7642 | R=0.8275 | th=0.40 | lr=1.00e-04
+MS | Epoch 05/50 | loss=0.3025 | val Dice=0.8191 | IoU=0.6936 | P=0.7987 | R=0.8405 | th=0.55 | lr=1.00e-04
+MS | Epoch 06/50 | loss=0.2860 | val Dice=0.8196 | IoU=0.6943 | P=0.7998 | R=0.8404 | th=0.30 | lr=1.00e-04
+MS | Epoch 07/50 | loss=0.2843 | val Dice=0.8345 | IoU=0.7160 | P=0.8130 | R=0.8571 | th=0.50 | lr=1.00e-04
+MS | Epoch 08/50 | loss=0.2796 | val Dice=0.8340 | IoU=0.7153 | P=0.8152 | R=0.8538 | th=0.65 | lr=1.00e-04
+MS | Epoch 09/50 | loss=0.2665 | val Dice=0.8347 | IoU=0.7163 | P=0.8107 | R=0.8601 | th=0.70 | lr=1.00e-04
+MS | Epoch 10/50 | loss=0.2653 | val Dice=0.8380 | IoU=0.7212 | P=0.8233 | R=0.8533 | th=0.45 | lr=1.00e-04
+MS | Epoch 11/50 | loss=0.2627 | val Dice=0.8397 | IoU=0.7238 | P=0.8221 | R=0.8582 | th=0.50 | lr=1.00e-04
+MS | Epoch 12/50 | loss=0.2632 | val Dice=0.8413 | IoU=0.7260 | P=0.8192 | R=0.8645 | th=0.40 | lr=1.00e-04
+MS | Epoch 13/50 | loss=0.2542 | val Dice=0.8389 | IoU=0.7224 | P=0.8124 | R=0.8670 | th=0.60 | lr=1.00e-04
+MS | Epoch 14/50 | loss=0.2554 | val Dice=0.8453 | IoU=0.7320 | P=0.8336 | R=0.8573 | th=0.45 | lr=1.00e-04
+MS | Epoch 15/50 | loss=0.2578 | val Dice=0.8383 | IoU=0.7216 | P=0.8164 | R=0.8613 | th=0.80 | lr=1.00e-04
+MS | Epoch 16/50 | loss=0.2509 | val Dice=0.8464 | IoU=0.7338 | P=0.8132 | R=0.8825 | th=0.55 | lr=1.00e-04
+MS | Epoch 17/50 | loss=0.2489 | val Dice=0.8481 | IoU=0.7362 | P=0.8151 | R=0.8838 | th=0.40 | lr=1.00e-04
+MS | Epoch 18/50 | loss=0.2602 | val Dice=0.8488 | IoU=0.7373 | P=0.8251 | R=0.8740 | th=0.25 | lr=1.00e-04
+MS | Epoch 19/50 | loss=0.2412 | val Dice=0.8541 | IoU=0.7453 | P=0.8360 | R=0.8730 | th=0.25 | lr=1.00e-04
+MS | Epoch 20/50 | loss=0.2287 | val Dice=0.8552 | IoU=0.7471 | P=0.8373 | R=0.8739 | th=0.45 | lr=1.00e-04
+MS | Epoch 21/50 | loss=0.2367 | val Dice=0.8514 | IoU=0.7412 | P=0.8334 | R=0.8702 | th=0.40 | lr=1.00e-04
+MS | Epoch 22/50 | loss=0.2291 | val Dice=0.8460 | IoU=0.7332 | P=0.8220 | R=0.8716 | th=0.70 | lr=1.00e-04
+MS | Epoch 23/50 | loss=0.2272 | val Dice=0.8565 | IoU=0.7490 | P=0.8414 | R=0.8721 | th=0.25 | lr=1.00e-04
+MS | Epoch 24/50 | loss=0.2310 | val Dice=0.8586 | IoU=0.7522 | P=0.8366 | R=0.8816 | th=0.35 | lr=1.00e-04
+MS | Epoch 25/50 | loss=0.2287 | val Dice=0.8545 | IoU=0.7460 | P=0.8305 | R=0.8799 | th=0.75 | lr=1.00e-04
+MS | Epoch 26/50 | loss=0.2317 | val Dice=0.8653 | IoU=0.7626 | P=0.8440 | R=0.8878 | th=0.50 | lr=1.00e-04
+MS | Epoch 27/50 | loss=0.2252 | val Dice=0.8598 | IoU=0.7540 | P=0.8349 | R=0.8861 | th=0.75 | lr=1.00e-04
+MS | Epoch 28/50 | loss=0.2273 | val Dice=0.8567 | IoU=0.7494 | P=0.8433 | R=0.8706 | th=0.80 | lr=1.00e-04
+MS | Epoch 29/50 | loss=0.2219 | val Dice=0.8575 | IoU=0.7505 | P=0.8444 | R=0.8710 | th=0.45 | lr=1.00e-04
+MS | Epoch 30/50 | loss=0.2190 | val Dice=0.8620 | IoU=0.7574 | P=0.8550 | R=0.8690 | th=0.50 | lr=1.00e-04
+MS | Epoch 31/50 | loss=0.2161 | val Dice=0.8613 | IoU=0.7564 | P=0.8563 | R=0.8663 | th=0.40 | lr=1.00e-04
+MS | Epoch 32/50 | loss=0.2086 | val Dice=0.8688 | IoU=0.7680 | P=0.8540 | R=0.8841 | th=0.50 | lr=5.00e-05
+MS | Epoch 33/50 | loss=0.2069 | val Dice=0.8640 | IoU=0.7606 | P=0.8607 | R=0.8674 | th=0.45 | lr=5.00e-05
+MS | Epoch 34/50 | loss=0.2005 | val Dice=0.8670 | IoU=0.7653 | P=0.8543 | R=0.8801 | th=0.55 | lr=5.00e-05
+MS | Epoch 35/50 | loss=0.2015 | val Dice=0.8673 | IoU=0.7658 | P=0.8415 | R=0.8948 | th=0.50 | lr=5.00e-05
+MS | Epoch 36/50 | loss=0.2000 | val Dice=0.8703 | IoU=0.7703 | P=0.8603 | R=0.8805 | th=0.50 | lr=5.00e-05
+MS | Epoch 37/50 | loss=0.1978 | val Dice=0.8685 | IoU=0.7676 | P=0.8552 | R=0.8823 | th=0.45 | lr=5.00e-05
+MS | Epoch 38/50 | loss=0.1990 | val Dice=0.8657 | IoU=0.7632 | P=0.8458 | R=0.8866 | th=0.65 | lr=5.00e-05
+MS | Epoch 39/50 | loss=0.1983 | val Dice=0.8707 | IoU=0.7711 | P=0.8546 | R=0.8876 | th=0.55 | lr=5.00e-05
+MS | Epoch 40/50 | loss=0.1959 | val Dice=0.8654 | IoU=0.7628 | P=0.8431 | R=0.8890 | th=0.40 | lr=5.00e-05
+MS | Epoch 41/50 | loss=0.2014 | val Dice=0.8685 | IoU=0.7676 | P=0.8494 | R=0.8886 | th=0.50 | lr=5.00e-05
+MS | Epoch 42/50 | loss=0.1956 | val Dice=0.8722 | IoU=0.7734 | P=0.8628 | R=0.8819 | th=0.35 | lr=5.00e-05
+MS | Epoch 43/50 | loss=0.1948 | val Dice=0.8686 | IoU=0.7677 | P=0.8488 | R=0.8894 | th=0.60 | lr=5.00e-05
+MS | Epoch 44/50 | loss=0.1896 | val Dice=0.8693 | IoU=0.7688 | P=0.8483 | R=0.8913 | th=0.55 | lr=5.00e-05
+MS | Epoch 45/50 | loss=0.1924 | val Dice=0.8706 | IoU=0.7709 | P=0.8596 | R=0.8819 | th=0.55 | lr=5.00e-05
+MS | Epoch 46/50 | loss=0.1959 | val Dice=0.8739 | IoU=0.7761 | P=0.8484 | R=0.9010 | th=0.35 | lr=5.00e-05
+MS | Epoch 47/50 | loss=0.1902 | val Dice=0.8722 | IoU=0.7733 | P=0.8577 | R=0.8872 | th=0.40 | lr=5.00e-05
+MS | Epoch 48/50 | loss=0.1882 | val Dice=0.8733 | IoU=0.7751 | P=0.8605 | R=0.8864 | th=0.60 | lr=5.00e-05
+MS | Epoch 49/50 | loss=0.1909 | val Dice=0.8623 | IoU=0.7579 | P=0.8412 | R=0.8845 | th=0.70 | lr=5.00e-05
+MS | Epoch 50/50 | loss=0.1910 | val Dice=0.8712 | IoU=0.7718 | P=0.8612 | R=0.8814 | th=0.25 | lr=5.00e-05
+
+------------------------------------------------------------------------------------------
+MS-ONLY FINAL TEST
+------------------------------------------------------------------------------------------
+Best epoch : 46
+Threshold  : 0.37
+Dice       : 0.8745
+IoU        : 0.7770
+Precision  : 0.8617
+Recall     : 0.8876
+Accuracy   : 0.9144
+
+====================================================================================================
+RGB-ONLY vs MS-ONLY — OFFICIAL TEST SUMMARY
+====================================================================================================
+RGB | Dice=0.8838 | IoU=0.7917 | Precision=0.8916 | Recall=0.8760 | Threshold=0.57 | Epoch=48
+MS  | Dice=0.8745 | IoU=0.7770 | Precision=0.8617 | Recall=0.8876 | Threshold=0.37 | Epoch=46
+
+Results directory: /kaggle/working/weedy_rgb_ms_unimodal_seed123
+Results ZIP      : /kaggle/working/weedy_rgb_ms_unimodal_seed123_results.zip
+
+Done.
+
+====================================================================================================
+SEED 123 — PROPOSED RGB+MS
+====================================================================================================
+===============================================================================================
+WEEDY RICE — PROPOSED 6-CHANNEL GATED-FUSION MODEL
+===============================================================================================
+ROOT        : /kaggle/input/datasets/hemal7/weedy-rgb-ms
+DATA_DIR    : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB
+RGB_DIR     : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/RGB
+MS_DIR      : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/Multispectral
+MASK_DIR    : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/Masks
+Device      : cuda
+Fast pilot  : False
+Max epochs  : 70
+Patience    : 12
+Input size  : (896, 672)
+Channels    : ('R', 'G', 'B', 'Green', 'Red-Edge', 'NIR')
+
+Official splits:
+Train: 438
+Val  : 148
+Test : 148
+Total: 734
+
+Checking one sample...
+Sample stem : DJI_DateTime_2024_06_02_13_42_0035_lat_10.3040603_lon_105.2619317_alt_20.018m
+Image shape : (672, 896, 6)
+Mask shape  : (672, 896)
+Image range : 0.0 to 0.9058823585510254
+Mask values : [0. 1.]
+
+Caching resized 6-channel samples...
+Cached 734 samples (~5.35 GB)
+
+Training-set normalization:
+R          mean=0.374092 std=0.125864
+G          mean=0.468180 std=0.122000
+B          mean=0.209188 std=0.107789
+Green      mean=0.216651 std=0.056127
+Red-Edge   mean=0.250748 std=0.063455
+NIR        mean=0.235060 std=0.039767
+Parameters: total=7,950,483, auxiliary=450, deployment=7,950,033
+
+===============================================================================================
+TRAINING
+===============================================================================================
+Epoch 01/70 | loss=0.5834 | val Dice=0.7512 | IoU=0.6016 | P=0.7040 | R=0.8053 | th=0.25 | lr=1.00e-04
+Epoch 02/70 | loss=0.4927 | val Dice=0.7801 | IoU=0.6395 | P=0.8238 | R=0.7408 | th=0.20 | lr=1.00e-04
+Epoch 03/70 | loss=0.4229 | val Dice=0.8205 | IoU=0.6956 | P=0.7963 | R=0.8462 | th=0.45 | lr=1.00e-04
+Epoch 04/70 | loss=0.4078 | val Dice=0.8181 | IoU=0.6922 | P=0.7788 | R=0.8616 | th=0.50 | lr=1.00e-04
+Epoch 05/70 | loss=0.3670 | val Dice=0.8444 | IoU=0.7308 | P=0.8587 | R=0.8306 | th=0.20 | lr=1.00e-04
+Epoch 06/70 | loss=0.3633 | val Dice=0.8501 | IoU=0.7393 | P=0.8375 | R=0.8631 | th=0.35 | lr=1.00e-04
+Epoch 07/70 | loss=0.3405 | val Dice=0.8574 | IoU=0.7504 | P=0.8544 | R=0.8604 | th=0.50 | lr=1.00e-04
+Epoch 08/70 | loss=0.3294 | val Dice=0.8533 | IoU=0.7442 | P=0.8636 | R=0.8434 | th=0.50 | lr=1.00e-04
+Epoch 09/70 | loss=0.3136 | val Dice=0.8470 | IoU=0.7346 | P=0.8561 | R=0.8380 | th=0.20 | lr=1.00e-04
+Epoch 10/70 | loss=0.3232 | val Dice=0.8647 | IoU=0.7616 | P=0.8464 | R=0.8838 | th=0.45 | lr=1.00e-04
+Epoch 11/70 | loss=0.3079 | val Dice=0.8662 | IoU=0.7640 | P=0.8739 | R=0.8587 | th=0.50 | lr=1.00e-04
+Epoch 12/70 | loss=0.3003 | val Dice=0.8653 | IoU=0.7626 | P=0.8539 | R=0.8771 | th=0.60 | lr=1.00e-04
+Epoch 13/70 | loss=0.2898 | val Dice=0.8756 | IoU=0.7787 | P=0.8607 | R=0.8909 | th=0.65 | lr=1.00e-04
+Epoch 14/70 | loss=0.2809 | val Dice=0.8782 | IoU=0.7828 | P=0.8748 | R=0.8816 | th=0.40 | lr=1.00e-04
+Epoch 15/70 | loss=0.2726 | val Dice=0.8827 | IoU=0.7901 | P=0.8671 | R=0.8990 | th=0.65 | lr=1.00e-04
+Epoch 16/70 | loss=0.2866 | val Dice=0.8833 | IoU=0.7911 | P=0.8697 | R=0.8974 | th=0.45 | lr=1.00e-04
+Epoch 17/70 | loss=0.2716 | val Dice=0.8773 | IoU=0.7815 | P=0.8843 | R=0.8705 | th=0.60 | lr=1.00e-04
+Epoch 18/70 | loss=0.2715 | val Dice=0.8839 | IoU=0.7919 | P=0.8744 | R=0.8936 | th=0.40 | lr=1.00e-04
+Epoch 19/70 | loss=0.2594 | val Dice=0.8835 | IoU=0.7913 | P=0.8699 | R=0.8975 | th=0.45 | lr=1.00e-04
+Epoch 20/70 | loss=0.2763 | val Dice=0.8815 | IoU=0.7882 | P=0.8786 | R=0.8844 | th=0.30 | lr=1.00e-04
+Epoch 21/70 | loss=0.2682 | val Dice=0.8861 | IoU=0.7954 | P=0.8764 | R=0.8959 | th=0.55 | lr=1.00e-04
+Epoch 22/70 | loss=0.2651 | val Dice=0.8889 | IoU=0.8000 | P=0.8810 | R=0.8969 | th=0.35 | lr=1.00e-04
+Epoch 23/70 | loss=0.2562 | val Dice=0.8597 | IoU=0.7539 | P=0.9061 | R=0.8178 | th=0.20 | lr=1.00e-04
+Epoch 24/70 | loss=0.2508 | val Dice=0.8889 | IoU=0.8000 | P=0.8967 | R=0.8812 | th=0.20 | lr=1.00e-04
+Epoch 25/70 | loss=0.2577 | val Dice=0.8915 | IoU=0.8042 | P=0.8772 | R=0.9063 | th=0.40 | lr=1.00e-04
+Epoch 26/70 | loss=0.2487 | val Dice=0.8946 | IoU=0.8092 | P=0.8893 | R=0.8999 | th=0.40 | lr=1.00e-04
+Epoch 27/70 | loss=0.2578 | val Dice=0.8917 | IoU=0.8046 | P=0.8847 | R=0.8989 | th=0.55 | lr=1.00e-04
+Epoch 28/70 | loss=0.2703 | val Dice=0.8893 | IoU=0.8007 | P=0.8803 | R=0.8985 | th=0.55 | lr=1.00e-04
+Epoch 29/70 | loss=0.2145 | val Dice=0.8937 | IoU=0.8079 | P=0.8867 | R=0.9010 | th=0.40 | lr=1.00e-04
+Epoch 30/70 | loss=0.2077 | val Dice=0.8942 | IoU=0.8087 | P=0.8921 | R=0.8964 | th=0.30 | lr=1.00e-04
+Epoch 31/70 | loss=0.2110 | val Dice=0.8937 | IoU=0.8078 | P=0.8782 | R=0.9097 | th=0.40 | lr=1.00e-04
+Epoch 32/70 | loss=0.1948 | val Dice=0.9021 | IoU=0.8217 | P=0.8982 | R=0.9061 | th=0.45 | lr=5.00e-05
+Epoch 33/70 | loss=0.1902 | val Dice=0.9008 | IoU=0.8195 | P=0.8934 | R=0.9083 | th=0.50 | lr=5.00e-05
+Epoch 34/70 | loss=0.1901 | val Dice=0.9024 | IoU=0.8222 | P=0.8913 | R=0.9139 | th=0.45 | lr=5.00e-05
+Epoch 35/70 | loss=0.1863 | val Dice=0.9030 | IoU=0.8231 | P=0.8984 | R=0.9076 | th=0.50 | lr=5.00e-05
+Epoch 36/70 | loss=0.1891 | val Dice=0.8992 | IoU=0.8168 | P=0.8847 | R=0.9142 | th=0.60 | lr=5.00e-05
+Epoch 37/70 | loss=0.1843 | val Dice=0.9043 | IoU=0.8253 | P=0.8920 | R=0.9169 | th=0.40 | lr=5.00e-05
+Epoch 38/70 | loss=0.1824 | val Dice=0.9040 | IoU=0.8247 | P=0.8939 | R=0.9142 | th=0.50 | lr=5.00e-05
+Epoch 39/70 | loss=0.1845 | val Dice=0.9030 | IoU=0.8231 | P=0.8967 | R=0.9093 | th=0.60 | lr=5.00e-05
+Epoch 40/70 | loss=0.1839 | val Dice=0.9037 | IoU=0.8243 | P=0.8996 | R=0.9078 | th=0.40 | lr=5.00e-05
+Epoch 41/70 | loss=0.1855 | val Dice=0.9032 | IoU=0.8234 | P=0.8901 | R=0.9166 | th=0.40 | lr=5.00e-05
+Epoch 42/70 | loss=0.1789 | val Dice=0.9008 | IoU=0.8196 | P=0.8939 | R=0.9078 | th=0.60 | lr=5.00e-05
+Epoch 43/70 | loss=0.1718 | val Dice=0.9070 | IoU=0.8298 | P=0.9029 | R=0.9111 | th=0.45 | lr=2.50e-05
+Epoch 44/70 | loss=0.1681 | val Dice=0.9073 | IoU=0.8303 | P=0.9010 | R=0.9136 | th=0.50 | lr=2.50e-05
+Epoch 45/70 | loss=0.1696 | val Dice=0.9085 | IoU=0.8323 | P=0.9010 | R=0.9161 | th=0.50 | lr=2.50e-05
+Epoch 46/70 | loss=0.1691 | val Dice=0.9077 | IoU=0.8309 | P=0.8992 | R=0.9163 | th=0.30 | lr=2.50e-05
+Epoch 47/70 | loss=0.1671 | val Dice=0.9068 | IoU=0.8296 | P=0.9011 | R=0.9126 | th=0.35 | lr=2.50e-05
+Epoch 48/70 | loss=0.1667 | val Dice=0.9030 | IoU=0.8232 | P=0.9021 | R=0.9039 | th=0.35 | lr=2.50e-05
+Epoch 49/70 | loss=0.1662 | val Dice=0.9072 | IoU=0.8302 | P=0.8932 | R=0.9218 | th=0.55 | lr=2.50e-05
+Epoch 50/70 | loss=0.1445 | val Dice=0.9068 | IoU=0.8295 | P=0.8964 | R=0.9174 | th=0.55 | lr=2.50e-05
+Epoch 51/70 | loss=0.1389 | val Dice=0.9078 | IoU=0.8312 | P=0.9025 | R=0.9132 | th=0.50 | lr=1.25e-05
+Epoch 52/70 | loss=0.1396 | val Dice=0.9100 | IoU=0.8349 | P=0.9055 | R=0.9146 | th=0.45 | lr=1.25e-05
+Epoch 53/70 | loss=0.1397 | val Dice=0.9099 | IoU=0.8347 | P=0.8995 | R=0.9205 | th=0.50 | lr=1.25e-05
+Epoch 54/70 | loss=0.1383 | val Dice=0.9110 | IoU=0.8366 | P=0.9052 | R=0.9170 | th=0.35 | lr=1.25e-05
+Epoch 55/70 | loss=0.1375 | val Dice=0.9109 | IoU=0.8365 | P=0.9003 | R=0.9218 | th=0.55 | lr=1.25e-05
+Epoch 56/70 | loss=0.1377 | val Dice=0.9094 | IoU=0.8339 | P=0.9043 | R=0.9147 | th=0.40 | lr=1.25e-05
+Epoch 57/70 | loss=0.1374 | val Dice=0.9092 | IoU=0.8335 | P=0.8964 | R=0.9223 | th=0.60 | lr=1.25e-05
+Epoch 58/70 | loss=0.1370 | val Dice=0.9113 | IoU=0.8370 | P=0.9075 | R=0.9151 | th=0.40 | lr=1.25e-05
+Epoch 59/70 | loss=0.1346 | val Dice=0.9089 | IoU=0.8331 | P=0.9085 | R=0.9093 | th=0.65 | lr=1.25e-05
+Epoch 60/70 | loss=0.1350 | val Dice=0.9103 | IoU=0.8353 | P=0.8979 | R=0.9230 | th=0.50 | lr=1.25e-05
+Epoch 61/70 | loss=0.1350 | val Dice=0.9108 | IoU=0.8363 | P=0.9049 | R=0.9169 | th=0.50 | lr=1.25e-05
+Epoch 62/70 | loss=0.1365 | val Dice=0.9098 | IoU=0.8345 | P=0.9037 | R=0.9159 | th=0.60 | lr=1.25e-05
+Epoch 63/70 | loss=0.1339 | val Dice=0.9101 | IoU=0.8350 | P=0.9015 | R=0.9188 | th=0.45 | lr=1.25e-05
+Epoch 64/70 | loss=0.1323 | val Dice=0.9121 | IoU=0.8385 | P=0.9118 | R=0.9125 | th=0.45 | lr=6.25e-06
+Epoch 65/70 | loss=0.1322 | val Dice=0.9110 | IoU=0.8365 | P=0.9039 | R=0.9182 | th=0.50 | lr=6.25e-06
+Epoch 66/70 | loss=0.1321 | val Dice=0.9117 | IoU=0.8377 | P=0.9077 | R=0.9157 | th=0.50 | lr=6.25e-06
+Epoch 67/70 | loss=0.1316 | val Dice=0.9122 | IoU=0.8386 | P=0.9106 | R=0.9139 | th=0.40 | lr=6.25e-06
+Epoch 68/70 | loss=0.1311 | val Dice=0.9126 | IoU=0.8392 | P=0.9066 | R=0.9186 | th=0.50 | lr=6.25e-06
+Epoch 69/70 | loss=0.1313 | val Dice=0.9118 | IoU=0.8379 | P=0.9106 | R=0.9130 | th=0.45 | lr=6.25e-06
+Epoch 70/70 | loss=0.1309 | val Dice=0.9107 | IoU=0.8360 | P=0.9085 | R=0.9129 | th=0.50 | lr=6.25e-06
+
+===============================================================================================
+VALIDATION SELECTION
+===============================================================================================
+Best epoch        : 68
+Best val Dice     : 0.9126
+Selected threshold: 0.52
+Fine val Dice     : 0.9126
+
+===============================================================================================
+FINAL OFFICIAL TEST RESULT
+===============================================================================================
+Train      : 438
+Validation : 148
+Test       : 148
+Best epoch : 68
+Threshold  : 0.52
+Dice       : 0.9164
+IoU        : 0.8456
+Precision  : 0.9087
+Recall     : 0.9242
+Accuracy   : 0.9433
+
+Results directory: /kaggle/working/weedy_proposed_6ch_seed123
+Results ZIP      : /kaggle/working/weedy_proposed_6ch_seed123_results.zip
+
+Done.
+
+====================================================================================================
+SEED 2026 — RGB-ONLY + MS-ONLY
+====================================================================================================
+====================================================================================================
+WEEDY RICE — RGB-ONLY AND MS-ONLY BASELINES
+====================================================================================================
+ROOT       : /kaggle/input/datasets/hemal7/weedy-rgb-ms
+DATA_DIR   : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB
+Device     : cuda
+Modalities : ['RGB', 'MS']
+Seed       : 2026
+Max epochs : 50
+Patience   : 12
+Input size : (896, 672)
+
+Official splits:
+Train: 438
+Val  : 148
+Test : 148
+Total: 734
+
+Checking one paired sample...
+Stem        : DJI_DateTime_2024_06_02_13_42_0035_lat_10.3040603_lon_105.2619317_alt_20.018m
+6ch shape   : (672, 896, 6)
+Mask shape  : (672, 896)
+Mask values : [0. 1.]
+
+Caching resized RGB + G + RE + NIR samples...
+Cached 734 samples (~5.35 GB)
+
+Training-set channel statistics:
+R          mean=0.374092 std=0.125864
+G          mean=0.468180 std=0.122000
+B          mean=0.209188 std=0.107789
+Green      mean=0.216651 std=0.056127
+Red-Edge   mean=0.250748 std=0.063455
+NIR        mean=0.235060 std=0.039767
+
+====================================================================================================
+RUNNING RGB-ONLY
+====================================================================================================
+Channels   : ['R', 'G', 'B']
+Parameters : 7,760,097
+RGB | Epoch 01/50 | loss=0.5272 | val Dice=0.6258 | IoU=0.4553 | P=0.4885 | R=0.8702 | th=0.40 | lr=1.00e-04
+RGB | Epoch 02/50 | loss=0.4817 | val Dice=0.7050 | IoU=0.5444 | P=0.6473 | R=0.7740 | th=0.55 | lr=1.00e-04
+RGB | Epoch 03/50 | loss=0.4458 | val Dice=0.7461 | IoU=0.5950 | P=0.6726 | R=0.8377 | th=0.50 | lr=1.00e-04
+RGB | Epoch 04/50 | loss=0.4245 | val Dice=0.7685 | IoU=0.6240 | P=0.7163 | R=0.8289 | th=0.35 | lr=1.00e-04
+RGB | Epoch 05/50 | loss=0.3928 | val Dice=0.7857 | IoU=0.6470 | P=0.7465 | R=0.8292 | th=0.55 | lr=1.00e-04
+RGB | Epoch 06/50 | loss=0.3900 | val Dice=0.7833 | IoU=0.6438 | P=0.7514 | R=0.8179 | th=0.65 | lr=1.00e-04
+RGB | Epoch 07/50 | loss=0.3940 | val Dice=0.7915 | IoU=0.6549 | P=0.7391 | R=0.8519 | th=0.65 | lr=1.00e-04
+RGB | Epoch 08/50 | loss=0.3591 | val Dice=0.7992 | IoU=0.6655 | P=0.7892 | R=0.8094 | th=0.40 | lr=1.00e-04
+RGB | Epoch 09/50 | loss=0.3574 | val Dice=0.8089 | IoU=0.6792 | P=0.7997 | R=0.8184 | th=0.40 | lr=1.00e-04
+RGB | Epoch 10/50 | loss=0.3463 | val Dice=0.8291 | IoU=0.7081 | P=0.7998 | R=0.8607 | th=0.50 | lr=1.00e-04
+RGB | Epoch 11/50 | loss=0.3204 | val Dice=0.8299 | IoU=0.7092 | P=0.8170 | R=0.8431 | th=0.70 | lr=1.00e-04
+RGB | Epoch 12/50 | loss=0.2917 | val Dice=0.8454 | IoU=0.7322 | P=0.8301 | R=0.8612 | th=0.70 | lr=1.00e-04
+RGB | Epoch 13/50 | loss=0.2872 | val Dice=0.8443 | IoU=0.7306 | P=0.8252 | R=0.8643 | th=0.70 | lr=1.00e-04
+RGB | Epoch 14/50 | loss=0.2846 | val Dice=0.8507 | IoU=0.7402 | P=0.8315 | R=0.8709 | th=0.40 | lr=1.00e-04
+RGB | Epoch 15/50 | loss=0.2638 | val Dice=0.8571 | IoU=0.7499 | P=0.8399 | R=0.8750 | th=0.50 | lr=1.00e-04
+RGB | Epoch 16/50 | loss=0.2595 | val Dice=0.8408 | IoU=0.7254 | P=0.8115 | R=0.8724 | th=0.30 | lr=1.00e-04
+RGB | Epoch 17/50 | loss=0.2585 | val Dice=0.8556 | IoU=0.7476 | P=0.8394 | R=0.8724 | th=0.65 | lr=1.00e-04
+RGB | Epoch 18/50 | loss=0.2503 | val Dice=0.8501 | IoU=0.7392 | P=0.8337 | R=0.8671 | th=0.35 | lr=1.00e-04
+RGB | Epoch 19/50 | loss=0.2557 | val Dice=0.8572 | IoU=0.7501 | P=0.8561 | R=0.8583 | th=0.35 | lr=1.00e-04
+RGB | Epoch 20/50 | loss=0.2429 | val Dice=0.8578 | IoU=0.7510 | P=0.8364 | R=0.8804 | th=0.40 | lr=1.00e-04
+RGB | Epoch 21/50 | loss=0.2456 | val Dice=0.8633 | IoU=0.7595 | P=0.8525 | R=0.8744 | th=0.45 | lr=1.00e-04
+RGB | Epoch 22/50 | loss=0.2553 | val Dice=0.8631 | IoU=0.7591 | P=0.8563 | R=0.8700 | th=0.35 | lr=1.00e-04
+RGB | Epoch 23/50 | loss=0.2455 | val Dice=0.8581 | IoU=0.7515 | P=0.8307 | R=0.8875 | th=0.75 | lr=1.00e-04
+RGB | Epoch 24/50 | loss=0.2382 | val Dice=0.8684 | IoU=0.7674 | P=0.8471 | R=0.8909 | th=0.60 | lr=1.00e-04
+RGB | Epoch 25/50 | loss=0.2308 | val Dice=0.8588 | IoU=0.7525 | P=0.8469 | R=0.8709 | th=0.50 | lr=1.00e-04
+RGB | Epoch 26/50 | loss=0.2475 | val Dice=0.8674 | IoU=0.7658 | P=0.8585 | R=0.8764 | th=0.50 | lr=1.00e-04
+RGB | Epoch 27/50 | loss=0.2269 | val Dice=0.8704 | IoU=0.7705 | P=0.8590 | R=0.8821 | th=0.45 | lr=1.00e-04
+RGB | Epoch 28/50 | loss=0.2411 | val Dice=0.8676 | IoU=0.7661 | P=0.8526 | R=0.8831 | th=0.50 | lr=1.00e-04
+RGB | Epoch 29/50 | loss=0.2370 | val Dice=0.8687 | IoU=0.7679 | P=0.8609 | R=0.8767 | th=0.55 | lr=1.00e-04
+RGB | Epoch 30/50 | loss=0.2249 | val Dice=0.8629 | IoU=0.7589 | P=0.8600 | R=0.8658 | th=0.75 | lr=1.00e-04
+RGB | Epoch 31/50 | loss=0.2294 | val Dice=0.8627 | IoU=0.7585 | P=0.8594 | R=0.8660 | th=0.65 | lr=1.00e-04
+RGB | Epoch 32/50 | loss=0.2247 | val Dice=0.8634 | IoU=0.7596 | P=0.8600 | R=0.8668 | th=0.75 | lr=1.00e-04
+RGB | Epoch 33/50 | loss=0.2104 | val Dice=0.8718 | IoU=0.7728 | P=0.8613 | R=0.8826 | th=0.40 | lr=5.00e-05
+RGB | Epoch 34/50 | loss=0.2175 | val Dice=0.8655 | IoU=0.7629 | P=0.8404 | R=0.8921 | th=0.75 | lr=5.00e-05
+RGB | Epoch 35/50 | loss=0.2151 | val Dice=0.8687 | IoU=0.7679 | P=0.8575 | R=0.8803 | th=0.20 | lr=5.00e-05
+RGB | Epoch 36/50 | loss=0.2114 | val Dice=0.8740 | IoU=0.7762 | P=0.8675 | R=0.8806 | th=0.65 | lr=5.00e-05
+RGB | Epoch 37/50 | loss=0.2137 | val Dice=0.8703 | IoU=0.7703 | P=0.8502 | R=0.8913 | th=0.55 | lr=5.00e-05
+RGB | Epoch 38/50 | loss=0.2063 | val Dice=0.8785 | IoU=0.7834 | P=0.8716 | R=0.8855 | th=0.50 | lr=5.00e-05
+RGB | Epoch 39/50 | loss=0.2097 | val Dice=0.8749 | IoU=0.7777 | P=0.8520 | R=0.8991 | th=0.65 | lr=5.00e-05
+RGB | Epoch 40/50 | loss=0.2082 | val Dice=0.8746 | IoU=0.7771 | P=0.8707 | R=0.8784 | th=0.35 | lr=5.00e-05
+RGB | Epoch 41/50 | loss=0.2105 | val Dice=0.8764 | IoU=0.7800 | P=0.8738 | R=0.8790 | th=0.50 | lr=5.00e-05
+RGB | Epoch 42/50 | loss=0.2040 | val Dice=0.8679 | IoU=0.7666 | P=0.8547 | R=0.8815 | th=0.50 | lr=5.00e-05
+RGB | Epoch 43/50 | loss=0.2087 | val Dice=0.8763 | IoU=0.7799 | P=0.8664 | R=0.8865 | th=0.40 | lr=5.00e-05
+RGB | Epoch 44/50 | loss=0.1991 | val Dice=0.8778 | IoU=0.7822 | P=0.8652 | R=0.8907 | th=0.50 | lr=2.50e-05
+RGB | Epoch 45/50 | loss=0.2029 | val Dice=0.8770 | IoU=0.7810 | P=0.8703 | R=0.8838 | th=0.55 | lr=2.50e-05
+RGB | Epoch 46/50 | loss=0.1960 | val Dice=0.8777 | IoU=0.7820 | P=0.8697 | R=0.8858 | th=0.55 | lr=2.50e-05
+RGB | Epoch 47/50 | loss=0.1971 | val Dice=0.8776 | IoU=0.7819 | P=0.8566 | R=0.8997 | th=0.50 | lr=2.50e-05
+RGB | Epoch 48/50 | loss=0.1940 | val Dice=0.8791 | IoU=0.7844 | P=0.8631 | R=0.8958 | th=0.40 | lr=2.50e-05
+RGB | Epoch 49/50 | loss=0.2013 | val Dice=0.8758 | IoU=0.7791 | P=0.8631 | R=0.8890 | th=0.45 | lr=2.50e-05
+RGB | Epoch 50/50 | loss=0.1951 | val Dice=0.8792 | IoU=0.7845 | P=0.8620 | R=0.8972 | th=0.45 | lr=2.50e-05
+
+------------------------------------------------------------------------------------------
+RGB-ONLY FINAL TEST
+------------------------------------------------------------------------------------------
+Best epoch : 50
+Threshold  : 0.47
+Dice       : 0.8768
+IoU        : 0.7806
+Precision  : 0.8856
+Recall     : 0.8682
+Accuracy   : 0.9180
+
+====================================================================================================
+RUNNING MS-ONLY
+====================================================================================================
+Channels   : ['Green', 'Red-Edge', 'NIR']
+Parameters : 7,760,097
+MS | Epoch 01/50 | loss=0.5416 | val Dice=0.5039 | IoU=0.3368 | P=0.3674 | R=0.8017 | th=0.40 | lr=1.00e-04
+MS | Epoch 02/50 | loss=0.5077 | val Dice=0.6088 | IoU=0.4376 | P=0.5285 | R=0.7179 | th=0.35 | lr=1.00e-04
+MS | Epoch 03/50 | loss=0.4087 | val Dice=0.7574 | IoU=0.6096 | P=0.7344 | R=0.7820 | th=0.20 | lr=1.00e-04
+MS | Epoch 04/50 | loss=0.3471 | val Dice=0.7673 | IoU=0.6224 | P=0.7278 | R=0.8113 | th=0.25 | lr=1.00e-04
+MS | Epoch 05/50 | loss=0.3166 | val Dice=0.7969 | IoU=0.6624 | P=0.7764 | R=0.8186 | th=0.45 | lr=1.00e-04
+MS | Epoch 06/50 | loss=0.3105 | val Dice=0.8076 | IoU=0.6772 | P=0.7851 | R=0.8314 | th=0.55 | lr=1.00e-04
+MS | Epoch 07/50 | loss=0.3169 | val Dice=0.8125 | IoU=0.6842 | P=0.7986 | R=0.8268 | th=0.55 | lr=1.00e-04
+MS | Epoch 08/50 | loss=0.2840 | val Dice=0.8299 | IoU=0.7093 | P=0.8103 | R=0.8504 | th=0.45 | lr=1.00e-04
+MS | Epoch 09/50 | loss=0.2942 | val Dice=0.8184 | IoU=0.6927 | P=0.7877 | R=0.8517 | th=0.20 | lr=1.00e-04
+MS | Epoch 10/50 | loss=0.2729 | val Dice=0.8347 | IoU=0.7163 | P=0.8102 | R=0.8608 | th=0.70 | lr=1.00e-04
+MS | Epoch 11/50 | loss=0.2741 | val Dice=0.8368 | IoU=0.7195 | P=0.8050 | R=0.8713 | th=0.60 | lr=1.00e-04
+MS | Epoch 12/50 | loss=0.2596 | val Dice=0.8404 | IoU=0.7247 | P=0.8303 | R=0.8507 | th=0.55 | lr=1.00e-04
+MS | Epoch 13/50 | loss=0.2500 | val Dice=0.8487 | IoU=0.7372 | P=0.8228 | R=0.8764 | th=0.60 | lr=1.00e-04
+MS | Epoch 14/50 | loss=0.2470 | val Dice=0.8479 | IoU=0.7359 | P=0.8217 | R=0.8757 | th=0.40 | lr=1.00e-04
+MS | Epoch 15/50 | loss=0.2528 | val Dice=0.8511 | IoU=0.7408 | P=0.8240 | R=0.8800 | th=0.30 | lr=1.00e-04
+MS | Epoch 16/50 | loss=0.2436 | val Dice=0.8430 | IoU=0.7287 | P=0.8138 | R=0.8745 | th=0.30 | lr=1.00e-04
+MS | Epoch 17/50 | loss=0.2436 | val Dice=0.8406 | IoU=0.7251 | P=0.8240 | R=0.8580 | th=0.20 | lr=1.00e-04
+MS | Epoch 18/50 | loss=0.2327 | val Dice=0.8504 | IoU=0.7398 | P=0.8189 | R=0.8844 | th=0.30 | lr=1.00e-04
+MS | Epoch 19/50 | loss=0.2429 | val Dice=0.8513 | IoU=0.7410 | P=0.8312 | R=0.8723 | th=0.75 | lr=1.00e-04
+MS | Epoch 20/50 | loss=0.2356 | val Dice=0.8557 | IoU=0.7478 | P=0.8267 | R=0.8868 | th=0.60 | lr=1.00e-04
+MS | Epoch 21/50 | loss=0.2329 | val Dice=0.8569 | IoU=0.7496 | P=0.8349 | R=0.8800 | th=0.70 | lr=1.00e-04
+MS | Epoch 22/50 | loss=0.2507 | val Dice=0.8534 | IoU=0.7442 | P=0.8472 | R=0.8596 | th=0.20 | lr=1.00e-04
+MS | Epoch 23/50 | loss=0.2402 | val Dice=0.8573 | IoU=0.7503 | P=0.8234 | R=0.8941 | th=0.50 | lr=1.00e-04
+MS | Epoch 24/50 | loss=0.2191 | val Dice=0.8604 | IoU=0.7550 | P=0.8477 | R=0.8735 | th=0.50 | lr=1.00e-04
+MS | Epoch 25/50 | loss=0.2219 | val Dice=0.8452 | IoU=0.7319 | P=0.8218 | R=0.8699 | th=0.20 | lr=1.00e-04
+MS | Epoch 26/50 | loss=0.2303 | val Dice=0.8615 | IoU=0.7567 | P=0.8392 | R=0.8850 | th=0.25 | lr=1.00e-04
+MS | Epoch 27/50 | loss=0.2328 | val Dice=0.8596 | IoU=0.7538 | P=0.8376 | R=0.8828 | th=0.40 | lr=1.00e-04
+MS | Epoch 28/50 | loss=0.2214 | val Dice=0.8560 | IoU=0.7482 | P=0.8334 | R=0.8799 | th=0.75 | lr=1.00e-04
+MS | Epoch 29/50 | loss=0.2244 | val Dice=0.8634 | IoU=0.7597 | P=0.8490 | R=0.8784 | th=0.60 | lr=1.00e-04
+MS | Epoch 30/50 | loss=0.2157 | val Dice=0.8643 | IoU=0.7610 | P=0.8530 | R=0.8759 | th=0.70 | lr=1.00e-04
+MS | Epoch 31/50 | loss=0.2157 | val Dice=0.8616 | IoU=0.7568 | P=0.8568 | R=0.8664 | th=0.40 | lr=1.00e-04
+MS | Epoch 32/50 | loss=0.2203 | val Dice=0.8548 | IoU=0.7463 | P=0.8285 | R=0.8828 | th=0.70 | lr=1.00e-04
+MS | Epoch 33/50 | loss=0.2192 | val Dice=0.8676 | IoU=0.7662 | P=0.8542 | R=0.8815 | th=0.55 | lr=1.00e-04
+MS | Epoch 34/50 | loss=0.2100 | val Dice=0.8664 | IoU=0.7643 | P=0.8471 | R=0.8866 | th=0.50 | lr=1.00e-04
+MS | Epoch 35/50 | loss=0.2112 | val Dice=0.8498 | IoU=0.7389 | P=0.8289 | R=0.8719 | th=0.45 | lr=1.00e-04
+MS | Epoch 36/50 | loss=0.2141 | val Dice=0.8640 | IoU=0.7606 | P=0.8400 | R=0.8894 | th=0.65 | lr=1.00e-04
+MS | Epoch 37/50 | loss=0.2103 | val Dice=0.8648 | IoU=0.7618 | P=0.8445 | R=0.8862 | th=0.55 | lr=1.00e-04
+MS | Epoch 38/50 | loss=0.2062 | val Dice=0.8675 | IoU=0.7660 | P=0.8503 | R=0.8854 | th=0.60 | lr=1.00e-04
+MS | Epoch 39/50 | loss=0.1954 | val Dice=0.8724 | IoU=0.7736 | P=0.8632 | R=0.8817 | th=0.55 | lr=5.00e-05
+MS | Epoch 40/50 | loss=0.1952 | val Dice=0.8696 | IoU=0.7693 | P=0.8482 | R=0.8922 | th=0.50 | lr=5.00e-05
+MS | Epoch 41/50 | loss=0.1921 | val Dice=0.8704 | IoU=0.7706 | P=0.8506 | R=0.8912 | th=0.35 | lr=5.00e-05
+MS | Epoch 42/50 | loss=0.1907 | val Dice=0.8728 | IoU=0.7744 | P=0.8637 | R=0.8822 | th=0.35 | lr=5.00e-05
+MS | Epoch 43/50 | loss=0.1901 | val Dice=0.8706 | IoU=0.7709 | P=0.8567 | R=0.8850 | th=0.35 | lr=5.00e-05
+MS | Epoch 44/50 | loss=0.1885 | val Dice=0.8702 | IoU=0.7703 | P=0.8560 | R=0.8850 | th=0.30 | lr=5.00e-05
+MS | Epoch 45/50 | loss=0.1944 | val Dice=0.8743 | IoU=0.7766 | P=0.8684 | R=0.8802 | th=0.40 | lr=5.00e-05
+MS | Epoch 46/50 | loss=0.1942 | val Dice=0.8729 | IoU=0.7745 | P=0.8581 | R=0.8883 | th=0.55 | lr=5.00e-05
+MS | Epoch 47/50 | loss=0.1881 | val Dice=0.8730 | IoU=0.7746 | P=0.8532 | R=0.8937 | th=0.65 | lr=5.00e-05
+MS | Epoch 48/50 | loss=0.1905 | val Dice=0.8761 | IoU=0.7796 | P=0.8729 | R=0.8794 | th=0.30 | lr=5.00e-05
+MS | Epoch 49/50 | loss=0.1890 | val Dice=0.8745 | IoU=0.7770 | P=0.8578 | R=0.8920 | th=0.50 | lr=5.00e-05
+MS | Epoch 50/50 | loss=0.1896 | val Dice=0.8731 | IoU=0.7747 | P=0.8454 | R=0.9027 | th=0.50 | lr=5.00e-05
+
+------------------------------------------------------------------------------------------
+MS-ONLY FINAL TEST
+------------------------------------------------------------------------------------------
+Best epoch : 48
+Threshold  : 0.28
+Dice       : 0.8809
+IoU        : 0.7871
+Precision  : 0.8807
+Recall     : 0.8810
+Accuracy   : 0.9200
+
+====================================================================================================
+RGB-ONLY vs MS-ONLY — OFFICIAL TEST SUMMARY
+====================================================================================================
+RGB | Dice=0.8768 | IoU=0.7806 | Precision=0.8856 | Recall=0.8682 | Threshold=0.47 | Epoch=50
+MS  | Dice=0.8809 | IoU=0.7871 | Precision=0.8807 | Recall=0.8810 | Threshold=0.28 | Epoch=48
+
+Results directory: /kaggle/working/weedy_rgb_ms_unimodal_seed2026
+Results ZIP      : /kaggle/working/weedy_rgb_ms_unimodal_seed2026_results.zip
+
+Done.
+
+====================================================================================================
+SEED 2026 — PROPOSED RGB+MS
+====================================================================================================
+===============================================================================================
+WEEDY RICE — PROPOSED 6-CHANNEL GATED-FUSION MODEL
+===============================================================================================
+ROOT        : /kaggle/input/datasets/hemal7/weedy-rgb-ms
+DATA_DIR    : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB
+RGB_DIR     : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/RGB
+MS_DIR      : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/Multispectral
+MASK_DIR    : /kaggle/input/datasets/hemal7/weedy-rgb-ms/A Dataset of Aligned RGB and Multispectral UAV Ima/WeedyRice-RGBMS-DB/WeedyRice-RGBMS-DB/Masks
+Device      : cuda
+Fast pilot  : False
+Max epochs  : 70
+Patience    : 12
+Input size  : (896, 672)
+Channels    : ('R', 'G', 'B', 'Green', 'Red-Edge', 'NIR')
+
+Official splits:
+Train: 438
+Val  : 148
+Test : 148
+Total: 734
+
+Checking one sample...
+Sample stem : DJI_DateTime_2024_06_02_13_42_0035_lat_10.3040603_lon_105.2619317_alt_20.018m
+Image shape : (672, 896, 6)
+Mask shape  : (672, 896)
+Image range : 0.0 to 0.9058823585510254
+Mask values : [0. 1.]
+
+Caching resized 6-channel samples...
+Cached 734 samples (~5.35 GB)
+
+Training-set normalization:
+R          mean=0.374092 std=0.125864
+G          mean=0.468180 std=0.122000
+B          mean=0.209188 std=0.107789
+Green      mean=0.216651 std=0.056127
+Red-Edge   mean=0.250748 std=0.063455
+NIR        mean=0.235060 std=0.039767
+Parameters: total=7,950,483, auxiliary=450, deployment=7,950,033
+
+===============================================================================================
+TRAINING
+===============================================================================================
+Epoch 01/70 | loss=0.5649 | val Dice=0.7786 | IoU=0.6374 | P=0.7469 | R=0.8131 | th=0.50 | lr=1.00e-04
+Epoch 02/70 | loss=0.4641 | val Dice=0.7602 | IoU=0.6132 | P=0.6949 | R=0.8391 | th=0.65 | lr=1.00e-04
+Epoch 03/70 | loss=0.4386 | val Dice=0.8226 | IoU=0.6987 | P=0.7846 | R=0.8644 | th=0.50 | lr=1.00e-04
+Epoch 04/70 | loss=0.3984 | val Dice=0.8328 | IoU=0.7136 | P=0.7996 | R=0.8689 | th=0.50 | lr=1.00e-04
+Epoch 05/70 | loss=0.3906 | val Dice=0.8374 | IoU=0.7203 | P=0.8079 | R=0.8692 | th=0.55 | lr=1.00e-04
+Epoch 06/70 | loss=0.3737 | val Dice=0.8442 | IoU=0.7305 | P=0.8181 | R=0.8720 | th=0.25 | lr=1.00e-04
+Epoch 07/70 | loss=0.3490 | val Dice=0.8491 | IoU=0.7377 | P=0.8228 | R=0.8770 | th=0.60 | lr=1.00e-04
+Epoch 08/70 | loss=0.3417 | val Dice=0.8618 | IoU=0.7572 | P=0.8513 | R=0.8725 | th=0.75 | lr=1.00e-04
+Epoch 09/70 | loss=0.3383 | val Dice=0.8571 | IoU=0.7499 | P=0.8235 | R=0.8936 | th=0.35 | lr=1.00e-04
+Epoch 10/70 | loss=0.3232 | val Dice=0.8395 | IoU=0.7235 | P=0.8569 | R=0.8228 | th=0.20 | lr=1.00e-04
+Epoch 11/70 | loss=0.3241 | val Dice=0.8302 | IoU=0.7098 | P=0.8028 | R=0.8596 | th=0.70 | lr=1.00e-04
+Epoch 12/70 | loss=0.3172 | val Dice=0.8517 | IoU=0.7417 | P=0.8155 | R=0.8913 | th=0.70 | lr=1.00e-04
+Epoch 13/70 | loss=0.3067 | val Dice=0.8677 | IoU=0.7663 | P=0.8673 | R=0.8681 | th=0.30 | lr=1.00e-04
+Epoch 14/70 | loss=0.3006 | val Dice=0.8799 | IoU=0.7855 | P=0.8793 | R=0.8804 | th=0.50 | lr=1.00e-04
+Epoch 15/70 | loss=0.2829 | val Dice=0.8730 | IoU=0.7746 | P=0.8754 | R=0.8705 | th=0.30 | lr=1.00e-04
+Epoch 16/70 | loss=0.2821 | val Dice=0.8781 | IoU=0.7826 | P=0.8629 | R=0.8937 | th=0.35 | lr=1.00e-04
+Epoch 17/70 | loss=0.2761 | val Dice=0.8831 | IoU=0.7906 | P=0.8736 | R=0.8927 | th=0.65 | lr=1.00e-04
+Epoch 18/70 | loss=0.2807 | val Dice=0.8822 | IoU=0.7892 | P=0.8561 | R=0.9099 | th=0.55 | lr=1.00e-04
+Epoch 19/70 | loss=0.2790 | val Dice=0.8727 | IoU=0.7742 | P=0.8542 | R=0.8920 | th=0.75 | lr=1.00e-04
+Epoch 20/70 | loss=0.2727 | val Dice=0.8865 | IoU=0.7961 | P=0.8861 | R=0.8869 | th=0.50 | lr=1.00e-04
+Epoch 21/70 | loss=0.2587 | val Dice=0.8719 | IoU=0.7728 | P=0.8918 | R=0.8528 | th=0.20 | lr=1.00e-04
+Epoch 22/70 | loss=0.2642 | val Dice=0.8827 | IoU=0.7900 | P=0.8687 | R=0.8971 | th=0.55 | lr=1.00e-04
+Epoch 23/70 | loss=0.2545 | val Dice=0.8865 | IoU=0.7962 | P=0.8766 | R=0.8967 | th=0.70 | lr=1.00e-04
+Epoch 24/70 | loss=0.2575 | val Dice=0.8906 | IoU=0.8028 | P=0.8813 | R=0.9002 | th=0.30 | lr=1.00e-04
+Epoch 25/70 | loss=0.2580 | val Dice=0.8885 | IoU=0.7994 | P=0.8731 | R=0.9045 | th=0.65 | lr=1.00e-04
+Epoch 26/70 | loss=0.2608 | val Dice=0.8911 | IoU=0.8036 | P=0.8821 | R=0.9003 | th=0.25 | lr=1.00e-04
+Epoch 27/70 | loss=0.2510 | val Dice=0.8792 | IoU=0.7845 | P=0.8629 | R=0.8962 | th=0.70 | lr=1.00e-04
+Epoch 28/70 | loss=0.2479 | val Dice=0.8939 | IoU=0.8081 | P=0.8775 | R=0.9109 | th=0.65 | lr=1.00e-04
+Epoch 29/70 | loss=0.2093 | val Dice=0.8939 | IoU=0.8081 | P=0.8802 | R=0.9080 | th=0.55 | lr=1.00e-04
+Epoch 30/70 | loss=0.2139 | val Dice=0.8938 | IoU=0.8080 | P=0.8948 | R=0.8929 | th=0.40 | lr=1.00e-04
+Epoch 31/70 | loss=0.2085 | val Dice=0.8934 | IoU=0.8073 | P=0.8774 | R=0.9100 | th=0.55 | lr=1.00e-04
+Epoch 32/70 | loss=0.2039 | val Dice=0.8933 | IoU=0.8071 | P=0.8914 | R=0.8951 | th=0.50 | lr=1.00e-04
+Epoch 33/70 | loss=0.2109 | val Dice=0.8969 | IoU=0.8131 | P=0.8842 | R=0.9100 | th=0.50 | lr=1.00e-04
+Epoch 34/70 | loss=0.2005 | val Dice=0.8973 | IoU=0.8137 | P=0.8829 | R=0.9121 | th=0.55 | lr=1.00e-04
+Epoch 35/70 | loss=0.2071 | val Dice=0.9002 | IoU=0.8185 | P=0.8923 | R=0.9082 | th=0.30 | lr=1.00e-04
+Epoch 36/70 | loss=0.2048 | val Dice=0.9004 | IoU=0.8189 | P=0.9015 | R=0.8994 | th=0.55 | lr=1.00e-04
+Epoch 37/70 | loss=0.2097 | val Dice=0.8911 | IoU=0.8036 | P=0.8861 | R=0.8961 | th=0.35 | lr=1.00e-04
+Epoch 38/70 | loss=0.2021 | val Dice=0.8909 | IoU=0.8033 | P=0.8761 | R=0.9062 | th=0.30 | lr=1.00e-04
+Epoch 39/70 | loss=0.2019 | val Dice=0.8980 | IoU=0.8149 | P=0.8847 | R=0.9117 | th=0.55 | lr=1.00e-04
+Epoch 40/70 | loss=0.1991 | val Dice=0.9017 | IoU=0.8210 | P=0.8998 | R=0.9036 | th=0.50 | lr=1.00e-04
+Epoch 41/70 | loss=0.1964 | val Dice=0.8953 | IoU=0.8105 | P=0.8814 | R=0.9097 | th=0.20 | lr=1.00e-04
+Epoch 42/70 | loss=0.1977 | val Dice=0.8747 | IoU=0.7773 | P=0.9222 | R=0.8319 | th=0.20 | lr=1.00e-04
+Epoch 43/70 | loss=0.1974 | val Dice=0.8978 | IoU=0.8146 | P=0.8934 | R=0.9023 | th=0.55 | lr=1.00e-04
+Epoch 44/70 | loss=0.1940 | val Dice=0.8936 | IoU=0.8077 | P=0.9145 | R=0.8736 | th=0.20 | lr=1.00e-04
+Epoch 45/70 | loss=0.1900 | val Dice=0.8967 | IoU=0.8128 | P=0.8788 | R=0.9155 | th=0.35 | lr=1.00e-04
+Epoch 46/70 | loss=0.1762 | val Dice=0.9056 | IoU=0.8274 | P=0.8947 | R=0.9167 | th=0.55 | lr=5.00e-05
+Epoch 47/70 | loss=0.1726 | val Dice=0.9052 | IoU=0.8268 | P=0.8955 | R=0.9150 | th=0.65 | lr=5.00e-05
+Epoch 48/70 | loss=0.1766 | val Dice=0.9072 | IoU=0.8301 | P=0.8975 | R=0.9170 | th=0.50 | lr=5.00e-05
+Epoch 49/70 | loss=0.1704 | val Dice=0.8989 | IoU=0.8164 | P=0.8894 | R=0.9086 | th=0.40 | lr=5.00e-05
+Epoch 50/70 | loss=0.1515 | val Dice=0.9062 | IoU=0.8285 | P=0.8920 | R=0.9208 | th=0.50 | lr=5.00e-05
+Epoch 51/70 | loss=0.1511 | val Dice=0.9053 | IoU=0.8269 | P=0.9028 | R=0.9077 | th=0.35 | lr=5.00e-05
+Epoch 52/70 | loss=0.1495 | val Dice=0.9057 | IoU=0.8277 | P=0.8927 | R=0.9191 | th=0.45 | lr=5.00e-05
+Epoch 53/70 | loss=0.1516 | val Dice=0.9080 | IoU=0.8315 | P=0.8951 | R=0.9213 | th=0.45 | lr=5.00e-05
+Epoch 54/70 | loss=0.1455 | val Dice=0.9020 | IoU=0.8214 | P=0.8899 | R=0.9143 | th=0.55 | lr=5.00e-05
+Epoch 55/70 | loss=0.1469 | val Dice=0.9067 | IoU=0.8292 | P=0.9034 | R=0.9099 | th=0.35 | lr=5.00e-05
+Epoch 56/70 | loss=0.1448 | val Dice=0.9116 | IoU=0.8376 | P=0.9062 | R=0.9171 | th=0.40 | lr=5.00e-05
+Epoch 57/70 | loss=0.1424 | val Dice=0.9082 | IoU=0.8319 | P=0.9003 | R=0.9163 | th=0.50 | lr=5.00e-05
+Epoch 58/70 | loss=0.1434 | val Dice=0.9042 | IoU=0.8251 | P=0.8975 | R=0.9109 | th=0.30 | lr=5.00e-05
+Epoch 59/70 | loss=0.1459 | val Dice=0.9097 | IoU=0.8344 | P=0.9018 | R=0.9178 | th=0.50 | lr=5.00e-05
+Epoch 60/70 | loss=0.1410 | val Dice=0.9090 | IoU=0.8331 | P=0.9036 | R=0.9144 | th=0.50 | lr=5.00e-05

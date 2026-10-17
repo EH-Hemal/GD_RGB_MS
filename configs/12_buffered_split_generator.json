@@ -1,0 +1,14 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 67,
+  "expressions": {
+    "BUFFER_M": "24.0",
+    "TARGET_VAL": "40",
+    "TARGET_TEST": "40",
+    "OUTPUT_DIR": "Path(\"/kaggle/working/spatial_24m_split\")",
+    "LAT_LON_PATTERN": "re.compile(\n    r\"lat_(-?\\d+(?:\\.\\d+)?)_lon_(-?\\d+(?:\\.\\d+)?)\",\n    re.IGNORECASE\n)",
+    "VALID_EXTENSIONS": "{\".jpg\", \".jpeg\", \".png\", \".tif\", \".tiff\"}",
+    "EARTH_RADIUS_M": "6_371_000.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 54,
+  "expressions": {
+    "EXPECTED_TEST_IMAGES": "60",
+    "VALIDATION_SELECTED_THRESHOLD": "0.60",
+    "GPS_PATTERN": "re.compile(\n    r\"lat_(?P<latitude>-?\\d+(?:\\.\\d+)?)_\"\n    r\"lon_(?P<longitude>-?\\d+(?:\\.\\d+)?)_\"\n    r\"alt_(?P<altitude>-?\\d+(?:\\.\\d+)?)m\",\n    flags=re.IGNORECASE,\n)"
+  }
+}

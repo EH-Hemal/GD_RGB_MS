@@ -1,0 +1,32 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "graindiscoloration (2).ipynb",
+  "cell_zero_based": 44,
+  "expressions": {
+    "BASE_DIR": "Path(BASE_DIR)",
+    "WORK_DIR": "Path(\"/kaggle/working\")\n    if Path(\"/kaggle/working\").exists()\n    else Path(\"/content\")",
+    "MASTER_OUT_DIR": "WORK_DIR / \"gd_6ch_early_fusion_unet_three_seeds\"",
+    "RUN_SEEDS": "[42, 123, 2026]",
+    "TARGET_SIZE": "(896, 672)",
+    "BATCH_SIZE": "2",
+    "ACCUMULATION_STEPS": "2",
+    "MAX_EPOCHS": "70",
+    "PATIENCE": "12",
+    "LEARNING_RATE": "1e-4",
+    "WEIGHT_DECAY": "1e-4",
+    "NUM_WORKERS": "0",
+    "PREFERRED_GN_GROUPS": "8",
+    "ENCODER_CHANNELS": "[32, 64, 128, 248]",
+    "CACHE_TRAIN_AND_VALIDATION": "True",
+    "SAVE_PROBABILITY_MAPS_FOR_SEEDS": "{42}",
+    "SAVE_BINARY_PREDICTIONS_FOR_SEEDS": "{42}",
+    "SHOW_DOWNLOAD_LINKS": "True",
+    "MASK_POSITIVE_RGB": "np.array([240, 128, 128], dtype=np.int16)",
+    "CHANNEL_ORDER": "[\"R\", \"G\", \"B\", \"Green\", \"Red-Edge\", \"NIR\"]",
+    "MEAN": "np.array(\n    [\n        0.41819795966148376,\n        0.46573567390441895,\n        0.2516770660877228,\n        0.21822915971279144,\n        0.16206900775432587,\n        0.23585167527198792,\n    ],\n    dtype=np.float32,\n)",
+    "STD": "np.array(\n    [\n        0.1540451943874359,\n        0.1569177359342575,\n        0.13375557959079742,\n        0.07147330790758133,\n        0.05124884843826294,\n        0.04640943184494972,\n    ],\n    dtype=np.float32,\n)",
+    "TRAIN_THRESHOLDS": "np.round(np.arange(0.20, 0.86, 0.05), 2).tolist()",
+    "FINAL_THRESHOLDS": "np.round(np.arange(0.20, 0.801, 0.01), 2).tolist()",
+    "RAM_CACHE": "{}"
+  }
+}

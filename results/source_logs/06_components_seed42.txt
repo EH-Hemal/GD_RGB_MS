@@ -1,0 +1,393 @@
+================================================================================
+SIX-CHANNEL COMPONENT ABLATION — SEED 42 — NO TTA
+================================================================================
+Dataset       : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Split digest  : be1d4a35a6659e91139ac1b4fa1b7ee1d709ce9e578f2f1629af4f2aa58aa33c
+Output        : /kaggle/working/gd_6ch_component_ablation_seed42
+Device        : cuda
+GPU           : Tesla T4
+Split         : 280 60 60
+Input size    : (896, 672) (width, height)
+Channels      : ['R', 'G', 'B', 'Green', 'Red-Edge', 'NIR']
+Batch/accum   : 2 / 2
+Normalization : GroupNorm
+Runs          : A1 Equal Multi-Scale Fusion -> A2 Spatially Gated Multi-Scale Fusion
+
+Preloading shared train+val RAM cache: 100%|██████████| 340/340 [01:02<00:00,  5.45it/s]
+
+RAM cache: 340 images, 2.48 GB
+
+================================================================================
+A1 EQUAL MULTI-SCALE FUSION
+================================================================================
+Fusion type          : equal
+Cross-stage feedback : enabled
+Auxiliary supervision: disabled
+Trainable parameters : 7,932,769
+
+                                                                            
+equal_multiscale  | Epoch 001 | train 0.3401 | val 0.2698 | Dice 0.6837 | IoU 0.5194 | P 0.6422 | R 0.7310 | th 0.65 | lr 1.00e-04 | 2.1m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 002 | train 0.2450 | val 0.2434 | Dice 0.6976 | IoU 0.5357 | P 0.6705 | R 0.7270 | th 0.50 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 003 | train 0.2218 | val 0.2170 | Dice 0.7319 | IoU 0.5772 | P 0.7041 | R 0.7620 | th 0.65 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 004 | train 0.2024 | val 0.2037 | Dice 0.7472 | IoU 0.5964 | P 0.7397 | R 0.7548 | th 0.75 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 005 | train 0.1928 | val 0.1938 | Dice 0.7482 | IoU 0.5976 | P 0.7301 | R 0.7671 | th 0.70 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 006 | train 0.1861 | val 0.2056 | Dice 0.7449 | IoU 0.5935 | P 0.7174 | R 0.7746 | th 0.80 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 007 | train 0.1714 | val 0.1847 | Dice 0.7398 | IoU 0.5871 | P 0.7181 | R 0.7628 | th 0.55 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 008 | train 0.1770 | val 0.1717 | Dice 0.7639 | IoU 0.6180 | P 0.7404 | R 0.7889 | th 0.45 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 009 | train 0.1602 | val 0.1630 | Dice 0.7715 | IoU 0.6280 | P 0.7530 | R 0.7910 | th 0.35 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 010 | train 0.1621 | val 0.1651 | Dice 0.7617 | IoU 0.6151 | P 0.7507 | R 0.7730 | th 0.40 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 011 | train 0.1594 | val 0.1863 | Dice 0.7456 | IoU 0.5944 | P 0.7157 | R 0.7782 | th 0.75 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 012 | train 0.1565 | val 0.1649 | Dice 0.7683 | IoU 0.6238 | P 0.7557 | R 0.7814 | th 0.65 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 013 | train 0.1496 | val 0.1753 | Dice 0.7733 | IoU 0.6304 | P 0.7936 | R 0.7541 | th 0.20 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 014 | train 0.1493 | val 0.1623 | Dice 0.7505 | IoU 0.6006 | P 0.7275 | R 0.7750 | th 0.40 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 015 | train 0.1444 | val 0.1752 | Dice 0.7548 | IoU 0.6061 | P 0.7410 | R 0.7690 | th 0.80 | lr 1.00e-04 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 016 | train 0.1471 | val 0.1503 | Dice 0.7798 | IoU 0.6390 | P 0.7625 | R 0.7978 | th 0.55 | lr 1.00e-04 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 017 | train 0.1423 | val 0.1683 | Dice 0.7651 | IoU 0.6196 | P 0.7362 | R 0.7964 | th 0.75 | lr 1.00e-04 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 018 | train 0.1395 | val 0.1718 | Dice 0.7569 | IoU 0.6089 | P 0.7370 | R 0.7781 | th 0.70 | lr 1.00e-04 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 019 | train 0.1413 | val 0.1587 | Dice 0.7727 | IoU 0.6296 | P 0.7508 | R 0.7960 | th 0.70 | lr 1.00e-04 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 020 | train 0.1400 | val 0.1532 | Dice 0.7766 | IoU 0.6348 | P 0.7544 | R 0.8002 | th 0.40 | lr 1.00e-04 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 021 | train 0.1355 | val 0.1571 | Dice 0.7664 | IoU 0.6212 | P 0.7502 | R 0.7832 | th 0.65 | lr 5.00e-05 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 022 | train 0.1261 | val 0.1416 | Dice 0.7965 | IoU 0.6618 | P 0.7851 | R 0.8081 | th 0.60 | lr 5.00e-05 | 2.2m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale/best_equal_multiscale_6ch_seed42.pt
+
+                                                                            
+equal_multiscale  | Epoch 023 | train 0.1263 | val 0.1518 | Dice 0.7803 | IoU 0.6397 | P 0.7744 | R 0.7862 | th 0.30 | lr 5.00e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 024 | train 0.1234 | val 0.1424 | Dice 0.7931 | IoU 0.6571 | P 0.7855 | R 0.8007 | th 0.60 | lr 5.00e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 025 | train 0.1246 | val 0.1450 | Dice 0.7915 | IoU 0.6549 | P 0.7863 | R 0.7967 | th 0.65 | lr 5.00e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 026 | train 0.1211 | val 0.1580 | Dice 0.7841 | IoU 0.6449 | P 0.7700 | R 0.7987 | th 0.80 | lr 5.00e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 027 | train 0.1206 | val 0.1659 | Dice 0.7610 | IoU 0.6142 | P 0.7309 | R 0.7936 | th 0.70 | lr 2.50e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 028 | train 0.1179 | val 0.1484 | Dice 0.7883 | IoU 0.6506 | P 0.7749 | R 0.8021 | th 0.70 | lr 2.50e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 029 | train 0.1154 | val 0.1498 | Dice 0.7789 | IoU 0.6379 | P 0.7689 | R 0.7892 | th 0.60 | lr 2.50e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 030 | train 0.1142 | val 0.1476 | Dice 0.7860 | IoU 0.6475 | P 0.7707 | R 0.8020 | th 0.65 | lr 2.50e-05 | 2.1m
+
+                                                                            
+equal_multiscale  | Epoch 031 | train 0.1138 | val 0.1534 | Dice 0.7741 | IoU 0.6315 | P 0.7648 | R 0.7836 | th 0.65 | lr 2.50e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 032 | train 0.1133 | val 0.1464 | Dice 0.7879 | IoU 0.6500 | P 0.7785 | R 0.7976 | th 0.65 | lr 1.25e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 033 | train 0.1094 | val 0.1456 | Dice 0.7914 | IoU 0.6548 | P 0.7828 | R 0.8001 | th 0.65 | lr 1.25e-05 | 2.2m
+
+                                                                            
+equal_multiscale  | Epoch 034 | train 0.1102 | val 0.1443 | Dice 0.7900 | IoU 0.6530 | P 0.7812 | R 0.7991 | th 0.60 | lr 1.25e-05 | 2.2m
+Early stopping after 12 non-improving epochs.
+
+equal_multiscale final validation predictions (no TTA): 100%|██████████| 60/60 [00:11<00:00,  5.45it/s]
+equal_multiscale final test predictions (no TTA): 100%|██████████| 60/60 [00:20<00:00,  2.91it/s]
+
+
+--------------------------------------------------------------------------------
+A1 Equal Multi-Scale Fusion — FINAL PRIMARY TEST RESULT — NO TTA
+--------------------------------------------------------------------------------
+Dice      : 0.8057
+IoU       : 0.6746
+Precision : 0.7807
+Recall    : 0.8323
+Threshold : 0.59
+Parameters: 7.933 M
+Best epoch: 22
+Results   : /kaggle/working/gd_6ch_component_ablation_seed42/equal_multiscale
+ZIP       : /kaggle/working/gd_6ch_equal_multiscale_seed42_results.zip
+
+================================================================================
+A2 SPATIALLY GATED MULTI-SCALE FUSION
+================================================================================
+Fusion type          : spatial
+Cross-stage feedback : enabled
+Auxiliary supervision: disabled
+Trainable parameters : 7,950,033
+
+                                                                         
+spatial_gated     | Epoch 001 | train 0.3176 | val 0.2459 | Dice 0.6824 | IoU 0.5179 | P 0.6714 | R 0.6938 | th 0.30 | lr 1.00e-04 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 002 | train 0.2200 | val 0.2153 | Dice 0.7239 | IoU 0.5673 | P 0.6963 | R 0.7538 | th 0.75 | lr 1.00e-04 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 003 | train 0.2100 | val 0.1971 | Dice 0.7318 | IoU 0.5771 | P 0.7170 | R 0.7473 | th 0.40 | lr 1.00e-04 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 004 | train 0.1856 | val 0.1933 | Dice 0.7601 | IoU 0.6130 | P 0.7452 | R 0.7756 | th 0.80 | lr 1.00e-04 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 005 | train 0.1841 | val 0.1886 | Dice 0.7429 | IoU 0.5909 | P 0.7210 | R 0.7661 | th 0.65 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 006 | train 0.1798 | val 0.1803 | Dice 0.7483 | IoU 0.5978 | P 0.7163 | R 0.7832 | th 0.55 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 007 | train 0.1674 | val 0.1828 | Dice 0.7441 | IoU 0.5925 | P 0.7340 | R 0.7544 | th 0.65 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 008 | train 0.1646 | val 0.1618 | Dice 0.7793 | IoU 0.6385 | P 0.7715 | R 0.7874 | th 0.20 | lr 1.00e-04 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 009 | train 0.1594 | val 0.1640 | Dice 0.7651 | IoU 0.6196 | P 0.7458 | R 0.7854 | th 0.55 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 010 | train 0.1575 | val 0.1682 | Dice 0.7543 | IoU 0.6055 | P 0.7365 | R 0.7729 | th 0.40 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 011 | train 0.1571 | val 0.1654 | Dice 0.7593 | IoU 0.6120 | P 0.7411 | R 0.7783 | th 0.50 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 012 | train 0.1548 | val 0.1615 | Dice 0.7712 | IoU 0.6276 | P 0.7543 | R 0.7888 | th 0.55 | lr 1.00e-04 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 013 | train 0.1467 | val 0.1592 | Dice 0.7699 | IoU 0.6259 | P 0.7608 | R 0.7791 | th 0.55 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 014 | train 0.1430 | val 0.1549 | Dice 0.7712 | IoU 0.6276 | P 0.7596 | R 0.7831 | th 0.30 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 015 | train 0.1436 | val 0.1505 | Dice 0.7849 | IoU 0.6460 | P 0.7782 | R 0.7918 | th 0.25 | lr 5.00e-05 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 016 | train 0.1377 | val 0.1576 | Dice 0.7695 | IoU 0.6254 | P 0.7492 | R 0.7910 | th 0.55 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 017 | train 0.1338 | val 0.1687 | Dice 0.7601 | IoU 0.6131 | P 0.7314 | R 0.7912 | th 0.70 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 018 | train 0.1386 | val 0.1590 | Dice 0.7713 | IoU 0.6277 | P 0.7635 | R 0.7792 | th 0.70 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 019 | train 0.1336 | val 0.1668 | Dice 0.7718 | IoU 0.6284 | P 0.7499 | R 0.7950 | th 0.80 | lr 5.00e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 020 | train 0.1350 | val 0.1483 | Dice 0.7849 | IoU 0.6459 | P 0.7667 | R 0.8039 | th 0.45 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 021 | train 0.1290 | val 0.1585 | Dice 0.7821 | IoU 0.6421 | P 0.7591 | R 0.8064 | th 0.75 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 022 | train 0.1240 | val 0.1528 | Dice 0.7846 | IoU 0.6456 | P 0.7642 | R 0.8061 | th 0.70 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 023 | train 0.1243 | val 0.1499 | Dice 0.7814 | IoU 0.6412 | P 0.7633 | R 0.8003 | th 0.55 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 024 | train 0.1220 | val 0.1458 | Dice 0.7941 | IoU 0.6585 | P 0.7831 | R 0.8054 | th 0.70 | lr 2.50e-05 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 025 | train 0.1225 | val 0.1457 | Dice 0.7874 | IoU 0.6493 | P 0.7813 | R 0.7935 | th 0.55 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 026 | train 0.1231 | val 0.1684 | Dice 0.7732 | IoU 0.6302 | P 0.7460 | R 0.8024 | th 0.80 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 027 | train 0.1216 | val 0.1617 | Dice 0.7741 | IoU 0.6315 | P 0.7511 | R 0.7986 | th 0.75 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 028 | train 0.1230 | val 0.1508 | Dice 0.7863 | IoU 0.6478 | P 0.7666 | R 0.8070 | th 0.70 | lr 2.50e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 029 | train 0.1207 | val 0.1533 | Dice 0.7804 | IoU 0.6399 | P 0.7665 | R 0.7948 | th 0.70 | lr 1.25e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 030 | train 0.1177 | val 0.1560 | Dice 0.7761 | IoU 0.6342 | P 0.7609 | R 0.7920 | th 0.70 | lr 1.25e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 031 | train 0.1163 | val 0.1496 | Dice 0.7834 | IoU 0.6440 | P 0.7696 | R 0.7977 | th 0.65 | lr 1.25e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 032 | train 0.1164 | val 0.1461 | Dice 0.7889 | IoU 0.6514 | P 0.7690 | R 0.8099 | th 0.60 | lr 1.25e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 033 | train 0.1163 | val 0.1423 | Dice 0.7911 | IoU 0.6544 | P 0.7760 | R 0.8068 | th 0.50 | lr 1.25e-05 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 034 | train 0.1152 | val 0.1485 | Dice 0.7871 | IoU 0.6490 | P 0.7680 | R 0.8072 | th 0.65 | lr 6.25e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 035 | train 0.1128 | val 0.1401 | Dice 0.7943 | IoU 0.6588 | P 0.7819 | R 0.8072 | th 0.50 | lr 6.25e-06 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 036 | train 0.1131 | val 0.1472 | Dice 0.7872 | IoU 0.6491 | P 0.7698 | R 0.8055 | th 0.65 | lr 6.25e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 037 | train 0.1128 | val 0.1427 | Dice 0.7925 | IoU 0.6563 | P 0.7812 | R 0.8041 | th 0.60 | lr 6.25e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 038 | train 0.1121 | val 0.1443 | Dice 0.7853 | IoU 0.6465 | P 0.7697 | R 0.8015 | th 0.50 | lr 6.25e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 039 | train 0.1127 | val 0.1456 | Dice 0.7922 | IoU 0.6559 | P 0.7805 | R 0.8043 | th 0.70 | lr 6.25e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 040 | train 0.1112 | val 0.1522 | Dice 0.7786 | IoU 0.6374 | P 0.7592 | R 0.7989 | th 0.65 | lr 3.13e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 041 | train 0.1099 | val 0.1470 | Dice 0.7850 | IoU 0.6461 | P 0.7685 | R 0.8023 | th 0.60 | lr 3.13e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 042 | train 0.1103 | val 0.1412 | Dice 0.7935 | IoU 0.6577 | P 0.7813 | R 0.8062 | th 0.55 | lr 3.13e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 043 | train 0.1089 | val 0.1453 | Dice 0.7881 | IoU 0.6502 | P 0.7723 | R 0.8044 | th 0.60 | lr 3.13e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 044 | train 0.1105 | val 0.1466 | Dice 0.7879 | IoU 0.6501 | P 0.7740 | R 0.8024 | th 0.65 | lr 3.13e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 045 | train 0.1094 | val 0.1487 | Dice 0.7852 | IoU 0.6463 | P 0.7683 | R 0.8029 | th 0.65 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 046 | train 0.1090 | val 0.1430 | Dice 0.7948 | IoU 0.6595 | P 0.7803 | R 0.8099 | th 0.65 | lr 1.56e-06 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 047 | train 0.1095 | val 0.1419 | Dice 0.7930 | IoU 0.6570 | P 0.7776 | R 0.8089 | th 0.55 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 048 | train 0.1093 | val 0.1422 | Dice 0.7945 | IoU 0.6591 | P 0.7781 | R 0.8117 | th 0.60 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 049 | train 0.1086 | val 0.1421 | Dice 0.7950 | IoU 0.6598 | P 0.7857 | R 0.8046 | th 0.65 | lr 1.56e-06 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 050 | train 0.1092 | val 0.1399 | Dice 0.7958 | IoU 0.6608 | P 0.7832 | R 0.8088 | th 0.55 | lr 1.56e-06 | 2.3m
+Saved: /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated/best_spatial_gated_6ch_seed42.pt
+
+                                                                         
+spatial_gated     | Epoch 051 | train 0.1086 | val 0.1447 | Dice 0.7890 | IoU 0.6515 | P 0.7754 | R 0.8030 | th 0.60 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 052 | train 0.1088 | val 0.1410 | Dice 0.7938 | IoU 0.6580 | P 0.7804 | R 0.8076 | th 0.55 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 053 | train 0.1086 | val 0.1452 | Dice 0.7924 | IoU 0.6562 | P 0.7752 | R 0.8104 | th 0.65 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 054 | train 0.1093 | val 0.1438 | Dice 0.7884 | IoU 0.6507 | P 0.7760 | R 0.8012 | th 0.55 | lr 1.56e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 055 | train 0.1084 | val 0.1450 | Dice 0.7908 | IoU 0.6540 | P 0.7781 | R 0.8039 | th 0.65 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 056 | train 0.1084 | val 0.1433 | Dice 0.7921 | IoU 0.6557 | P 0.7756 | R 0.8093 | th 0.60 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 057 | train 0.1084 | val 0.1413 | Dice 0.7947 | IoU 0.6594 | P 0.7827 | R 0.8072 | th 0.60 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 058 | train 0.1084 | val 0.1407 | Dice 0.7952 | IoU 0.6601 | P 0.7863 | R 0.8044 | th 0.60 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 059 | train 0.1078 | val 0.1426 | Dice 0.7926 | IoU 0.6565 | P 0.7792 | R 0.8065 | th 0.60 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 060 | train 0.1080 | val 0.1430 | Dice 0.7931 | IoU 0.6572 | P 0.7851 | R 0.8013 | th 0.65 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 061 | train 0.1080 | val 0.1411 | Dice 0.7937 | IoU 0.6579 | P 0.7814 | R 0.8063 | th 0.55 | lr 1.00e-06 | 2.3m
+
+                                                                         
+spatial_gated     | Epoch 062 | train 0.1079 | val 0.1418 | Dice 0.7927 | IoU 0.6566 | P 0.7778 | R 0.8081 | th 0.55 | lr 1.00e-06 | 2.3m
+Early stopping after 12 non-improving epochs.
+
+spatial_gated final validation predictions (no TTA): 100%|██████████| 60/60 [00:11<00:00,  5.26it/s]
+spatial_gated final test predictions (no TTA): 100%|██████████| 60/60 [00:18<00:00,  3.32it/s]
+
+
+--------------------------------------------------------------------------------
+A2 Spatially Gated Multi-Scale Fusion — FINAL PRIMARY TEST RESULT — NO TTA
+--------------------------------------------------------------------------------
+Dice      : 0.8062
+IoU       : 0.6754
+Precision : 0.7858
+Recall    : 0.8277
+Threshold : 0.55
+Parameters: 7.950 M
+Best epoch: 50
+Results   : /kaggle/working/gd_6ch_component_ablation_seed42/spatial_gated
+ZIP       : /kaggle/working/gd_6ch_spatial_gated_seed42_results.zip
+
+================================================================================
+BOTH SIX-CHANNEL COMPONENT ABLATION RUNS FINISHED
+================================================================================
+A1 Equal Multi-Scale Fusion: Dice=0.8057 | IoU=0.6746 | P=0.7807 | R=0.8323 | th=0.59
+A2 Spatially Gated Multi-Scale Fusion: Dice=0.8062 | IoU=0.6754 | P=0.7858 | R=0.8277 | th=0.55
+Combined CSV : /kaggle/working/gd_6ch_component_ablation_seed42/six_channel_component_ablation_summary.csv
+Combined JSON: /kaggle/working/gd_6ch_component_ablation_seed42/six_channel_component_ablation_summary.json
+Combined ZIP : /kaggle/working/gd_6ch_component_ablation_seed42_results.zip
+IMPORTANT: Download the ZIP before ending the Kaggle session.
+
+/kaggle/working/gd_6ch_component_ablation_seed42_results.zip
+/kaggle/working/gd_6ch_equal_multiscale_seed42_results.zip
+/kaggle/working/gd_6ch_spatial_gated_seed42_results.zip

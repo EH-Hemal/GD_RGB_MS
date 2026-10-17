@@ -1,0 +1,11 @@
+protocol,model,seeds,n_seeds,provenance,dice_mean,dice_sample_sd,iou_mean,iou_sample_sd,precision_mean,precision_sample_sd,recall_mean,recall_sample_sd
+standard,Proposed,42;123;2026,3,author-confirmed manuscript summary; raw three-seed exports pending,0.814,0.0048,0.6864,0.0068,0.7932,0.0054,0.8359,0.0058
+standard,U-Net++,42;123;2026,3,author-supplied final runner output; includes rounded historical seed42,0.7807,0.0068,0.6404,0.0092,0.7787,0.0053,0.7828,0.0111
+standard,DeepLabV3+ ResNet-50,42;123;2026,3,second notebook cell16 saved summary; includes rounded seed42 references,0.7631,0.0066,0.617,0.0087,0.772,0.0439,0.757,0.0344
+standard,SegFormer MiT-B1,42;123;2026,3,second notebook cell16 saved summary; includes rounded seed42 references,0.8225,0.0042,0.6985,0.006,0.8066,0.0137,0.8393,0.0155
+standard,CMX MiT-B0,42;123;2026,3,second notebook cell16 saved summary; includes rounded seed42 references,0.8216,0.0096,0.6973,0.0137,0.8109,0.0242,0.833,0.0062
+standard,Early-Fusion Residual-scSE U-Net,42;123;2026,3,original notebook cell44 saved output,0.8026,0.0081,0.6703,0.0113,0.792,0.009,0.8134,0.0095
+buffered24m,Proposed,42;123;2026,3,author-supplied completed three-seed log,0.8061,0.0082,0.6753,0.0115,0.8379,0.0131,0.7772,0.0262
+train_A_test_B,Proposed,42;123;2026,3,author-confirmed manuscript summary; earliest run exports pending,0.6596,0.0307,0.4926,0.0345,0.5652,0.0671,0.8004,0.0392
+train_B_test_A,Proposed,42;123;2026,3,author-supplied completed remaining-runs log,0.7684,0.0047,0.6239,0.0062,0.8145,0.0203,0.7276,0.0109
+weedyrice_official,Proposed,42;123;2026,3,author-confirmed final manuscript summary; final exports pending,0.9189,0.0032,0.85,0.0055,0.9122,0.0039,0.9258,0.0025

@@ -1,0 +1,154 @@
+====================================================================================================
+CROSS-ACQUISITION GENERALIZATION — A -> B RECHECK
+====================================================================================================
+Dataset: /kaggle/input/datasets/hemal7/gd-rgbms-db
+Device : cuda
+Seed   : 123
+Input  : (896, 672) | batch 2 | accumulation 2
+
+GPS acquisition groups:
+  Group A: 217
+  Group B: 183
+  Minimum A-B centre distance: 555.449 m
+
+####################################################################################################
+# A_to_B: TRAIN/DEVELOP ON A -> TEST ON B
+####################################################################################################
+Source acquisition images     : 217
+  Development train           : 174
+  Development validation      : 43
+Final refit train (ALL source): 217
+Final untouched test          : 183
+
+Normalization mean (development train only): [0.4163302481174469, 0.4594426453113556, 0.2524718940258026, 0.21803979575634003, 0.16220958530902863, 0.23578569293022156]
+Normalization std  (development train only): [0.15995393693447113, 0.16233007609844208, 0.13925796747207642, 0.0747355967760086, 0.054563555866479874, 0.041728582233190536]
+Old-run normalization max |mean diff|: 0.00046311
+Old-run normalization max |std diff| : 0.00026593
+Normalization diagnostic: not an exact match to the previous run. Training is still valid, but if you want bit-for-bit reproduction, send me these printed values and I can align the old dev split.
+Parameters: total=7,950,483, auxiliary=450, deployment=7,950,033
+A_to_B DEV | epoch 001 | loss 0.4606 | val Dice 0.6891 | IoU 0.5256 | th 0.60 | lr 1.00e-04
+A_to_B DEV | epoch 002 | loss 0.3070 | val Dice 0.7134 | IoU 0.5544 | th 0.65 | lr 1.00e-04
+A_to_B DEV | epoch 003 | loss 0.2824 | val Dice 0.6957 | IoU 0.5334 | th 0.50 | lr 1.00e-04
+A_to_B DEV | epoch 004 | loss 0.2604 | val Dice 0.7423 | IoU 0.5902 | th 0.30 | lr 1.00e-04
+A_to_B DEV | epoch 005 | loss 0.2567 | val Dice 0.7213 | IoU 0.5640 | th 0.60 | lr 1.00e-04
+A_to_B DEV | epoch 006 | loss 0.2496 | val Dice 0.7675 | IoU 0.6227 | th 0.65 | lr 1.00e-04
+A_to_B DEV | epoch 007 | loss 0.2411 | val Dice 0.7610 | IoU 0.6142 | th 0.60 | lr 1.00e-04
+A_to_B DEV | epoch 008 | loss 0.2354 | val Dice 0.7787 | IoU 0.6376 | th 0.75 | lr 1.00e-04
+A_to_B DEV | epoch 009 | loss 0.2374 | val Dice 0.7842 | IoU 0.6450 | th 0.70 | lr 1.00e-04
+A_to_B DEV | epoch 010 | loss 0.2327 | val Dice 0.7796 | IoU 0.6389 | th 0.35 | lr 1.00e-04
+A_to_B DEV | epoch 011 | loss 0.2257 | val Dice 0.7836 | IoU 0.6441 | th 0.65 | lr 1.00e-04
+A_to_B DEV | epoch 012 | loss 0.2263 | val Dice 0.7870 | IoU 0.6487 | th 0.50 | lr 1.00e-04
+A_to_B DEV | epoch 013 | loss 0.2263 | val Dice 0.7662 | IoU 0.6209 | th 0.65 | lr 1.00e-04
+A_to_B DEV | epoch 014 | loss 0.2215 | val Dice 0.7879 | IoU 0.6501 | th 0.60 | lr 1.00e-04
+A_to_B DEV | epoch 015 | loss 0.2217 | val Dice 0.7985 | IoU 0.6647 | th 0.45 | lr 1.00e-04
+A_to_B DEV | epoch 016 | loss 0.2187 | val Dice 0.7809 | IoU 0.6405 | th 0.70 | lr 1.00e-04
+A_to_B DEV | epoch 017 | loss 0.2179 | val Dice 0.7728 | IoU 0.6297 | th 0.35 | lr 1.00e-04
+A_to_B DEV | epoch 018 | loss 0.2152 | val Dice 0.7952 | IoU 0.6600 | th 0.45 | lr 1.00e-04
+A_to_B DEV | epoch 019 | loss 0.2147 | val Dice 0.7851 | IoU 0.6462 | th 0.60 | lr 1.00e-04
+A_to_B DEV | epoch 020 | loss 0.2116 | val Dice 0.7567 | IoU 0.6086 | th 0.45 | lr 1.00e-04
+A_to_B DEV | epoch 021 | loss 0.2102 | val Dice 0.7903 | IoU 0.6533 | th 0.35 | lr 5.00e-05
+A_to_B DEV | epoch 022 | loss 0.2067 | val Dice 0.7996 | IoU 0.6662 | th 0.55 | lr 5.00e-05
+A_to_B DEV | epoch 023 | loss 0.2017 | val Dice 0.7878 | IoU 0.6499 | th 0.50 | lr 5.00e-05
+A_to_B DEV | epoch 024 | loss 0.2001 | val Dice 0.7787 | IoU 0.6376 | th 0.45 | lr 5.00e-05
+A_to_B DEV | epoch 025 | loss 0.1993 | val Dice 0.7974 | IoU 0.6631 | th 0.70 | lr 5.00e-05
+A_to_B DEV | epoch 026 | loss 0.1988 | val Dice 0.7874 | IoU 0.6494 | th 0.40 | lr 5.00e-05
+A_to_B DEV | epoch 027 | loss 0.1979 | val Dice 0.8029 | IoU 0.6707 | th 0.45 | lr 5.00e-05
+A_to_B DEV | epoch 028 | loss 0.1945 | val Dice 0.7821 | IoU 0.6422 | th 0.35 | lr 5.00e-05
+A_to_B DEV | epoch 029 | loss 0.1691 | val Dice 0.7718 | IoU 0.6284 | th 0.35 | lr 5.00e-05
+A_to_B DEV | epoch 030 | loss 0.1694 | val Dice 0.8018 | IoU 0.6691 | th 0.65 | lr 5.00e-05
+A_to_B DEV | epoch 031 | loss 0.1677 | val Dice 0.7958 | IoU 0.6609 | th 0.35 | lr 5.00e-05
+A_to_B DEV | epoch 032 | loss 0.1643 | val Dice 0.7989 | IoU 0.6651 | th 0.40 | lr 5.00e-05
+A_to_B DEV | epoch 033 | loss 0.1619 | val Dice 0.7933 | IoU 0.6575 | th 0.35 | lr 2.50e-05
+A_to_B DEV | epoch 034 | loss 0.1601 | val Dice 0.7977 | IoU 0.6634 | th 0.60 | lr 2.50e-05
+A_to_B DEV | epoch 035 | loss 0.1582 | val Dice 0.7907 | IoU 0.6538 | th 0.50 | lr 2.50e-05
+A_to_B DEV | epoch 036 | loss 0.1583 | val Dice 0.7924 | IoU 0.6562 | th 0.45 | lr 2.50e-05
+A_to_B DEV | epoch 037 | loss 0.1587 | val Dice 0.8077 | IoU 0.6774 | th 0.50 | lr 2.50e-05
+A_to_B DEV | epoch 038 | loss 0.1586 | val Dice 0.8000 | IoU 0.6667 | th 0.55 | lr 2.50e-05
+A_to_B DEV | epoch 039 | loss 0.1565 | val Dice 0.8071 | IoU 0.6766 | th 0.50 | lr 2.50e-05
+A_to_B DEV | epoch 040 | loss 0.1578 | val Dice 0.8007 | IoU 0.6676 | th 0.60 | lr 2.50e-05
+A_to_B DEV | epoch 041 | loss 0.1553 | val Dice 0.8037 | IoU 0.6718 | th 0.35 | lr 2.50e-05
+A_to_B DEV | epoch 042 | loss 0.1554 | val Dice 0.7882 | IoU 0.6505 | th 0.70 | lr 2.50e-05
+A_to_B DEV | epoch 043 | loss 0.1527 | val Dice 0.7972 | IoU 0.6627 | th 0.45 | lr 1.25e-05
+A_to_B DEV | epoch 044 | loss 0.1520 | val Dice 0.7945 | IoU 0.6591 | th 0.45 | lr 1.25e-05
+A_to_B DEV | epoch 045 | loss 0.1520 | val Dice 0.7985 | IoU 0.6646 | th 0.60 | lr 1.25e-05
+A_to_B DEV | epoch 046 | loss 0.1505 | val Dice 0.8029 | IoU 0.6708 | th 0.25 | lr 1.25e-05
+A_to_B DEV | epoch 047 | loss 0.1512 | val Dice 0.7939 | IoU 0.6582 | th 0.45 | lr 1.25e-05
+A_to_B DEV | epoch 048 | loss 0.1486 | val Dice 0.7978 | IoU 0.6636 | th 0.40 | lr 6.25e-06
+A_to_B DEV | epoch 049 | loss 0.1485 | val Dice 0.7960 | IoU 0.6611 | th 0.50 | lr 6.25e-06
+A_to_B: early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------
+A_to_B DEVELOPMENT SELECTION
+--------------------------------------------------------------------------------
+Best epoch              : 37
+Best development Dice   : 0.8077
+Exact selected threshold: 0.48
+Threshold-val Dice      : 0.8078
+Parameters: total=7,950,483, auxiliary=450, deployment=7,950,033
+A_to_B FINAL REFIT | epoch 001/037 | loss 0.4404 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 002/037 | loss 0.2896 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 003/037 | loss 0.2643 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 004/037 | loss 0.2535 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 005/037 | loss 0.2464 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 006/037 | loss 0.2400 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 007/037 | loss 0.2359 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 008/037 | loss 0.2338 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 009/037 | loss 0.2292 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 010/037 | loss 0.2279 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 011/037 | loss 0.2279 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 012/037 | loss 0.2220 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 013/037 | loss 0.2241 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 014/037 | loss 0.2191 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 015/037 | loss 0.2170 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 016/037 | loss 0.2150 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 017/037 | loss 0.2103 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 018/037 | loss 0.2132 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 019/037 | loss 0.2126 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 020/037 | loss 0.2111 | lr 1.00e-04
+A_to_B FINAL REFIT | epoch 021/037 | loss 0.2030 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 022/037 | loss 0.2018 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 023/037 | loss 0.1986 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 024/037 | loss 0.1975 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 025/037 | loss 0.1967 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 026/037 | loss 0.1991 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 027/037 | loss 0.1966 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 028/037 | loss 0.1930 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 029/037 | loss 0.1655 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 030/037 | loss 0.1661 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 031/037 | loss 0.1651 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 032/037 | loss 0.1642 | lr 5.00e-05
+A_to_B FINAL REFIT | epoch 033/037 | loss 0.1603 | lr 2.50e-05
+A_to_B FINAL REFIT | epoch 034/037 | loss 0.1589 | lr 2.50e-05
+A_to_B FINAL REFIT | epoch 035/037 | loss 0.1577 | lr 2.50e-05
+A_to_B FINAL REFIT | epoch 036/037 | loss 0.1570 | lr 2.50e-05
+A_to_B FINAL REFIT | epoch 037/037 | loss 0.1565 | lr 2.50e-05
+
+================================================================================
+A_to_B FINAL HELD-OUT TEST RESULT
+================================================================================
+Train all source : 217
+Test all target  : 183
+Best epoch       : 37
+Best dev Dice    : 0.8077
+Threshold        : 0.48
+Dice             : 0.6512
+IoU              : 0.4828
+Precision        : 0.5411
+Recall           : 0.8176
+Accuracy         : 0.9699
+Checkpoint       : /kaggle/working/gd_cross_acquisition_A_to_B_seed42_recheck/final_all_source_checkpoint.pt
+
+Previous-run reference:
+  Group A/B     : 217 / 183
+  Best epoch    : 27
+  Best dev Dice : 0.8050
+  Threshold     : 0.47
+  Test Dice     : 0.6339
+  Test IoU      : 0.4640
+  Precision     : 0.5135
+  Recall        : 0.8280
+
+Results directory: /kaggle/working/gd_cross_acquisition_A_to_B_seed42_recheck
+ZIP              : /kaggle/working/gd_cross_acquisition_A_to_B_seed42_recheck_results.zip
+
+Done.

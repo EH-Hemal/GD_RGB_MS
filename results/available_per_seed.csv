@@ -1,0 +1,10 @@
+protocol,model,seed,dice,iou,precision,recall,provenance
+buffered24m,Proposed,42,0.798036,0.663944,0.84589,0.755307,"completed author-supplied log, printed six decimals"
+buffered24m,Proposed,123,0.805863,0.67485,0.845051,0.770149,"completed author-supplied log, printed six decimals"
+buffered24m,Proposed,2026,0.814446,0.686975,0.82279,0.806269,"completed author-supplied log, printed six decimals"
+train_B_test_A,Proposed,42,0.763713,0.617748,0.791145,0.73812,"completed author-supplied log, printed six decimals"
+train_B_test_A,Proposed,123,0.773162,0.630207,0.824089,0.728164,"completed author-supplied log, printed six decimals"
+train_B_test_A,Proposed,2026,0.768309,0.623784,0.828272,0.716443,"completed author-supplied log, printed six decimals"
+standard,U-Net++,42,0.7845,0.6454,0.7765,0.7926,author-confirmed output; seed42 rounded manuscript reference
+standard,U-Net++,123,0.772821,0.629754,0.774879,0.770774,"author-supplied final output, six decimals"
+standard,U-Net++,2026,0.784861,0.645903,0.7847,0.785023,"author-supplied final output, six decimals"

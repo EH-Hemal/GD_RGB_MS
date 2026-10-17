@@ -1,0 +1,414 @@
+Installing segmentation-models-pytorch + dependencies ...
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.8/154.8 kB 4.1 MB/s eta 0:00:00
+==============================================================================================================
+KAGGLE | GD-RGBMS-DB | STRONG BASELINES | 3 MODELS | SEED 42 ONLY
+==============================================================================================================
+Dataset      : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Device       : cuda
+PyTorch      : 2.10.0+cu128
+SMP          : 0.5.0
+Split        : 280 60 60
+Input size   : (896, 672)
+Models       : ['DeepLabV3+ ResNet-50', 'SegFormer MiT-B1', 'CMX MiT-B0']
+Seeds        : [123, 2026]
+Seed 42      : NOT rerun (existing result used only in final 3-seed summary)
+Initial LR   : 0.0001 (same for all six runs; no LR sweep)
+Max epochs   : 50
+Total runs   : 6
+==============================================================================================================
+Preloading train + validation images to RAM ...
+Cached 340 images.
+
+==============================================================================================================
+RUN: DeepLabV3+ ResNet-50 | seed 123 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | DeepLabV3+ ResNet-50 | seed=123 | lr=1.0e-04 | batch=2 | accum=2 | effective batch=4
+##############################################################################################################
+
+config.json:   0%|          | 0.00/156 [00:00<?, ?B/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+model.safetensors:   0%|          | 0.00/102M [00:00<?, ?B/s]
+Parameters: total=26,686,993 | trainable=26,686,993
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 001 | loss 0.5516 | val Dice 0.5875 | IoU 0.4159 | P 0.5756 | R 0.6000 | th 0.60 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 002 | loss 0.3753 | val Dice 0.6785 | IoU 0.5134 | P 0.7342 | R 0.6306 | th 0.80 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 003 | loss 0.3020 | val Dice 0.6675 | IoU 0.5009 | P 0.7338 | R 0.6122 | th 0.60 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 004 | loss 0.2593 | val Dice 0.7204 | IoU 0.5630 | P 0.7450 | R 0.6975 | th 0.55 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 005 | loss 0.2311 | val Dice 0.7446 | IoU 0.5931 | P 0.7535 | R 0.7358 | th 0.50 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 006 | loss 0.2111 | val Dice 0.7164 | IoU 0.5581 | P 0.7508 | R 0.6850 | th 0.55 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 007 | loss 0.1995 | val Dice 0.7425 | IoU 0.5904 | P 0.7796 | R 0.7088 | th 0.50 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 008 | loss 0.1861 | val Dice 0.7209 | IoU 0.5636 | P 0.7594 | R 0.6861 | th 0.65 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 009 | loss 0.1815 | val Dice 0.7275 | IoU 0.5718 | P 0.7466 | R 0.7095 | th 0.35 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 010 | loss 0.1713 | val Dice 0.7427 | IoU 0.5907 | P 0.7754 | R 0.7126 | th 0.60 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 011 | loss 0.1564 | val Dice 0.7611 | IoU 0.6144 | P 0.7866 | R 0.7372 | th 0.85 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 012 | loss 0.1497 | val Dice 0.7555 | IoU 0.6071 | P 0.7916 | R 0.7226 | th 0.75 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 013 | loss 0.1476 | val Dice 0.7436 | IoU 0.5919 | P 0.7781 | R 0.7121 | th 0.55 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 014 | loss 0.1363 | val Dice 0.6976 | IoU 0.5356 | P 0.8151 | R 0.6096 | th 0.50 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 015 | loss 0.1312 | val Dice 0.7471 | IoU 0.5963 | P 0.7867 | R 0.7113 | th 0.65 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 016 | loss 0.1263 | val Dice 0.7300 | IoU 0.5749 | P 0.8162 | R 0.6604 | th 0.65 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 017 | loss 0.1182 | val Dice 0.7534 | IoU 0.6044 | P 0.7772 | R 0.7310 | th 0.75 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 018 | loss 0.1165 | val Dice 0.7410 | IoU 0.5885 | P 0.7611 | R 0.7219 | th 0.65 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 019 | loss 0.1145 | val Dice 0.7295 | IoU 0.5742 | P 0.7701 | R 0.6930 | th 0.60 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 020 | loss 0.1120 | val Dice 0.7179 | IoU 0.5599 | P 0.7865 | R 0.6603 | th 0.65 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 021 | loss 0.1088 | val Dice 0.7359 | IoU 0.5822 | P 0.8013 | R 0.6804 | th 0.65 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 022 | loss 0.1030 | val Dice 0.7545 | IoU 0.6058 | P 0.7716 | R 0.7381 | th 0.80 | lr 1.25e-05
+deeplabv3plus_resnet50 | seed 123 | lr0 1.0e-04 | epoch 023 | loss 0.1030 | val Dice 0.7512 | IoU 0.6015 | P 0.7931 | R 0.7135 | th 0.75 | lr 1.25e-05
+Early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | DeepLabV3+ ResNet-50 | seed=123 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+Parameters: total=26,686,993 | trainable=26,686,993
+RESULT | DeepLabV3+ ResNet-50 | seed 123 | Dice=0.7628 | IoU=0.6166 | P=0.7342 | R=0.7938 | Acc=0.9758 | th=0.80 | best epoch=11
+
+==============================================================================================================
+RUN: DeepLabV3+ ResNet-50 | seed 2026 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | DeepLabV3+ ResNet-50 | seed=2026 | lr=1.0e-04 | batch=2 | accum=2 | effective batch=4
+##############################################################################################################
+Parameters: total=26,686,993 | trainable=26,686,993
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 001 | loss 0.5238 | val Dice 0.6247 | IoU 0.4543 | P 0.6435 | R 0.6070 | th 0.65 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 002 | loss 0.3462 | val Dice 0.6607 | IoU 0.4933 | P 0.7147 | R 0.6143 | th 0.70 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 003 | loss 0.2828 | val Dice 0.6763 | IoU 0.5109 | P 0.7343 | R 0.6268 | th 0.75 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 004 | loss 0.2490 | val Dice 0.7295 | IoU 0.5742 | P 0.7447 | R 0.7149 | th 0.80 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 005 | loss 0.2211 | val Dice 0.7137 | IoU 0.5548 | P 0.7585 | R 0.6738 | th 0.70 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 006 | loss 0.2049 | val Dice 0.6837 | IoU 0.5195 | P 0.7201 | R 0.6508 | th 0.40 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 007 | loss 0.1900 | val Dice 0.6613 | IoU 0.4940 | P 0.7111 | R 0.6180 | th 0.55 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 008 | loss 0.1749 | val Dice 0.7113 | IoU 0.5520 | P 0.7629 | R 0.6663 | th 0.75 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 009 | loss 0.1664 | val Dice 0.7004 | IoU 0.5389 | P 0.7642 | R 0.6464 | th 0.55 | lr 1.00e-04
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 010 | loss 0.1508 | val Dice 0.7587 | IoU 0.6112 | P 0.8022 | R 0.7196 | th 0.65 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 011 | loss 0.1437 | val Dice 0.7413 | IoU 0.5890 | P 0.7710 | R 0.7139 | th 0.55 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 012 | loss 0.1377 | val Dice 0.7429 | IoU 0.5910 | P 0.7794 | R 0.7097 | th 0.75 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 013 | loss 0.1333 | val Dice 0.7112 | IoU 0.5518 | P 0.7644 | R 0.6648 | th 0.70 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 014 | loss 0.1255 | val Dice 0.7159 | IoU 0.5575 | P 0.7639 | R 0.6736 | th 0.50 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 015 | loss 0.1213 | val Dice 0.7338 | IoU 0.5796 | P 0.7564 | R 0.7125 | th 0.55 | lr 5.00e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 016 | loss 0.1161 | val Dice 0.7229 | IoU 0.5661 | P 0.7623 | R 0.6875 | th 0.50 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 017 | loss 0.1106 | val Dice 0.6345 | IoU 0.4646 | P 0.7322 | R 0.5597 | th 0.45 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 018 | loss 0.1107 | val Dice 0.6297 | IoU 0.4596 | P 0.7355 | R 0.5506 | th 0.45 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 019 | loss 0.1065 | val Dice 0.6152 | IoU 0.4442 | P 0.7701 | R 0.5121 | th 0.35 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 020 | loss 0.1050 | val Dice 0.6552 | IoU 0.4872 | P 0.7540 | R 0.5794 | th 0.40 | lr 2.50e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 021 | loss 0.0967 | val Dice 0.5343 | IoU 0.3645 | P 0.7434 | R 0.4170 | th 0.20 | lr 1.25e-05
+deeplabv3plus_resnet50 | seed 2026 | lr0 1.0e-04 | epoch 022 | loss 0.1004 | val Dice 0.5306 | IoU 0.3611 | P 0.7289 | R 0.4171 | th 0.30 | lr 1.25e-05
+Early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | DeepLabV3+ ResNet-50 | seed=2026 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+Parameters: total=26,686,993 | trainable=26,686,993
+RESULT | DeepLabV3+ ResNet-50 | seed 2026 | Dice=0.7699 | IoU=0.6259 | P=0.8201 | R=0.7255 | Acc=0.9788 | th=0.63 | best epoch=10
+
+==============================================================================================================
+RUN: SegFormer MiT-B1 | seed 123 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | SegFormer MiT-B1 | seed=123 | lr=1.0e-04 | batch=1 | accum=4 | effective batch=4
+##############################################################################################################
+
+config.json:   0%|          | 0.00/135 [00:00<?, ?B/s]
+model.safetensors:   0%|          | 0.00/54.7M [00:00<?, ?B/s]
+Parameters: total=13,686,913 | trainable=13,686,913
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 001 | loss 0.4539 | val Dice 0.6741 | IoU 0.5084 | P 0.6716 | R 0.6766 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 002 | loss 0.3000 | val Dice 0.7153 | IoU 0.5568 | P 0.7285 | R 0.7026 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 003 | loss 0.2463 | val Dice 0.7354 | IoU 0.5816 | P 0.7269 | R 0.7442 | th 0.55 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 004 | loss 0.2152 | val Dice 0.7375 | IoU 0.5841 | P 0.7269 | R 0.7483 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 005 | loss 0.1971 | val Dice 0.7641 | IoU 0.6183 | P 0.7746 | R 0.7539 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 006 | loss 0.1866 | val Dice 0.7722 | IoU 0.6289 | P 0.7739 | R 0.7704 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 007 | loss 0.1738 | val Dice 0.7655 | IoU 0.6201 | P 0.7618 | R 0.7693 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 008 | loss 0.1631 | val Dice 0.7731 | IoU 0.6302 | P 0.7564 | R 0.7906 | th 0.35 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 009 | loss 0.1576 | val Dice 0.7848 | IoU 0.6458 | P 0.7901 | R 0.7795 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 010 | loss 0.1494 | val Dice 0.7853 | IoU 0.6465 | P 0.7896 | R 0.7811 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 011 | loss 0.1454 | val Dice 0.7897 | IoU 0.6525 | P 0.7782 | R 0.8016 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 012 | loss 0.1410 | val Dice 0.7980 | IoU 0.6639 | P 0.7922 | R 0.8040 | th 0.55 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 013 | loss 0.1353 | val Dice 0.7957 | IoU 0.6607 | P 0.7866 | R 0.8049 | th 0.35 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 014 | loss 0.1349 | val Dice 0.7782 | IoU 0.6369 | P 0.7751 | R 0.7813 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 015 | loss 0.1288 | val Dice 0.7807 | IoU 0.6404 | P 0.7830 | R 0.7785 | th 0.25 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 016 | loss 0.1232 | val Dice 0.7956 | IoU 0.6605 | P 0.7988 | R 0.7923 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 017 | loss 0.1191 | val Dice 0.7989 | IoU 0.6651 | P 0.7917 | R 0.8062 | th 0.40 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 018 | loss 0.1166 | val Dice 0.7927 | IoU 0.6566 | P 0.7925 | R 0.7929 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 019 | loss 0.1146 | val Dice 0.7932 | IoU 0.6573 | P 0.7902 | R 0.7962 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 020 | loss 0.1135 | val Dice 0.7878 | IoU 0.6499 | P 0.7740 | R 0.8021 | th 0.75 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 021 | loss 0.1072 | val Dice 0.8055 | IoU 0.6743 | P 0.8160 | R 0.7952 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 022 | loss 0.1056 | val Dice 0.8046 | IoU 0.6731 | P 0.7993 | R 0.8100 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 023 | loss 0.1044 | val Dice 0.8021 | IoU 0.6696 | P 0.8037 | R 0.8005 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 024 | loss 0.1021 | val Dice 0.8039 | IoU 0.6721 | P 0.8054 | R 0.8025 | th 0.50 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 025 | loss 0.1006 | val Dice 0.8051 | IoU 0.6737 | P 0.8021 | R 0.8080 | th 0.55 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 026 | loss 0.0951 | val Dice 0.8072 | IoU 0.6767 | P 0.8086 | R 0.8057 | th 0.30 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 027 | loss 0.0957 | val Dice 0.8106 | IoU 0.6815 | P 0.8101 | R 0.8111 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 028 | loss 0.0898 | val Dice 0.8049 | IoU 0.6735 | P 0.8061 | R 0.8038 | th 0.45 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 029 | loss 0.0897 | val Dice 0.8058 | IoU 0.6748 | P 0.7586 | R 0.8594 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 030 | loss 0.0910 | val Dice 0.8110 | IoU 0.6821 | P 0.8055 | R 0.8166 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 031 | loss 0.0898 | val Dice 0.8048 | IoU 0.6734 | P 0.7987 | R 0.8111 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 032 | loss 0.0864 | val Dice 0.8073 | IoU 0.6768 | P 0.8023 | R 0.8123 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 033 | loss 0.0809 | val Dice 0.8077 | IoU 0.6774 | P 0.8174 | R 0.7982 | th 0.65 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 034 | loss 0.0825 | val Dice 0.8039 | IoU 0.6721 | P 0.8118 | R 0.7961 | th 0.20 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 035 | loss 0.0775 | val Dice 0.8108 | IoU 0.6818 | P 0.8120 | R 0.8095 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 036 | loss 0.0755 | val Dice 0.8142 | IoU 0.6867 | P 0.8196 | R 0.8089 | th 0.80 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 037 | loss 0.0704 | val Dice 0.8109 | IoU 0.6820 | P 0.8075 | R 0.8143 | th 0.70 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 038 | loss 0.0702 | val Dice 0.8127 | IoU 0.6845 | P 0.8168 | R 0.8087 | th 0.45 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 039 | loss 0.0685 | val Dice 0.8094 | IoU 0.6798 | P 0.8114 | R 0.8074 | th 0.60 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 040 | loss 0.0679 | val Dice 0.8141 | IoU 0.6865 | P 0.8077 | R 0.8206 | th 0.80 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 041 | loss 0.0664 | val Dice 0.8146 | IoU 0.6871 | P 0.8158 | R 0.8133 | th 0.75 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 042 | loss 0.0660 | val Dice 0.8140 | IoU 0.6863 | P 0.8137 | R 0.8142 | th 0.70 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 043 | loss 0.0650 | val Dice 0.8134 | IoU 0.6855 | P 0.8184 | R 0.8085 | th 0.85 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 044 | loss 0.0646 | val Dice 0.8094 | IoU 0.6798 | P 0.8059 | R 0.8129 | th 0.80 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 045 | loss 0.0626 | val Dice 0.8091 | IoU 0.6795 | P 0.7960 | R 0.8227 | th 0.85 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 046 | loss 0.0623 | val Dice 0.8130 | IoU 0.6849 | P 0.8172 | R 0.8088 | th 0.60 | lr 5.00e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 047 | loss 0.0595 | val Dice 0.8143 | IoU 0.6867 | P 0.8086 | R 0.8200 | th 0.80 | lr 2.50e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 048 | loss 0.0585 | val Dice 0.8139 | IoU 0.6862 | P 0.8140 | R 0.8138 | th 0.70 | lr 2.50e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 049 | loss 0.0598 | val Dice 0.8140 | IoU 0.6863 | P 0.8137 | R 0.8143 | th 0.80 | lr 2.50e-05
+segformer_mit_b1 | seed 123 | lr0 1.0e-04 | epoch 050 | loss 0.0588 | val Dice 0.8136 | IoU 0.6858 | P 0.8164 | R 0.8108 | th 0.70 | lr 2.50e-05
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | SegFormer MiT-B1 | seed=123 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+Parameters: total=13,686,913 | trainable=13,686,913
+RESULT | SegFormer MiT-B1 | seed 123 | Dice=0.8185 | IoU=0.6928 | P=0.8120 | R=0.8251 | Acc=0.9821 | th=0.75 | best epoch=41
+
+==============================================================================================================
+RUN: SegFormer MiT-B1 | seed 2026 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | SegFormer MiT-B1 | seed=2026 | lr=1.0e-04 | batch=1 | accum=4 | effective batch=4
+##############################################################################################################
+Parameters: total=13,686,913 | trainable=13,686,913
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 001 | loss 0.4091 | val Dice 0.6798 | IoU 0.5149 | P 0.6850 | R 0.6747 | th 0.75 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 002 | loss 0.2766 | val Dice 0.7322 | IoU 0.5776 | P 0.7237 | R 0.7409 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 003 | loss 0.2369 | val Dice 0.7433 | IoU 0.5914 | P 0.7477 | R 0.7389 | th 0.80 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 004 | loss 0.2118 | val Dice 0.7431 | IoU 0.5912 | P 0.7441 | R 0.7421 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 005 | loss 0.1932 | val Dice 0.7244 | IoU 0.5679 | P 0.6438 | R 0.8282 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 006 | loss 0.1799 | val Dice 0.7764 | IoU 0.6345 | P 0.7767 | R 0.7762 | th 0.35 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 007 | loss 0.1733 | val Dice 0.7551 | IoU 0.6065 | P 0.7494 | R 0.7609 | th 0.35 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 008 | loss 0.1585 | val Dice 0.7808 | IoU 0.6404 | P 0.7856 | R 0.7761 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 009 | loss 0.1522 | val Dice 0.7800 | IoU 0.6393 | P 0.7643 | R 0.7963 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 010 | loss 0.1429 | val Dice 0.7899 | IoU 0.6528 | P 0.7929 | R 0.7870 | th 0.35 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 011 | loss 0.1387 | val Dice 0.7986 | IoU 0.6647 | P 0.8015 | R 0.7956 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 012 | loss 0.1311 | val Dice 0.7910 | IoU 0.6542 | P 0.8018 | R 0.7805 | th 0.30 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 013 | loss 0.1241 | val Dice 0.7933 | IoU 0.6574 | P 0.7833 | R 0.8035 | th 0.75 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 014 | loss 0.1201 | val Dice 0.8029 | IoU 0.6708 | P 0.8061 | R 0.7998 | th 0.45 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 015 | loss 0.1167 | val Dice 0.8005 | IoU 0.6674 | P 0.8058 | R 0.7954 | th 0.45 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 016 | loss 0.1130 | val Dice 0.7954 | IoU 0.6603 | P 0.7962 | R 0.7945 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 017 | loss 0.1106 | val Dice 0.8022 | IoU 0.6697 | P 0.7979 | R 0.8066 | th 0.50 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 018 | loss 0.1107 | val Dice 0.8029 | IoU 0.6708 | P 0.7973 | R 0.8087 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 019 | loss 0.1065 | val Dice 0.8089 | IoU 0.6791 | P 0.7891 | R 0.8297 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 020 | loss 0.1015 | val Dice 0.8086 | IoU 0.6787 | P 0.8177 | R 0.7997 | th 0.60 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 021 | loss 0.1009 | val Dice 0.7977 | IoU 0.6635 | P 0.7418 | R 0.8626 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 022 | loss 0.1008 | val Dice 0.8118 | IoU 0.6832 | P 0.8041 | R 0.8196 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 023 | loss 0.0948 | val Dice 0.8041 | IoU 0.6724 | P 0.8049 | R 0.8033 | th 0.45 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 024 | loss 0.0915 | val Dice 0.8091 | IoU 0.6794 | P 0.7800 | R 0.8404 | th 0.85 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 025 | loss 0.0923 | val Dice 0.8114 | IoU 0.6827 | P 0.8042 | R 0.8188 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 026 | loss 0.0898 | val Dice 0.8106 | IoU 0.6815 | P 0.8105 | R 0.8106 | th 0.70 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 027 | loss 0.0876 | val Dice 0.8080 | IoU 0.6778 | P 0.8086 | R 0.8073 | th 0.75 | lr 1.00e-04
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 028 | loss 0.0820 | val Dice 0.8119 | IoU 0.6833 | P 0.7882 | R 0.8370 | th 0.85 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 029 | loss 0.0790 | val Dice 0.8143 | IoU 0.6868 | P 0.8202 | R 0.8085 | th 0.75 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 030 | loss 0.0777 | val Dice 0.8148 | IoU 0.6875 | P 0.8192 | R 0.8104 | th 0.50 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 031 | loss 0.0727 | val Dice 0.8143 | IoU 0.6867 | P 0.8203 | R 0.8083 | th 0.60 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 032 | loss 0.0744 | val Dice 0.8121 | IoU 0.6836 | P 0.8094 | R 0.8148 | th 0.75 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 033 | loss 0.0730 | val Dice 0.8195 | IoU 0.6941 | P 0.8085 | R 0.8307 | th 0.85 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 034 | loss 0.0715 | val Dice 0.8111 | IoU 0.6822 | P 0.7838 | R 0.8403 | th 0.85 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 035 | loss 0.0696 | val Dice 0.8151 | IoU 0.6879 | P 0.8091 | R 0.8212 | th 0.75 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 036 | loss 0.0700 | val Dice 0.8132 | IoU 0.6853 | P 0.8271 | R 0.7999 | th 0.50 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 037 | loss 0.0699 | val Dice 0.8127 | IoU 0.6845 | P 0.8204 | R 0.8052 | th 0.60 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 038 | loss 0.0677 | val Dice 0.8146 | IoU 0.6872 | P 0.8156 | R 0.8135 | th 0.70 | lr 5.00e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 039 | loss 0.0651 | val Dice 0.8158 | IoU 0.6888 | P 0.8098 | R 0.8218 | th 0.80 | lr 2.50e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 040 | loss 0.0645 | val Dice 0.8167 | IoU 0.6902 | P 0.8185 | R 0.8149 | th 0.70 | lr 2.50e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 041 | loss 0.0640 | val Dice 0.8152 | IoU 0.6880 | P 0.8238 | R 0.8068 | th 0.60 | lr 2.50e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 042 | loss 0.0639 | val Dice 0.8155 | IoU 0.6885 | P 0.8208 | R 0.8103 | th 0.80 | lr 2.50e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 043 | loss 0.0611 | val Dice 0.8143 | IoU 0.6868 | P 0.7964 | R 0.8330 | th 0.85 | lr 2.50e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 044 | loss 0.0623 | val Dice 0.8164 | IoU 0.6898 | P 0.8143 | R 0.8185 | th 0.75 | lr 1.25e-05
+segformer_mit_b1 | seed 2026 | lr0 1.0e-04 | epoch 045 | loss 0.0593 | val Dice 0.8165 | IoU 0.6898 | P 0.8242 | R 0.8088 | th 0.70 | lr 1.25e-05
+Early stopping after 12 non-improving epochs.
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | SegFormer MiT-B1 | seed=2026 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+Parameters: total=13,686,913 | trainable=13,686,913
+RESULT | SegFormer MiT-B1 | seed 2026 | Dice=0.8222 | IoU=0.6980 | P=0.7911 | R=0.8558 | Acc=0.9819 | th=0.80 | best epoch=33
+
+==============================================================================================================
+RUN: CMX MiT-B0 | seed 123 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | CMX MiT-B0 | seed=123 | lr=1.0e-04 | batch=1 | accum=4 | effective batch=4
+##############################################################################################################
+Cloning official CMX repository ...
+
+Cloning into '/kaggle/working/RGBX_Semantic_Segmentation_official'...
+[32m08 21:52:20 [0mUsing backbone: Segformer-B0
+/usr/local/lib/python3.12/dist-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[32m08 21:52:20 [0mUsing MLP Decoder
+[32m08 21:52:21 [0mHTTP Request: HEAD https://huggingface.co/smp-hub/mit_b0.imagenet/resolve/9ce53d104d92d75aabb00aae70677aaab67e7c84/config.json "HTTP/1.1 307 Temporary Redirect"
+[32m08 21:52:21 [0mHTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/smp-hub/mit_b0.imagenet/9ce53d104d92d75aabb00aae70677aaab67e7c84/config.json "HTTP/1.1 200 OK"
+[32m08 21:52:21 [0mHTTP Request: GET https://huggingface.co/api/resolve-cache/models/smp-hub/mit_b0.imagenet/9ce53d104d92d75aabb00aae70677aaab67e7c84/config.json "HTTP/1.1 200 OK"
+
+config.json:   0%|          | 0.00/135 [00:00<?, ?B/s]
+[32m08 21:52:21 [0mHTTP Request: HEAD https://huggingface.co/smp-hub/mit_b0.imagenet/resolve/9ce53d104d92d75aabb00aae70677aaab67e7c84/model.safetensors "HTTP/1.1 302 Found"
+[32m08 21:52:21 [0mHTTP Request: GET https://huggingface.co/api/models/smp-hub/mit_b0.imagenet/xet-read-token/9ce53d104d92d75aabb00aae70677aaab67e7c84 "HTTP/1.1 200 OK"
+
+model.safetensors:   0%|          | 0.00/14.3M [00:00<?, ?B/s]
+CMX pretrained initialization: loaded 352 tensors into dual MiT-B0 backbone (missing after partial load=148, unexpected=0).
+Parameters: total=11,190,985 | trainable=11,190,985
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 001 | loss 0.4781 | val Dice 0.6738 | IoU 0.5081 | P 0.6610 | R 0.6871 | th 0.55 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 002 | loss 0.3018 | val Dice 0.6847 | IoU 0.5206 | P 0.6800 | R 0.6894 | th 0.65 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 003 | loss 0.2575 | val Dice 0.7369 | IoU 0.5834 | P 0.7192 | R 0.7555 | th 0.80 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 004 | loss 0.2295 | val Dice 0.7363 | IoU 0.5827 | P 0.7345 | R 0.7381 | th 0.55 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 005 | loss 0.2071 | val Dice 0.7484 | IoU 0.5980 | P 0.6986 | R 0.8058 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 006 | loss 0.1921 | val Dice 0.7529 | IoU 0.6037 | P 0.7523 | R 0.7534 | th 0.50 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 007 | loss 0.1782 | val Dice 0.7729 | IoU 0.6298 | P 0.7533 | R 0.7935 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 008 | loss 0.1740 | val Dice 0.7618 | IoU 0.6152 | P 0.7587 | R 0.7649 | th 0.80 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 009 | loss 0.1668 | val Dice 0.7727 | IoU 0.6296 | P 0.7839 | R 0.7619 | th 0.65 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 010 | loss 0.1583 | val Dice 0.7783 | IoU 0.6371 | P 0.7736 | R 0.7831 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 011 | loss 0.1545 | val Dice 0.7698 | IoU 0.6258 | P 0.7741 | R 0.7656 | th 0.25 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 012 | loss 0.1480 | val Dice 0.7856 | IoU 0.6469 | P 0.7865 | R 0.7846 | th 0.70 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 013 | loss 0.1439 | val Dice 0.7864 | IoU 0.6479 | P 0.7857 | R 0.7870 | th 0.30 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 014 | loss 0.1416 | val Dice 0.7789 | IoU 0.6379 | P 0.7730 | R 0.7850 | th 0.70 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 015 | loss 0.1362 | val Dice 0.7787 | IoU 0.6376 | P 0.7737 | R 0.7837 | th 0.55 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 016 | loss 0.1333 | val Dice 0.7945 | IoU 0.6591 | P 0.7911 | R 0.7980 | th 0.70 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 017 | loss 0.1280 | val Dice 0.8002 | IoU 0.6670 | P 0.7921 | R 0.8085 | th 0.55 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 018 | loss 0.1243 | val Dice 0.7793 | IoU 0.6385 | P 0.7809 | R 0.7778 | th 0.25 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 019 | loss 0.1237 | val Dice 0.8081 | IoU 0.6780 | P 0.7843 | R 0.8334 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 020 | loss 0.1188 | val Dice 0.8003 | IoU 0.6671 | P 0.7972 | R 0.8035 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 021 | loss 0.1143 | val Dice 0.8106 | IoU 0.6815 | P 0.8078 | R 0.8133 | th 0.45 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 022 | loss 0.1117 | val Dice 0.8143 | IoU 0.6868 | P 0.8164 | R 0.8123 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 023 | loss 0.1093 | val Dice 0.8126 | IoU 0.6844 | P 0.8026 | R 0.8230 | th 0.75 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 024 | loss 0.1106 | val Dice 0.8102 | IoU 0.6810 | P 0.8212 | R 0.7995 | th 0.25 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 025 | loss 0.1080 | val Dice 0.8114 | IoU 0.6826 | P 0.8133 | R 0.8095 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 026 | loss 0.1029 | val Dice 0.8145 | IoU 0.6871 | P 0.8123 | R 0.8168 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 027 | loss 0.1012 | val Dice 0.8140 | IoU 0.6864 | P 0.8161 | R 0.8120 | th 0.45 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 028 | loss 0.1017 | val Dice 0.8183 | IoU 0.6925 | P 0.8205 | R 0.8162 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 029 | loss 0.0983 | val Dice 0.7962 | IoU 0.6615 | P 0.8203 | R 0.7735 | th 0.20 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 030 | loss 0.0986 | val Dice 0.8095 | IoU 0.6800 | P 0.8090 | R 0.8100 | th 0.25 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 031 | loss 0.0964 | val Dice 0.8195 | IoU 0.6942 | P 0.8135 | R 0.8256 | th 0.75 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 032 | loss 0.0935 | val Dice 0.8136 | IoU 0.6858 | P 0.8164 | R 0.8108 | th 0.75 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 033 | loss 0.0945 | val Dice 0.8171 | IoU 0.6908 | P 0.8220 | R 0.8123 | th 0.50 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 034 | loss 0.0895 | val Dice 0.8199 | IoU 0.6947 | P 0.8132 | R 0.8266 | th 0.70 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 035 | loss 0.0879 | val Dice 0.8054 | IoU 0.6742 | P 0.8038 | R 0.8070 | th 0.40 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 036 | loss 0.0870 | val Dice 0.8154 | IoU 0.6883 | P 0.8127 | R 0.8180 | th 0.60 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 037 | loss 0.0868 | val Dice 0.8160 | IoU 0.6892 | P 0.8083 | R 0.8239 | th 0.45 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 038 | loss 0.0860 | val Dice 0.8135 | IoU 0.6856 | P 0.8139 | R 0.8130 | th 0.80 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 039 | loss 0.0832 | val Dice 0.8168 | IoU 0.6903 | P 0.7892 | R 0.8463 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 040 | loss 0.0813 | val Dice 0.8146 | IoU 0.6872 | P 0.8106 | R 0.8186 | th 0.70 | lr 5.00e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 041 | loss 0.0770 | val Dice 0.8147 | IoU 0.6873 | P 0.8134 | R 0.8160 | th 0.70 | lr 5.00e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 042 | loss 0.0754 | val Dice 0.8194 | IoU 0.6940 | P 0.8064 | R 0.8328 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 043 | loss 0.0743 | val Dice 0.8161 | IoU 0.6893 | P 0.8217 | R 0.8105 | th 0.50 | lr 5.00e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 044 | loss 0.0735 | val Dice 0.8172 | IoU 0.6909 | P 0.8065 | R 0.8283 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 045 | loss 0.0706 | val Dice 0.8216 | IoU 0.6972 | P 0.8197 | R 0.8235 | th 0.85 | lr 2.50e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 046 | loss 0.0705 | val Dice 0.8218 | IoU 0.6975 | P 0.8270 | R 0.8167 | th 0.80 | lr 2.50e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 047 | loss 0.0696 | val Dice 0.8205 | IoU 0.6956 | P 0.8178 | R 0.8232 | th 0.85 | lr 2.50e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 048 | loss 0.0692 | val Dice 0.8209 | IoU 0.6963 | P 0.8272 | R 0.8148 | th 0.75 | lr 2.50e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 049 | loss 0.0680 | val Dice 0.8183 | IoU 0.6925 | P 0.8292 | R 0.8077 | th 0.85 | lr 2.50e-05
+cmx_mit_b0 | seed 123 | lr0 1.0e-04 | epoch 050 | loss 0.0666 | val Dice 0.8185 | IoU 0.6928 | P 0.8181 | R 0.8189 | th 0.65 | lr 2.50e-05
+
+[32m08 22:43:48 [0mUsing backbone: Segformer-B0
+
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | CMX MiT-B0 | seed=123 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+
+[32m08 22:43:48 [0mUsing MLP Decoder
+
+CMX pretrained initialization: loaded 352 tensors into dual MiT-B0 backbone (missing after partial load=148, unexpected=0).
+Parameters: total=11,190,985 | trainable=11,190,985
+RESULT | CMX MiT-B0 | seed 123 | Dice=0.8289 | IoU=0.7078 | P=0.8292 | R=0.8286 | Acc=0.9833 | th=0.79 | best epoch=46
+
+[32m08 22:44:18 [0mUsing backbone: Segformer-B0
+
+
+==============================================================================================================
+RUN: CMX MiT-B0 | seed 2026 | initial LR 1.0e-04 | max epochs 50
+==============================================================================================================
+
+##############################################################################################################
+TRAIN | CMX MiT-B0 | seed=2026 | lr=1.0e-04 | batch=1 | accum=4 | effective batch=4
+##############################################################################################################
+
+[32m08 22:44:18 [0mUsing MLP Decoder
+
+CMX pretrained initialization: loaded 352 tensors into dual MiT-B0 backbone (missing after partial load=148, unexpected=0).
+Parameters: total=11,190,985 | trainable=11,190,985
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 001 | loss 0.6225 | val Dice 0.5864 | IoU 0.4149 | P 0.5793 | R 0.5938 | th 0.50 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 002 | loss 0.3577 | val Dice 0.6853 | IoU 0.5213 | P 0.6901 | R 0.6806 | th 0.55 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 003 | loss 0.3015 | val Dice 0.7080 | IoU 0.5480 | P 0.7161 | R 0.7000 | th 0.50 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 004 | loss 0.2739 | val Dice 0.7166 | IoU 0.5584 | P 0.7222 | R 0.7111 | th 0.45 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 005 | loss 0.2395 | val Dice 0.7176 | IoU 0.5596 | P 0.6421 | R 0.8133 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 006 | loss 0.2201 | val Dice 0.7518 | IoU 0.6023 | P 0.7607 | R 0.7431 | th 0.45 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 007 | loss 0.2068 | val Dice 0.7352 | IoU 0.5813 | P 0.7445 | R 0.7261 | th 0.35 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 008 | loss 0.1946 | val Dice 0.7589 | IoU 0.6114 | P 0.7524 | R 0.7654 | th 0.20 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 009 | loss 0.1862 | val Dice 0.7617 | IoU 0.6151 | P 0.7545 | R 0.7690 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 010 | loss 0.1765 | val Dice 0.7747 | IoU 0.6323 | P 0.7788 | R 0.7707 | th 0.25 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 011 | loss 0.1743 | val Dice 0.7709 | IoU 0.6272 | P 0.7189 | R 0.8309 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 012 | loss 0.1652 | val Dice 0.7535 | IoU 0.6044 | P 0.7444 | R 0.7628 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 013 | loss 0.1585 | val Dice 0.7594 | IoU 0.6121 | P 0.7330 | R 0.7877 | th 0.85 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 014 | loss 0.1560 | val Dice 0.7536 | IoU 0.6046 | P 0.7555 | R 0.7517 | th 0.35 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 015 | loss 0.1504 | val Dice 0.7515 | IoU 0.6019 | P 0.7430 | R 0.7601 | th 0.65 | lr 1.00e-04
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 016 | loss 0.1446 | val Dice 0.7686 | IoU 0.6241 | P 0.7618 | R 0.7755 | th 0.75 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 017 | loss 0.1397 | val Dice 0.7698 | IoU 0.6258 | P 0.7657 | R 0.7740 | th 0.80 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 018 | loss 0.1404 | val Dice 0.7776 | IoU 0.6362 | P 0.7759 | R 0.7794 | th 0.35 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 019 | loss 0.1361 | val Dice 0.7775 | IoU 0.6360 | P 0.7705 | R 0.7847 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 020 | loss 0.1374 | val Dice 0.7836 | IoU 0.6442 | P 0.7879 | R 0.7794 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 021 | loss 0.1340 | val Dice 0.7826 | IoU 0.6429 | P 0.7800 | R 0.7852 | th 0.70 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 022 | loss 0.1359 | val Dice 0.7833 | IoU 0.6437 | P 0.7533 | R 0.8157 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 023 | loss 0.1298 | val Dice 0.7717 | IoU 0.6283 | P 0.7761 | R 0.7674 | th 0.30 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 024 | loss 0.1277 | val Dice 0.7747 | IoU 0.6323 | P 0.7725 | R 0.7770 | th 0.50 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 025 | loss 0.1280 | val Dice 0.7815 | IoU 0.6413 | P 0.7831 | R 0.7799 | th 0.85 | lr 5.00e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 026 | loss 0.1208 | val Dice 0.7791 | IoU 0.6382 | P 0.7727 | R 0.7857 | th 0.40 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 027 | loss 0.1211 | val Dice 0.7869 | IoU 0.6487 | P 0.7879 | R 0.7859 | th 0.70 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 028 | loss 0.1203 | val Dice 0.7924 | IoU 0.6561 | P 0.7916 | R 0.7931 | th 0.85 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 029 | loss 0.1173 | val Dice 0.7868 | IoU 0.6485 | P 0.7809 | R 0.7928 | th 0.55 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 030 | loss 0.1157 | val Dice 0.7941 | IoU 0.6585 | P 0.7830 | R 0.8055 | th 0.75 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 031 | loss 0.1149 | val Dice 0.8001 | IoU 0.6669 | P 0.7972 | R 0.8031 | th 0.60 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 032 | loss 0.1149 | val Dice 0.7902 | IoU 0.6532 | P 0.7921 | R 0.7883 | th 0.75 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 033 | loss 0.1121 | val Dice 0.7946 | IoU 0.6592 | P 0.7936 | R 0.7956 | th 0.65 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 034 | loss 0.1123 | val Dice 0.7850 | IoU 0.6461 | P 0.7868 | R 0.7833 | th 0.60 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 035 | loss 0.1105 | val Dice 0.7909 | IoU 0.6541 | P 0.7893 | R 0.7925 | th 0.45 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 036 | loss 0.1105 | val Dice 0.7928 | IoU 0.6568 | P 0.7917 | R 0.7940 | th 0.65 | lr 2.50e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 037 | loss 0.1081 | val Dice 0.7974 | IoU 0.6631 | P 0.7981 | R 0.7967 | th 0.70 | lr 1.25e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 038 | loss 0.1082 | val Dice 0.7938 | IoU 0.6580 | P 0.7986 | R 0.7890 | th 0.65 | lr 1.25e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 039 | loss 0.1073 | val Dice 0.7991 | IoU 0.6654 | P 0.7898 | R 0.8086 | th 0.70 | lr 1.25e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 040 | loss 0.1069 | val Dice 0.7970 | IoU 0.6625 | P 0.7924 | R 0.8016 | th 0.70 | lr 1.25e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 041 | loss 0.1064 | val Dice 0.7944 | IoU 0.6589 | P 0.7899 | R 0.7989 | th 0.60 | lr 1.25e-05
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 042 | loss 0.1038 | val Dice 0.7981 | IoU 0.6640 | P 0.7990 | R 0.7972 | th 0.70 | lr 6.25e-06
+cmx_mit_b0 | seed 2026 | lr0 1.0e-04 | epoch 043 | loss 0.1044 | val Dice 0.7972 | IoU 0.6628 | P 0.7951 | R 0.7994 | th 0.75 | lr 6.25e-06
+Early stopping after 12 non-improving epochs.
+
+[32m08 23:28:26 [0mUsing backbone: Segformer-B0
+
+
+--------------------------------------------------------------------------------------------------------------
+FINAL EVAL | CMX MiT-B0 | seed=2026 | selected lr=1.0e-04
+--------------------------------------------------------------------------------------------------------------
+
+[32m08 23:28:26 [0mUsing MLP Decoder
+
+CMX pretrained initialization: loaded 352 tensors into dual MiT-B0 backbone (missing after partial load=148, unexpected=0).
+Parameters: total=11,190,985 | trainable=11,190,985
+RESULT | CMX MiT-B0 | seed 2026 | Dice=0.8108 | IoU=0.6818 | P=0.7835 | R=0.8401 | Acc=0.9808 | th=0.59 | best epoch=31
+
+==============================================================================================================
+ALL SIX NEW BASELINE RUNS FINISHED
+==============================================================================================================
+DeepLabV3+ ResNet-50         | seed  123 | Dice 0.7628 | IoU 0.6166 | P 0.7342 | R 0.7938 | Acc 0.9758 | th 0.80 | epoch 11
+DeepLabV3+ ResNet-50         | seed 2026 | Dice 0.7699 | IoU 0.6259 | P 0.8201 | R 0.7255 | Acc 0.9788 | th 0.63 | epoch 10
+SegFormer MiT-B1             | seed  123 | Dice 0.8185 | IoU 0.6928 | P 0.8120 | R 0.8251 | Acc 0.9821 | th 0.75 | epoch 41
+SegFormer MiT-B1             | seed 2026 | Dice 0.8222 | IoU 0.6980 | P 0.7911 | R 0.8558 | Acc 0.9819 | th 0.80 | epoch 33
+CMX MiT-B0                   | seed  123 | Dice 0.8289 | IoU 0.7078 | P 0.8292 | R 0.8286 | Acc 0.9833 | th 0.79 | epoch 46
+CMX MiT-B0                   | seed 2026 | Dice 0.8108 | IoU 0.6818 | P 0.7835 | R 0.8401 | Acc 0.9808 | th 0.59 | epoch 31
+
+==============================================================================================================
+FINAL 3-SEED SUMMARY (seed 42 existing + new seeds 123 and 2026)
+==============================================================================================================
+DeepLabV3+ ResNet-50         | Dice 0.7631 +/- 0.0066 | IoU 0.6170 +/- 0.0087 | P 0.7720 +/- 0.0439 | R 0.7570 +/- 0.0344
+SegFormer MiT-B1             | Dice 0.8225 +/- 0.0042 | IoU 0.6985 +/- 0.0060 | P 0.8066 +/- 0.0137 | R 0.8393 +/- 0.0155
+CMX MiT-B0                   | Dice 0.8216 +/- 0.0096 | IoU 0.6973 +/- 0.0137 | P 0.8109 +/- 0.0242 | R 0.8330 +/- 0.0062
+
+Master output: /kaggle/working/gd_strong_baselines_seeds123_2026_3models
+Summary CSV : /kaggle/working/gd_strong_baselines_seeds123_2026_3models/three_seed_mean_sd_summary.csv
+ZIP         : /kaggle/working/gd_strong_baselines_seeds123_2026_3models_complete.zip

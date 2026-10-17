@@ -1,0 +1,11 @@
+{
+  "purpose": "Read-only extraction of top-level source expressions; notebook code is authoritative. Not a separate executable configuration.",
+  "source": "gd_unetpp_seeds123_2026.py",
+  "cell_zero_based": null,
+  "expressions": {
+    "RUN_SEEDS": "[123, 2026]",
+    "DATASET_ROOT": "None",
+    "SEED42_REFERENCE": "{\n    \"model\": \"U-Net++ (custom convolutional encoder, BatchNorm)\",\n    \"seed\": 42, \"dice\": .7845, \"iou\": .6454,\n    \"precision\": .7765, \"recall\": .7926,\n    \"parameter_count\": 8_051_791,\n    \"provenance\": \"existing manuscript seed-42 result; not rerun\",\n}",
+    "SOURCE_CONFIGURATION_SHA256": "'bd1d9a9f5b7905180df0161188608ce6502c76903749cbb7f7ee988d167410e9'"
+  }
+}

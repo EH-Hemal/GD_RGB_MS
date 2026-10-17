@@ -1,0 +1,352 @@
+========================================================================================
+CONTROLLED SPECTRAL-ONLY BASELINES — MS VERSUS MS+NDRE — SEED 42
+========================================================================================
+Dataset       : /kaggle/input/datasets/hemal7/gd-rgbms-db
+Output        : /kaggle/working/gd_controlled_ms_vs_msndre_seed42
+Device        : cuda
+Split         : 280 60 60
+Input size    : (896, 672)
+Variants      : ['MS-only', 'MS+NDRE-only']
+Seeds         : [42]
+Primary mode  : no TTA
+
+Preloading train+validation cache:   0%|          | 0/340 [00:00<?, ?it/s]/tmp/ipykernel_58/1247291240.py:242: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  image = Image.fromarray(array.astype(np.float32), mode="F")
+Preloading train+validation cache: 100%|██████████| 340/340 [00:54<00:00,  6.19it/s]
+
+RAM cache: 340 samples, approximately 1.72 GB
+
+========================================================================================
+SEED 42 | MS-only CONTROLLED BASELINE
+========================================================================================
+Channels  : ['Green', 'Red-Edge', 'NIR']
+Parameters: 7,901,827
+
+                                                                   
+Seed 42 | Epoch 001 | train 0.3210 | val 0.2540 | Dice 0.6632 | IoU 0.4961 | P 0.6583 | R 0.6682 | th 0.50 | lr 1.00e-04 | 1.4m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 002 | train 0.2383 | val 0.2142 | Dice 0.7155 | IoU 0.5571 | P 0.6957 | R 0.7365 | th 0.50 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 003 | train 0.2146 | val 0.2158 | Dice 0.7034 | IoU 0.5425 | P 0.6819 | R 0.7263 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 004 | train 0.2007 | val 0.2259 | Dice 0.7253 | IoU 0.5690 | P 0.6912 | R 0.7629 | th 0.85 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 005 | train 0.1900 | val 0.1858 | Dice 0.7353 | IoU 0.5814 | P 0.7218 | R 0.7492 | th 0.45 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 006 | train 0.1831 | val 0.1898 | Dice 0.7381 | IoU 0.5849 | P 0.7317 | R 0.7447 | th 0.60 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 007 | train 0.1791 | val 0.1937 | Dice 0.7294 | IoU 0.5741 | P 0.7058 | R 0.7547 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 008 | train 0.1712 | val 0.1851 | Dice 0.7324 | IoU 0.5778 | P 0.7045 | R 0.7627 | th 0.55 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 009 | train 0.1680 | val 0.1751 | Dice 0.7540 | IoU 0.6052 | P 0.7468 | R 0.7613 | th 0.40 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 010 | train 0.1647 | val 0.1725 | Dice 0.7462 | IoU 0.5952 | P 0.7324 | R 0.7605 | th 0.60 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 011 | train 0.1657 | val 0.1806 | Dice 0.7422 | IoU 0.5901 | P 0.7326 | R 0.7520 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 012 | train 0.1628 | val 0.1796 | Dice 0.7365 | IoU 0.5829 | P 0.7062 | R 0.7694 | th 0.55 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 013 | train 0.1603 | val 0.1723 | Dice 0.7621 | IoU 0.6156 | P 0.7551 | R 0.7692 | th 0.20 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 014 | train 0.1579 | val 0.1602 | Dice 0.7722 | IoU 0.6289 | P 0.7693 | R 0.7750 | th 0.45 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 015 | train 0.1534 | val 0.1672 | Dice 0.7529 | IoU 0.6037 | P 0.7360 | R 0.7706 | th 0.40 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 016 | train 0.1533 | val 0.1588 | Dice 0.7645 | IoU 0.6188 | P 0.7521 | R 0.7773 | th 0.50 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 017 | train 0.1476 | val 0.1704 | Dice 0.7530 | IoU 0.6039 | P 0.7296 | R 0.7780 | th 0.70 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 018 | train 0.1487 | val 0.1575 | Dice 0.7739 | IoU 0.6312 | P 0.7631 | R 0.7851 | th 0.65 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 019 | train 0.1460 | val 0.1623 | Dice 0.7652 | IoU 0.6197 | P 0.7446 | R 0.7869 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 020 | train 0.1439 | val 0.1685 | Dice 0.7526 | IoU 0.6034 | P 0.7457 | R 0.7596 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 021 | train 0.1448 | val 0.1666 | Dice 0.7619 | IoU 0.6154 | P 0.7404 | R 0.7846 | th 0.70 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 022 | train 0.1403 | val 0.1535 | Dice 0.7731 | IoU 0.6302 | P 0.7574 | R 0.7895 | th 0.60 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 023 | train 0.1400 | val 0.1739 | Dice 0.7514 | IoU 0.6018 | P 0.7275 | R 0.7770 | th 0.70 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 024 | train 0.1329 | val 0.1556 | Dice 0.7656 | IoU 0.6202 | P 0.7579 | R 0.7734 | th 0.40 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 025 | train 0.1283 | val 0.1524 | Dice 0.7727 | IoU 0.6296 | P 0.7732 | R 0.7722 | th 0.50 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 026 | train 0.1265 | val 0.1716 | Dice 0.7635 | IoU 0.6175 | P 0.7429 | R 0.7853 | th 0.80 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 027 | train 0.1239 | val 0.1736 | Dice 0.7523 | IoU 0.6029 | P 0.7342 | R 0.7713 | th 0.75 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 028 | train 0.1235 | val 0.1584 | Dice 0.7784 | IoU 0.6371 | P 0.7568 | R 0.8012 | th 0.70 | lr 5.00e-05 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_only/seed_42/best_ms_only_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 029 | train 0.1207 | val 0.1541 | Dice 0.7740 | IoU 0.6313 | P 0.7653 | R 0.7829 | th 0.55 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 030 | train 0.1201 | val 0.1592 | Dice 0.7632 | IoU 0.6171 | P 0.7488 | R 0.7782 | th 0.50 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 031 | train 0.1218 | val 0.1766 | Dice 0.7609 | IoU 0.6140 | P 0.7419 | R 0.7808 | th 0.85 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 032 | train 0.1185 | val 0.1579 | Dice 0.7635 | IoU 0.6175 | P 0.7503 | R 0.7772 | th 0.55 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 033 | train 0.1157 | val 0.1531 | Dice 0.7725 | IoU 0.6294 | P 0.7641 | R 0.7811 | th 0.60 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 034 | train 0.1108 | val 0.1552 | Dice 0.7687 | IoU 0.6243 | P 0.7510 | R 0.7874 | th 0.55 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 035 | train 0.1084 | val 0.1594 | Dice 0.7630 | IoU 0.6168 | P 0.7519 | R 0.7745 | th 0.65 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 036 | train 0.1075 | val 0.1519 | Dice 0.7717 | IoU 0.6282 | P 0.7690 | R 0.7744 | th 0.55 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 037 | train 0.1079 | val 0.1531 | Dice 0.7751 | IoU 0.6328 | P 0.7606 | R 0.7901 | th 0.35 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 038 | train 0.1039 | val 0.1562 | Dice 0.7672 | IoU 0.6223 | P 0.7538 | R 0.7811 | th 0.45 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 039 | train 0.1019 | val 0.1527 | Dice 0.7743 | IoU 0.6317 | P 0.7594 | R 0.7897 | th 0.50 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 040 | train 0.0997 | val 0.1589 | Dice 0.7641 | IoU 0.6183 | P 0.7635 | R 0.7647 | th 0.45 | lr 1.25e-05 | 1.5m
+Early stopping: 12 consecutive non-improving epochs.
+
+Fine validation threshold search seed 42: 100%|██████████| 60/60 [00:07<00:00,  8.02it/s]
+Final no-TTA test seed 42:   0%|          | 0/60 [00:00<?, ?it/s]/tmp/ipykernel_58/1247291240.py:242: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  image = Image.fromarray(array.astype(np.float32), mode="F")
+Final no-TTA test seed 42: 100%|██████████| 60/60 [00:15<00:00,  3.78it/s]
+Saving probability maps seed 42: 100%|██████████| 60/60 [00:08<00:00,  6.83it/s]
+Saving predictions seed 42: 100%|██████████| 60/60 [00:00<00:00, 121.33it/s]
+
+
+----------------------------------------------------------------------------------------
+MS-only | SEED 42 FINISHED
+Best epoch       : 28
+Val threshold    : 0.71
+Test Dice        : 0.788766
+Test IoU         : 0.651208
+Test Precision   : 0.771567
+Test Recall      : 0.806748
+Downloadable ZIP : /kaggle/working/gd_ms_only_unet_seed42_results.zip
+
+/kaggle/working/gd_ms_only_unet_seed42_results.zip
+
+========================================================================================
+SEED 42 | MS+NDRE-only CONTROLLED BASELINE
+========================================================================================
+Channels  : ['Green', 'Red-Edge', 'NIR', 'NDRE']
+Parameters: 7,902,147
+
+                                                                   
+Seed 42 | Epoch 001 | train 0.3543 | val 0.2786 | Dice 0.6292 | IoU 0.4590 | P 0.5971 | R 0.6649 | th 0.35 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 002 | train 0.2429 | val 0.2345 | Dice 0.6891 | IoU 0.5257 | P 0.6643 | R 0.7160 | th 0.45 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 003 | train 0.2174 | val 0.2188 | Dice 0.7036 | IoU 0.5427 | P 0.6700 | R 0.7408 | th 0.55 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 004 | train 0.1992 | val 0.2089 | Dice 0.7226 | IoU 0.5657 | P 0.6987 | R 0.7482 | th 0.70 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 005 | train 0.1921 | val 0.1908 | Dice 0.7343 | IoU 0.5801 | P 0.7175 | R 0.7519 | th 0.40 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 006 | train 0.1856 | val 0.1889 | Dice 0.7416 | IoU 0.5893 | P 0.7271 | R 0.7567 | th 0.55 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 007 | train 0.1793 | val 0.1825 | Dice 0.7476 | IoU 0.5969 | P 0.7529 | R 0.7424 | th 0.35 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 008 | train 0.1716 | val 0.1775 | Dice 0.7443 | IoU 0.5927 | P 0.7338 | R 0.7551 | th 0.40 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 009 | train 0.1705 | val 0.1793 | Dice 0.7484 | IoU 0.5980 | P 0.7342 | R 0.7632 | th 0.50 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 010 | train 0.1670 | val 0.1759 | Dice 0.7454 | IoU 0.5941 | P 0.7323 | R 0.7589 | th 0.30 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 011 | train 0.1632 | val 0.1944 | Dice 0.7302 | IoU 0.5751 | P 0.7057 | R 0.7565 | th 0.75 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 012 | train 0.1639 | val 0.1844 | Dice 0.7347 | IoU 0.5807 | P 0.7179 | R 0.7523 | th 0.50 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 013 | train 0.1607 | val 0.1788 | Dice 0.7499 | IoU 0.5999 | P 0.7633 | R 0.7370 | th 0.35 | lr 1.00e-04 | 1.4m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 014 | train 0.1567 | val 0.1644 | Dice 0.7615 | IoU 0.6149 | P 0.7550 | R 0.7682 | th 0.50 | lr 1.00e-04 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 015 | train 0.1538 | val 0.1771 | Dice 0.7425 | IoU 0.5905 | P 0.7132 | R 0.7744 | th 0.65 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 016 | train 0.1533 | val 0.1627 | Dice 0.7606 | IoU 0.6137 | P 0.7367 | R 0.7861 | th 0.45 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 017 | train 0.1493 | val 0.1712 | Dice 0.7490 | IoU 0.5988 | P 0.7366 | R 0.7619 | th 0.60 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 018 | train 0.1548 | val 0.1780 | Dice 0.7595 | IoU 0.6122 | P 0.7206 | R 0.8028 | th 0.70 | lr 1.00e-04 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 019 | train 0.1516 | val 0.1811 | Dice 0.7520 | IoU 0.6025 | P 0.7137 | R 0.7946 | th 0.75 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 020 | train 0.1380 | val 0.1717 | Dice 0.7642 | IoU 0.6183 | P 0.7351 | R 0.7956 | th 0.75 | lr 5.00e-05 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 021 | train 0.1407 | val 0.1704 | Dice 0.7513 | IoU 0.6017 | P 0.7195 | R 0.7861 | th 0.60 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 022 | train 0.1361 | val 0.1662 | Dice 0.7582 | IoU 0.6106 | P 0.7421 | R 0.7749 | th 0.65 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 023 | train 0.1331 | val 0.1632 | Dice 0.7624 | IoU 0.6160 | P 0.7552 | R 0.7697 | th 0.60 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 024 | train 0.1306 | val 0.1692 | Dice 0.7552 | IoU 0.6066 | P 0.7511 | R 0.7593 | th 0.60 | lr 5.00e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 025 | train 0.1320 | val 0.1643 | Dice 0.7555 | IoU 0.6071 | P 0.7434 | R 0.7681 | th 0.45 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 026 | train 0.1246 | val 0.1726 | Dice 0.7628 | IoU 0.6165 | P 0.7463 | R 0.7800 | th 0.80 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 027 | train 0.1225 | val 0.1676 | Dice 0.7657 | IoU 0.6204 | P 0.7500 | R 0.7821 | th 0.75 | lr 2.50e-05 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 028 | train 0.1222 | val 0.1598 | Dice 0.7725 | IoU 0.6294 | P 0.7470 | R 0.7999 | th 0.60 | lr 2.50e-05 | 1.4m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 029 | train 0.1203 | val 0.1638 | Dice 0.7680 | IoU 0.6233 | P 0.7491 | R 0.7878 | th 0.70 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 030 | train 0.1193 | val 0.1568 | Dice 0.7757 | IoU 0.6336 | P 0.7687 | R 0.7828 | th 0.65 | lr 2.50e-05 | 1.5m
+Saved: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/ms_ndre/seed_42/best_ms_ndre_unet_seed42.pt
+
+                                                                   
+Seed 42 | Epoch 031 | train 0.1196 | val 0.1610 | Dice 0.7649 | IoU 0.6193 | P 0.7610 | R 0.7689 | th 0.55 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 032 | train 0.1164 | val 0.1682 | Dice 0.7624 | IoU 0.6160 | P 0.7473 | R 0.7780 | th 0.75 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 033 | train 0.1154 | val 0.1560 | Dice 0.7752 | IoU 0.6330 | P 0.7671 | R 0.7835 | th 0.30 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 034 | train 0.1143 | val 0.1730 | Dice 0.7529 | IoU 0.6038 | P 0.7304 | R 0.7770 | th 0.70 | lr 2.50e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 035 | train 0.1138 | val 0.1654 | Dice 0.7542 | IoU 0.6054 | P 0.7366 | R 0.7727 | th 0.40 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 036 | train 0.1100 | val 0.1585 | Dice 0.7708 | IoU 0.6271 | P 0.7634 | R 0.7783 | th 0.55 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 037 | train 0.1101 | val 0.1607 | Dice 0.7687 | IoU 0.6242 | P 0.7515 | R 0.7866 | th 0.55 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 038 | train 0.1075 | val 0.1604 | Dice 0.7674 | IoU 0.6226 | P 0.7598 | R 0.7751 | th 0.45 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 039 | train 0.1074 | val 0.1596 | Dice 0.7702 | IoU 0.6263 | P 0.7573 | R 0.7836 | th 0.55 | lr 1.25e-05 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 040 | train 0.1064 | val 0.1628 | Dice 0.7632 | IoU 0.6170 | P 0.7583 | R 0.7681 | th 0.40 | lr 6.25e-06 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 041 | train 0.1048 | val 0.1583 | Dice 0.7714 | IoU 0.6279 | P 0.7658 | R 0.7771 | th 0.50 | lr 6.25e-06 | 1.5m
+
+                                                                   
+Seed 42 | Epoch 042 | train 0.1036 | val 0.1613 | Dice 0.7668 | IoU 0.6218 | P 0.7554 | R 0.7786 | th 0.55 | lr 6.25e-06 | 1.5m
+Early stopping: 12 consecutive non-improving epochs.
+
+Fine validation threshold search seed 42: 100%|██████████| 60/60 [00:07<00:00,  8.01it/s]
+Final no-TTA test seed 42: 100%|██████████| 60/60 [00:14<00:00,  4.16it/s]
+Saving probability maps seed 42: 100%|██████████| 60/60 [00:08<00:00,  7.15it/s]
+Saving predictions seed 42: 100%|██████████| 60/60 [00:00<00:00, 124.61it/s]
+
+
+----------------------------------------------------------------------------------------
+MS+NDRE-only | SEED 42 FINISHED
+Best epoch       : 30
+Val threshold    : 0.62
+Test Dice        : 0.792788
+Test IoU         : 0.656709
+Test Precision   : 0.771787
+Test Recall      : 0.814963
+Downloadable ZIP : /kaggle/working/gd_ms_ndre_unet_seed42_results.zip
+
+/kaggle/working/gd_ms_ndre_unet_seed42_results.zip
+
+========================================================================================
+CONTROLLED MS-ONLY VERSUS MS+NDRE-ONLY COMPARISON FINISHED
+========================================================================================
+MS-only        | Dice 0.788766 | IoU 0.651208 | P 0.771567 | R 0.806748 | th 0.71
+MS+NDRE-only   | Dice 0.792788 | IoU 0.656709 | P 0.771787 | R 0.814963 | th 0.62
+Comparison CSV: /kaggle/working/gd_controlled_ms_vs_msndre_seed42/controlled_ms_vs_msndre_seed42.csv
+Combined ZIP  : /kaggle/working/gd_controlled_ms_vs_msndre_seed42_complete.zip
+
+Download the ZIP before ending the Kaggle session.
+
+/kaggle/working/gd_controlled_ms_vs_msndre_seed42/controlled_ms_vs_msndre_seed42.csv
+/kaggle/working/gd_controlled_ms_vs_msndre_seed42_complete.zip
